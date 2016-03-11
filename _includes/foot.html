@@ -110,7 +110,7 @@ $(document).on('click', function(event) {
 
 {% if page.parallax == true %}
   <script type="text/javascript" src="{{ site.baseurl }}/js/parallax.min.js"></script>
-  <script>$('.parallax-window').parallax({imageSrc: '{{ site.baseurl }}{{ page.parallaxLarge }}'});</script>
+  <script>$('.parallax-window').parallax({imageSrc: '{{ site.baseurl }}{{ page.parallaxLarge }}',iosFix: false});</script>
   {% if page.parallaxSmall %}
     <style>
       @media (max-width: 768px) {
@@ -148,6 +148,6 @@ $(document).on('click', function(event) {
 {% endif %}
 
 {% if page.animate == true %}
-  <script src="{{ site.baseurl }}js/wow.min.js"></script>
-  <script>new WOW().init();</script>
+  <!--script src="{{ site.baseurl }}js/wow.min.js"></script>
+  <script>new WOW().init();</script-->
 {% endif %}
