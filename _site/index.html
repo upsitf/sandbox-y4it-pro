@@ -12,6 +12,10 @@
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,900italic,900,700italic,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/css/font-awesome.min.css">
+	
+		<link rel="stylesheet" href="/css/animate.css">
+		<link rel="stylesheet" href="/css/animate-custom.css">
+	
 	<link rel="stylesheet" href="/css/km-navbar.css">
 	<link rel="stylesheet" href="/css/custom.css">
 
@@ -38,7 +42,7 @@
 
     <body>
 
-		<header class="km-header  ">
+		<header id="navbar" class="km-header  km-header-hide ">
 
   <nav class="km-navbar">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -49,7 +53,9 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="km-navbar-brand" style="font-weight:900">Y4iT</a>
+        <a class="km-navbar-brand" style="font-weight:900">
+          <img src="/images/logo-y4it-logotype.png">
+        </a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -60,7 +66,7 @@
           <li><a>About</a></li>
           <li><a>FAQ</a></li>
           <li><a>Organizer</a></li>
-          <a class="btn btn-default">Buy Tickets</a>
+          <a class="btn btn-default">Get Badges</a>
         </ul>
       </div><!-- /.navbar-collapse -->
   </nav>
@@ -70,12 +76,12 @@
 
 		<section class="page-content">
 
-		<section class="parallax-window" data-parallax="scroll" data-image-src="/images/jumbotron-bg.png" data-speed="0.5">
+		<section id="jumbotron" class="parallax-window">
   <div class="container-fluid">
     <div class="row row-limit">
       <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
         <div class="km-jumbotron-margin-top"></div>
-        <div class="panel panel-default panel-jumbotron">
+        <div class="panel panel-default panel-jumbotron animated fadeInDown">
           <div class="panel-heading panel-jumbotron-heading">
             <img class="panel-jumbotron-logo" src="/images/logo-y4it.png">
             <h1 class="panel-title">
@@ -95,13 +101,27 @@
             <a class="btn btn-default" role="button">Download poster</a>
           </div>
         </div>
-        <div class="km-jumbotron-margin-top"></div>
+        <div class="km-jumbotron-margin-bottom"></div>
       </div>
     </div>
   </div>
 </section>
 
-<section>
+<style>
+  @media (max-width: 768px) {
+    .km-jumbotron-margin-top {
+      height: 88vw;
+      min-height: 245px;
+      max-height: 660px;
+    }
+    .km-jumbotron-margin-bottom {
+      height: 30px;
+      min-height: 0;
+    }
+  }
+</style>
+
+<section class="section-default hidden">
   <div class="container-fluid">
     <div class="row row-limit">
       <div class="col-lg-12">
@@ -111,7 +131,7 @@
   </div>
 </section>
 
-<section>
+<section class="section-default section-gray">
   <div class="container-fluid">
     <div class="row row-limit">
       <div class="col-lg-12">
@@ -147,12 +167,12 @@
   </div>
 </section>
 
-<section>
+<section class="section-default section-violet">
   <div class="container-fluid">
     <div class="row row-limit">
       <div class="col-lg-12">
 
-        <img>
+        <img class="img-responsive" src="/images/smx.jpg">
         <h1>Event Details</h1>
 
         <div class="row">
@@ -241,7 +261,7 @@
   </div>
 </section>
 
-<section>
+<section class="section-default section-gray">
   <div class="container-fluid">
     <div class="row row-limit">
       <div class="col-lg-12">
@@ -269,13 +289,13 @@
   </div>
 </section>
 
-<section>
+<section class="section-default section-orange">
   <div class="container-fluid">
-    <div class="row">
+    <div class="row row-limit">
       <div class="col-lg-12">
 
         <h1>
-          Congress Badges
+          Congress Badges<br/>
           <small>Per Day</small>
         </h1>
 
@@ -300,7 +320,7 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row row-limit">
       <div class="col-lg-12">
 
         <h1>Badge Inclusions</h1>
@@ -330,7 +350,7 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row row-limit">
       <div class="col-lg-12">
 
         <h1>Modes of Payment</h1>
@@ -355,7 +375,7 @@
   </div>
 </section>
 
-<section>
+<section class="section-default section-violet">
   <div class="container-fluid">
     <div class="row row-limit">
       <div class="col-lg-12">
@@ -403,7 +423,7 @@
   </div>
 </section>
 
-<section>
+<section class="section-default section-gray">
   <div class="container-fluid">
     <div class="row row-limit">
       <div class="col-lg-12">
@@ -421,7 +441,7 @@
   </div>
 </section>
 
-<section>
+<section class="section-default section-orange">
   <div class="container-fluid">
     <div class="row row-limit">
       <div class="col-lg-12">
@@ -457,7 +477,7 @@
   </div>
 </section>
 
-<section>
+<section class="section-default section-gray">
   <div class="container-fluid">
     <div class="row row-limit">
       <div class="col-lg-12">
@@ -498,7 +518,157 @@
 
 		<script type="text/javascript" src="/js/jquery.min.js"></script>
 <script type="text/javascript" src="/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="/js/parallax.min.js"></script>
+
+<!--script type="text/javascript" src="/js/jquery.inview.js"></script>
+<script>
+
+  $('#jumbotron').bind('inview', function (event, visible) {
+    if (visible == true) {
+      $('header').addClass('km-header-hide');
+    } else {
+      $('header').removeClass('km-header-hide');
+    }
+
+  });
+  $(window).scroll();
+</script-->
+
+
+
+<!--script type="text/javascript" src="/js/jquery.visible.min.js"></script>
+<script>
+  function toggleScroll() {
+    if ($('#jumbotron').visible(true)) {
+      $('header').addClass('km-header-hide');
+    } else {
+      $('header').removeClass('km-header-hide');
+    }
+  }
+  $( window ).scroll(function() {
+    toggleScroll();
+  });
+</script-->
+
+
+
+
+<script>
+  function hasClass(element, cls) {
+      return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
+  }
+
+/*
+  function toggle() {
+    var navbar_menu = document.getElementById('navbar-menu');
+    if (hasClass(navbar_menu,'active')) {
+      navbar_menu.classList.remove('active');
+    }
+    else {
+      navbar_menu.classList.add('active');
+    }
+  }
+
+  $(document).on('click', function(event) {
+    if ((!$(event.target).closest('.navbar-menu').length) && (!$(event.target).closest('.navbar-toggle').length)) {
+      //alert('clicked outside nav controls');
+      $('.navbar-menu').removeClass('active');
+    }
+  });
+*/
+</script>
+
+<script>
+
+/* NAVIGATION HEADER*/
+
+var didScroll = false;
+
+var basis = document.getElementById('jumbotron');
+var basis_bcr = basis.getBoundingClientRect();
+var navbar = document.getElementById('navbar');
+var navbar_bcr = navbar.getBoundingClientRect();
+window.onscroll = doOnScroll;
+
+function doOnScroll() {
+    didScroll = true;
+    basis_bcr = basis.getBoundingClientRect();
+    navbar_bcr = navbar.getBoundingClientRect();
+    //if ((basis_bcr.bottom-(navbar_bcr.bottom-navbar_bcr.top)) <= 0) {
+    if (basis_bcr.bottom <= 0) {
+      if (hasClass(navbar,'km-header-hide')) {
+        navbar.classList.remove('km-header-hide');
+      }
+    }
+    else {
+      if ((!(hasClass(navbar,'km-header-hide'))) && (basis.getBoundingClientRect().top == 0)) {
+        navbar.classList.add('km-header-hide');
+      }
+    }
+}
+
+setInterval(function() {
+    if(didScroll) {
+        didScroll = false;
+    }
+}, 100);
+
+/* DROPDOWN */
+
+$(document).on('click', function(event) {
+  if ((!$(event.target).closest('.button-more#button-more-1').length)) {
+    $('.button-more#button-more-1').parent().next().removeClass('toggle-dropdown-active toggle-dropdown-visible');
+  }
+  if ((!$(event.target).closest('.button-more#button-more-2').length)) {
+    $('.button-more#button-more-2').parent().next().removeClass('toggle-dropdown-active toggle-dropdown-visible');
+  }
+});
+</script>
+
+
+
+
+  <script type="text/javascript" src="/js/parallax.min.js"></script>
+  <script>$('.parallax-window').parallax({imageSrc: '/images/art-landscape-web.png'});</script>
+  
+    <style>
+      @media (max-width: 768px) {
+        .parallax-window {
+          background-image: url('/images/art-portrait-web.png');
+          background-size: cover;
+          background-position: center top;
+        }
+        .parallax-mirror {
+          display: none;
+        }
+      }
+    </style>
+  
+  
+    <!--script>
+      $(window).resize(function() {
+        if (Math.max(document.documentElement.clientWidth, window.innerWidth || 0) <= 768) {
+          $('.parallax-mirror').remove();
+          setTimeout(function() {
+            $('.parallax-window').parallax({imageSrc: '/images/art-portrait-web.png'});
+          }, 0);
+
+          //alert('XS Screen!');
+        }
+        else {
+          $('.parallax-mirror').remove();
+          setTimeout(function() {
+            $('.parallax-window').parallax({imageSrc: '/images/art-landscape-web.png'});
+          }, 0);
+        }
+      });
+    </script-->
+  
+
+
+
+  <script src="js/wow.min.js"></script>
+  <script>new WOW().init();</script>
+
 
 
 	</body>

@@ -1,4 +1,4 @@
-<header class="km-header {% if page.title %}{{ ' static ' }}{% else %}{{ ' ' }}{% endif %}">
+<header id="navbar" class="km-header {% if page.navHide %}{{ ' km-header-hide ' }}{% endif %}">
 
   <nav class="km-navbar">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -9,7 +9,9 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="km-navbar-brand" style="font-weight:900">Y4iT</a>
+        <a class="km-navbar-brand" style="font-weight:900">
+          <img src="{{ site.baseurl }}/images/logo-y4it-logotype.png">
+        </a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -20,7 +22,7 @@
           <li><a>About</a></li>
           <li><a>FAQ</a></li>
           <li><a>Organizer</a></li>
-          <a class="btn btn-default">Buy Tickets</a>
+          <a class="btn btn-default">Get Badges</a>
         </ul>
       </div><!-- /.navbar-collapse -->
   </nav>

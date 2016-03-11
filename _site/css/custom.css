@@ -59,19 +59,114 @@
   margin-bottom: 15px;
 }
 
-.panel-jumbotron btn {
-  
+.btn,
+.btn.btn-default {
+  background: none;
+  border-radius: 0;
+  border-width: 3px;
+  border-color: #333;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  font-weight: 700;
+  margin-bottom: 0;
+  -webkit-transition: 250ms ease-out;
+  -moz-transition: 250ms ease-out;
+  -o-transition: 250ms ease-out;
+  transition: 250ms ease-out;
+}
+
+.btn:hover,
+.btn.btn-default:hover {
+  background-color: #333;
+  color: white;
+  font-weight: 400;
+  -webkit-transition: 250ms ease-out;
+  -moz-transition: 250ms ease-out;
+  -o-transition: 250ms ease-out;
+  transition: 250ms ease-out;
+}
+
+.panel-jumbotron .btn,
+.panel-jumbotron .btn.btn-default {
+  border-color: #624a9d;
+  color: #624a9d;
+  margin-bottom: 15px;
+}
+
+.panel-jumbotron .btn:hover,
+.panel-jumbotron .btn-default:hover {
+  background-color: #624a9d;
+  color: white;
 }
 
 .km-jumbotron-margin-top {
-  height: calc((((100vh - 355px) / 2) - 97px) + 40px);
+  height: calc(((100vh - 425px) / 2) + 54px);
   min-height: 80px;
 }
 
 .km-jumbotron-margin-bottom {
-  height: calc(((100vh - 355px) / 2) - 40px);
+  height: calc(((100vh - 425px) / 2) - 54px);
   min-height: 80px;
 }
+
+.section-default {
+  padding-top: 85px;
+  padding-bottom: 55px;
+}
+.section-default h1 {
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 0.75em;
+}
+.section-default h1 small {
+  text-transform: none;
+  font-size: 0.55em;
+  line-height: calc((1em * 3) / 4);
+}
+
+.section-gray {background-color: #f0f8ff;}
+.section-violet {background-color: #624a9d;}
+.section-orange {background-color: #f47e21;}
+.section-gray *,
+.section-gray h1,
+.section-gray h2,
+.section-gray h3,
+.section-gray h4,
+.section-gray h5,
+.section-gray h6,
+.section-gray span,
+.section-gray p { }
+.section-violet *,
+.section-violet h1,
+.section-violet h2,
+.section-violet h3,
+.section-violet h4,
+.section-violet h5,
+.section-violet h6,
+.section-violet span,
+.section-violet p {color: white;}
+.section-violet h1 small,
+.section-violet h2 small,
+.section-violet h3 small,
+.section-violet h4 small,
+.section-violet h5 small,
+.section-violet h6 small {color: rgba(255,255,255,0.75);}
+.section-orange *,
+.section-orange h1,
+.section-orange h2,
+.section-orange h3,
+.section-orange h4,
+.section-orange h5,
+.section-orange h6,
+.section-orange span,
+.section-orange p {color: white;}
+.section-orange h1 small,
+.section-orange h2 small,
+.section-orange h3 small,
+.section-orange h4 small,
+.section-orange h5 small,
+.section-orange h6 small {color: rgba(255,255,255,0.75);}
 
 @media (min-width: 768px) {
 

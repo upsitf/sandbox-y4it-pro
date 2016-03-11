@@ -1,0 +1,10 @@
+.animated.fadeInDown.panel-jumbotron {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 100ms;
+  -moz-animation-duration: 1s;
+  -moz-animation-delay: 100ms;
+  -o-animation-duration: 1s;
+  -o-animation-delay: 100ms;
+  animation-duration: 1s;
+  animation-delay: 100ms;
+}

@@ -1,3 +1,153 @@
 <script type="text/javascript" src="{{ site.baseurl }}/js/jquery.min.js"></script>
 <script type="text/javascript" src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
-{% if page.parallax %}{{ '<script type="text/javascript" src="' }}{{ site.baseurl }}{{ '/js/parallax.min.js"></script>' }}{% endif %}
+{% if page.navHide %}
+<!--script type="text/javascript" src="{{ site.baseurl }}/js/jquery.inview.js"></script>
+<script>
+
+  $('#{{ page.navHide }}').bind('inview', function (event, visible) {
+    if (visible == true) {
+      $('header').addClass('km-header-hide');
+    } else {
+      $('header').removeClass('km-header-hide');
+    }
+
+  });
+  $(window).scroll();
+</script-->
+{% endif %}
+
+{% if page.navHide %}
+<!--script type="text/javascript" src="{{ site.baseurl }}/js/jquery.visible.min.js"></script>
+<script>
+  function toggleScroll() {
+    if ($('#{{ page.navHide }}').visible(true)) {
+      $('header').addClass('km-header-hide');
+    } else {
+      $('header').removeClass('km-header-hide');
+    }
+  }
+  $( window ).scroll(function() {
+    toggleScroll();
+  });
+</script-->
+{% endif %}
+
+{% if page.navHide %}
+
+<script>
+  function hasClass(element, cls) {
+      return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
+  }
+
+/*
+  function toggle() {
+    var navbar_menu = document.getElementById('navbar-menu');
+    if (hasClass(navbar_menu,'active')) {
+      navbar_menu.classList.remove('active');
+    }
+    else {
+      navbar_menu.classList.add('active');
+    }
+  }
+
+  $(document).on('click', function(event) {
+    if ((!$(event.target).closest('.navbar-menu').length) && (!$(event.target).closest('.navbar-toggle').length)) {
+      //alert('clicked outside nav controls');
+      $('.navbar-menu').removeClass('active');
+    }
+  });
+*/
+</script>
+
+<script>
+
+/* NAVIGATION HEADER*/
+
+var didScroll = false;
+
+var basis = document.getElementById('{{ page.navHide }}');
+var basis_bcr = basis.getBoundingClientRect();
+var navbar = document.getElementById('navbar');
+var navbar_bcr = navbar.getBoundingClientRect();
+window.onscroll = doOnScroll;
+
+function doOnScroll() {
+    didScroll = true;
+    basis_bcr = basis.getBoundingClientRect();
+    navbar_bcr = navbar.getBoundingClientRect();
+    //if ((basis_bcr.bottom-(navbar_bcr.bottom-navbar_bcr.top)) <= 0) {
+    if (basis_bcr.bottom <= 0) {
+      if (hasClass(navbar,'km-header-hide')) {
+        navbar.classList.remove('km-header-hide');
+      }
+    }
+    else {
+      if ((!(hasClass(navbar,'km-header-hide'))) && (basis.getBoundingClientRect().top == 0)) {
+        navbar.classList.add('km-header-hide');
+      }
+    }
+}
+
+setInterval(function() {
+    if(didScroll) {
+        didScroll = false;
+    }
+}, 100);
+
+/* DROPDOWN */
+
+$(document).on('click', function(event) {
+  if ((!$(event.target).closest('.button-more#button-more-1').length)) {
+    $('.button-more#button-more-1').parent().next().removeClass('toggle-dropdown-active toggle-dropdown-visible');
+  }
+  if ((!$(event.target).closest('.button-more#button-more-2').length)) {
+    $('.button-more#button-more-2').parent().next().removeClass('toggle-dropdown-active toggle-dropdown-visible');
+  }
+});
+</script>
+
+{% endif %}
+
+{% if page.parallax == true %}
+  <script type="text/javascript" src="{{ site.baseurl }}/js/parallax.min.js"></script>
+  <script>$('.parallax-window').parallax({imageSrc: '{{ site.baseurl }}{{ page.parallaxLarge }}'});</script>
+  {% if page.parallaxSmall %}
+    <style>
+      @media (max-width: 768px) {
+        .parallax-window {
+          background-image: url('{{ site.baseurl }}{{ page.parallaxSmall }}');
+          background-size: cover;
+          background-position: center top;
+        }
+        .parallax-mirror {
+          display: none;
+        }
+      }
+    </style>
+  {% endif %}
+  {% if page.parallaxSmall %}
+    <!--script>
+      $(window).resize(function() {
+        if (Math.max(document.documentElement.clientWidth, window.innerWidth || 0) <= 768) {
+          $('.parallax-mirror').remove();
+          setTimeout(function() {
+            $('.parallax-window').parallax({imageSrc: '{{ site.baseurl }}{{ page.parallaxSmall }}'});
+          }, 0);
+
+          //alert('XS Screen!');
+        }
+        else {
+          $('.parallax-mirror').remove();
+          setTimeout(function() {
+            $('.parallax-window').parallax({imageSrc: '{{ site.baseurl }}{{ page.parallaxLarge }}'});
+          }, 0);
+        }
+      });
+    </script-->
+  {% endif %}
+{% endif %}
+
+{% if page.animate == true %}
+  <script src="{{ site.baseurl }}js/wow.min.js"></script>
+  <script>new WOW().init();</script>
+{% endif %}
