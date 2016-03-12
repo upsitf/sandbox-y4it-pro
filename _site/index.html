@@ -59,7 +59,7 @@
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="km-navbar-collapse">
+      <div id="collapse" class="km-navbar-collapse hidden-xs">
         <ul class="km-navbar-right">
           <li><a>Speakers</a></li>
           <li><a>Details</a></li>
@@ -294,8 +294,10 @@
           (YVC).</p>
 
         <!-- Embed YouTube player here -->
-        <div class="embed-responsive embed-responsive-4by3">
-          <iframe class="embed-responsive-item" width="100%" src="https://www.youtube.com/embed/PWVx1pfzAZw" frameborder="0" allowfullscreen></iframe>
+        <div class="embed-sizer">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" width="100%" src="https://www.youtube.com/embed/PWVx1pfzAZw" frameborder="0" allowfullscreen></iframe>
+          </div>
         </div>
         <small>Y4iT 2015 Video Montage</small>
 
@@ -574,9 +576,9 @@
 
 /*
   function toggle() {
-    var navbar_menu = document.getElementById('navbar-menu');
-    if (hasClass(navbar_menu,'active')) {
-      navbar_menu.classList.remove('active');
+    var navbar_menu = document.getElementById('collapse');
+    if (hasClass(navbar_menu,'km-navbar-active')) {
+      navbar_menu.classList.remove('km-navbar-active');
     }
     else {
       navbar_menu.classList.add('active');
@@ -657,26 +659,6 @@ $(document).on('click', function(event) {
         }
       }
     </style>
-  
-  
-    <!--script>
-      $(window).resize(function() {
-        if (Math.max(document.documentElement.clientWidth, window.innerWidth || 0) <= 768) {
-          $('.parallax-mirror').remove();
-          setTimeout(function() {
-            $('.parallax-window').parallax({imageSrc: '/images/art-portrait-web.png'});
-          }, 0);
-
-          //alert('XS Screen!');
-        }
-        else {
-          $('.parallax-mirror').remove();
-          setTimeout(function() {
-            $('.parallax-window').parallax({imageSrc: '/images/art-landscape-web.png'});
-          }, 0);
-        }
-      });
-    </script-->
   
 
 

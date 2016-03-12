@@ -41,9 +41,9 @@
 
 /*
   function toggle() {
-    var navbar_menu = document.getElementById('navbar-menu');
-    if (hasClass(navbar_menu,'active')) {
-      navbar_menu.classList.remove('active');
+    var navbar_menu = document.getElementById('collapse');
+    if (hasClass(navbar_menu,'km-navbar-active')) {
+      navbar_menu.classList.remove('km-navbar-active');
     }
     else {
       navbar_menu.classList.add('active');
@@ -124,26 +124,6 @@ $(document).on('click', function(event) {
         }
       }
     </style>
-  {% endif %}
-  {% if page.parallaxSmall %}
-    <!--script>
-      $(window).resize(function() {
-        if (Math.max(document.documentElement.clientWidth, window.innerWidth || 0) <= 768) {
-          $('.parallax-mirror').remove();
-          setTimeout(function() {
-            $('.parallax-window').parallax({imageSrc: '{{ site.baseurl }}{{ page.parallaxSmall }}'});
-          }, 0);
-
-          //alert('XS Screen!');
-        }
-        else {
-          $('.parallax-mirror').remove();
-          setTimeout(function() {
-            $('.parallax-window').parallax({imageSrc: '{{ site.baseurl }}{{ page.parallaxLarge }}'});
-          }, 0);
-        }
-      });
-    </script-->
   {% endif %}
 {% endif %}
 
