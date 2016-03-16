@@ -10,6 +10,7 @@
 .panel-jumbotron {
   margin-top: 91px;
   margin-bottom: 0;
+  padding-bottom: 15px;
   background-color: rgba(255,255,255,0.75);
   border-radius: 0;
   border-width: 1px;
@@ -50,8 +51,9 @@
   margin-bottom: 15px;
 }
 
-.panel-jumbotron .panel-body p {
+.panel-jumbotron .panel-body span {
   margin-bottom: 0;
+  display: block;
   text-align: center;
 }
 
@@ -85,6 +87,15 @@
   -moz-transition: 250ms ease-out;
   -o-transition: 250ms ease-out;
   transition: 250ms ease-out;
+}
+
+@media(max-width: 768px) {
+  .btn-block {
+    width: 100%;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .panel-jumbotron .btn,
@@ -123,7 +134,7 @@
 .section-default h1 {
   text-align: center;
   text-transform: uppercase;
-  line-height: 0.75em;
+  line-height: 1em;
   margin-top: 45px;
   margin-bottom: 45px;
 }
@@ -193,6 +204,30 @@
 .section-orange h5 small,
 .section-orange h6 small {color: rgba(255,255,255,0.75);}
 
+.section-orange .btn,
+.section-orange .btn.btn-default {
+  border-color: white;
+  color: white;
+}
+.section-orange .btn:hover,
+.section-orange .btn.btn-default:hover {
+  background-color: white;
+  border-color: white;
+  color: #f47e21;
+}
+
+.section-violet .btn,
+.section-violet .btn.btn-default {
+  border-color: white;
+  color: white;
+}
+.section-violet .btn:hover,
+.section-violet .btn.btn-default:hover {
+  background-color: white;
+  border-color: white;
+  color: #624a9d;
+}
+
 .embed-sizer {
   max-width: 640px;
   margin: auto;
@@ -226,6 +261,43 @@
     width: calc(100% + 90px);
   }
   */
+}
+
+p {
+  line-height: 2.25em;
+  margin-bottom: 30px;
+}
+
+
+.section-default>.container-fluid .row:last-of-type>div:last-of-type>p:last-of-type:last-child {
+  margin-bottom: 0;
+}
+
+
+.small-caption {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.span-caption {
+  display: inline-block;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .row.row-buttons>div>.btn,
+  .row.row-buttons>div>.btn-default {
+    margin-bottom: 15px;
+  }
+  .row.row-buttons>div:last-of-type>.btn,
+  .row.row-buttons>div:last-of-type>.btn-default {
+    margin-bottom: 0;
+  }
+}
+.production-control {
+  display: none !important;
 }
 
 @media (min-width: 768px) {

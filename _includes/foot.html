@@ -1,38 +1,6 @@
 <script type="text/javascript" src="{{ site.baseurl }}/js/jquery.min.js"></script>
 <script type="text/javascript" src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
 {% if page.navHide %}
-<!--script type="text/javascript" src="{{ site.baseurl }}/js/jquery.inview.js"></script>
-<script>
-
-  $('#{{ page.navHide }}').bind('inview', function (event, visible) {
-    if (visible == true) {
-      $('header').addClass('km-header-hide');
-    } else {
-      $('header').removeClass('km-header-hide');
-    }
-
-  });
-  $(window).scroll();
-</script-->
-{% endif %}
-
-{% if page.navHide %}
-<!--script type="text/javascript" src="{{ site.baseurl }}/js/jquery.visible.min.js"></script>
-<script>
-  function toggleScroll() {
-    if ($('#{{ page.navHide }}').visible(true)) {
-      $('header').addClass('km-header-hide');
-    } else {
-      $('header').removeClass('km-header-hide');
-    }
-  }
-  $( window ).scroll(function() {
-    toggleScroll();
-  });
-</script-->
-{% endif %}
-
-{% if page.navHide %}
 
 <script>
   function hasClass(element, cls) {
@@ -46,7 +14,7 @@
       navbar_menu.classList.remove('km-navbar-active');
     }
     else {
-      navbar_menu.classList.add('active');
+      navbar_menu.classList.add('km-navbar-active');
     }
   }
 
@@ -67,7 +35,7 @@ var didScroll = false;
 
 var basis = document.getElementById('{{ page.navHide }}');
 var basis_bcr = basis.getBoundingClientRect();
-var navbar = document.getElementById('navbar');
+var navbar = document.getElementById('km-navbar');
 var navbar_bcr = navbar.getBoundingClientRect();
 window.onscroll = doOnScroll;
 
@@ -77,13 +45,13 @@ function doOnScroll() {
     navbar_bcr = navbar.getBoundingClientRect();
     //if ((basis_bcr.bottom-(navbar_bcr.bottom-navbar_bcr.top)) <= 0) {
     if (basis_bcr.bottom <= 0) {
-      if (hasClass(navbar,'km-header-hide')) {
-        navbar.classList.remove('km-header-hide');
+      if (hasClass(navbar,'navbar-hide')) {
+        navbar.classList.remove('navbar-hide');
       }
     }
     else {
-      if ((!(hasClass(navbar,'km-header-hide'))) && (basis.getBoundingClientRect().top == 0)) {
-        navbar.classList.add('km-header-hide');
+      if ((!(hasClass(navbar,'navbar-hide'))) && (basis.getBoundingClientRect().top == 0)) {
+        navbar.classList.add('navbar-hide');
       }
     }
 }
@@ -95,7 +63,7 @@ setInterval(function() {
 }, 100);
 
 /* DROPDOWN */
-
+/*
 $(document).on('click', function(event) {
   if ((!$(event.target).closest('.button-more#button-more-1').length)) {
     $('.button-more#button-more-1').parent().next().removeClass('toggle-dropdown-active toggle-dropdown-visible');
@@ -104,6 +72,7 @@ $(document).on('click', function(event) {
     $('.button-more#button-more-2').parent().next().removeClass('toggle-dropdown-active toggle-dropdown-visible');
   }
 });
+*/
 </script>
 
 {% endif %}

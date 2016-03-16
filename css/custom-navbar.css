@@ -1,0 +1,330 @@
+.navbar-default {
+  background: none;
+  border-style: none;
+  margin-bottom: 0;
+}
+
+/*@media (min-width: 768px) {*/
+  .navbar-default:not(.navbar-hide) {
+    top: 0px;
+    -webkit-transition: 250ms ease-out;
+    -moz-transition: 250ms ease-out;
+    -ms-transition: 250ms ease-out;
+    -o-transition: 250ms ease-out;
+    transition: 250ms ease-out;
+  }
+
+  .navbar-default.navbar-hide {
+    top: -55px;
+    -webkit-transition: 250ms ease-out;
+    -moz-transition: 250ms ease-out;
+    -ms-transition: 250ms ease-out;
+    -o-transition: 250ms ease-out;
+    transition: 250ms ease-out;
+  }
+
+  .navbar-default .navbar-collapse {
+    -webkit-transition: 250ms ease-out;
+    -moz-transition: 250ms ease-out;
+    -ms-transition: 250ms ease-out;
+    -o-transition: 250ms ease-out;
+    transition: 250ms ease-out;
+  }
+
+  .navbar-default.navbar-hide .navbar-collapse {
+    max-height: 0px;
+    -webkit-transition: 250ms ease-out;
+    -moz-transition: 250ms ease-out;
+    -ms-transition: 250ms ease-out;
+    -o-transition: 250ms ease-out;
+    transition: 250ms ease-out;
+  }
+/*}*/
+
+.navbar-default .container {
+  background-color: white;
+  width: 100%;
+  max-width: 960px;
+}
+
+.navbar-default .navbar-toggle {
+  margin-right: 0;
+  border-style: none;
+  padding-top: 16px;
+  padding-bottom: 17px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background: none;
+}
+
+.navbar-default .navbar-toggle.collapsed {
+  padding-left: 36px;
+  padding-right: 0;
+  -webkit-transition: 250ms ease-out;
+  -moz-transition: 250ms ease-out;
+  -ms-transition: 250ms ease-out;
+  -o-transition: 250ms ease-out;
+  transition: 250ms ease-out;
+}
+
+.navbar-default .navbar-toggle:not(.collapsed) {
+  padding-left: 18px;
+  padding-right: 18px;
+  -webkit-transition: 250ms ease-out;
+  -moz-transition: 250ms ease-out;
+  -ms-transition: 250ms ease-out;
+  -o-transition: 250ms ease-out;
+  transition: 250ms ease-out;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #F47E21;
+  height: 3px;
+}
+
+.navbar-toggle.collapsed .icon-bar:nth-of-type(2) {
+ 	-webkit-transform: translate(0,0) rotate(0); /* Safari */
+  -moz-transform: translate(0,0) rotate(0);
+  -ms-transform: translate(0,0) rotate(0); /* IE 9 */
+  -o-transform: translate(0,0) rotate(0);
+  transform: translate(0,0) rotate(0);
+  -webkit-transition: 250ms ease-out;
+  -moz-transition: 250ms ease-out;
+  -ms-transition: 250ms ease-out;
+  -o-transition: 250ms ease-out;
+  transition: 250ms ease-out;
+}
+
+.navbar-toggle.collapsed .icon-bar:nth-of-type(3) {
+  -webkit-transform: scale(1,1);
+  -moz-transform: scale(1,1);
+  -ms-transform: scale(1,1);
+ 	-o-transform: scale(1,1);
+  transform: scale(1,1);
+  -webkit-transition: 250ms ease-out;
+  -moz-transition: 250ms ease-out;
+  -ms-transition: 250ms ease-out;
+  -o-transition: 250ms ease-out;
+  transition: 250ms ease-out;
+}
+
+.navbar-toggle.collapsed .icon-bar:nth-of-type(4) {
+  -webkit-transform: translate(0,0) rotate(0); /* Safari */
+  -moz-transform: translate(0,0) rotate(0);
+  -ms-transform: translate(0,0) rotate(0); /* IE 9 */
+ 	-o-transform: translate(0,0) rotate(0);
+  transform: translate(0,0) rotate(0);
+  -webkit-transition: 250ms ease-out;
+  -moz-transition: 250ms ease-out;
+  -ms-transition: 250ms ease-out;
+  -o-transition: 250ms ease-out;
+  transition: 250ms ease-out;
+}
+
+.navbar-toggle:not(.collapsed) .icon-bar:nth-of-type(2) {
+ 	-webkit-transform: translate(0,7px) rotate(45deg); /* Safari */
+  -moz-transform: translate(0,7px) rotate(45deg);
+  -ms-transform: translate(0,7px) rotate(45deg); /* IE 9 */
+  -o-transform: translate(0,7px) rotate(45deg);
+  transform: translate(0,7px) rotate(45deg);
+  -webkit-transition: 250ms ease-out;
+  -moz-transition: 250ms ease-out;
+  -ms-transition: 250ms ease-out;
+  -o-transition: 250ms ease-out;
+  transition: 250ms ease-out;
+}
+
+.navbar-toggle:not(.collapsed) .icon-bar:nth-of-type(3) {
+  -webkit-transform: scale(0.01,1);
+  -moz-transform: scale(0.01,1);
+  -ms-transform: scale(0.01,1);
+ 	-o-transform: scale(0.01,1);
+  transform: scale(0.01,1);
+  -webkit-transition: 250ms ease-out;
+  -moz-transition: 250ms ease-out;
+  -ms-transition: 250ms ease-out;
+  -o-transition: 250ms ease-out;
+  transition: 250ms ease-out;
+}
+
+.navbar-toggle:not(.collapsed) .icon-bar:nth-of-type(4) {
+  -webkit-transform: translate(0,-7px) rotate(-45deg); /* Safari */
+  -moz-transform: translate(0,-7px) rotate(-45deg);
+  -ms-transform: translate(0,-7px) rotate(-45deg); /* IE 9 */
+ 	-o-transform: translate(0,-7px) rotate(-45deg);
+  transform: translate(0,-7px) rotate(-45deg);
+  -webkit-transition: 250ms ease-out;
+  -moz-transition: 250ms ease-out;
+  -ms-transition: 250ms ease-out;
+  -o-transition: 250ms ease-out;
+  transition: 250ms ease-out;
+}
+
+.navbar-brand {
+  padding-top: 9px;
+}
+
+.navbar-brand>img {
+  width: 80px;
+}
+
+.navbar-default .navbar-collapse {
+  border-style: none;
+}
+
+.navbar-right {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav>li>a {
+    padding-bottom: 15px;
+    border-style: solid;
+    border-color: #624a9d;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    -webkit-transition: padding-bottom 240ms linear 80ms, border-bottom-width 240ms linear;
+    -moz-transition: padding-bottom 240ms linear 80ms, border-bottom-width 240ms linear;
+    -ms-transition: padding-bottom 240ms linear 80ms, border-bottom-width 240ms linear;
+    -o-transition: padding-bottom 240ms linear 80ms, border-bottom-width 240ms linear;
+    transition: padding-bottom 240ms linear 80ms, border-bottom-width 240ms linear;
+  }
+  .navbar-nav>li>a.nav-active {
+    padding-bottom: 12px;
+    border-bottom-width: 3px;
+    -webkit-transition: padding-bottom 240ms linear, border-bottom-width 240ms linear 80ms;
+    -moz-transition: padding-bottom 240ms linear, border-bottom-width 240ms linear 80ms;
+    -ms-transition: padding-bottom 240ms linear, border-bottom-width 240ms linear 80ms;
+    -o-transition: padding-bottom 240ms linear, border-bottom-width 240ms linear 80ms;
+    transition: padding-bottom 240ms linear, border-bottom-width 240ms linear 80ms;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-default .navbar-nav>li:nth-of-type(odd)>a {
+    background-color: #fafafa;
+  }
+}
+
+.navbar-right .btn,
+.navbar-right .btn.btn-default {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  margin-left: 6px;
+  margin-right: 6px;
+
+  font-weight: 700 !important;
+  color: #f47e21;
+  border-color: #f47e21;
+}
+
+@media (max-width: 768px) {
+  .navbar-right .btn,
+  .navbar-right .btn.btn-default{
+    display: block;
+    max-width: 200px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #624a9d;
+}
+
+@media (max-width: 768px) {
+  .navbar-default .navbar-nav>li>a {
+    text-align: center;
+  }
+}
+
+.navbar-right .btn:hover,
+.navbar-right .btn.btn-default:hover {
+  color: white;
+  background: #f47e21;
+}
+
+.km-navbar-header a {
+  padding: 5px 15px 0 15px;
+  margin-left: -15px;
+  font-weight: 900;
+  font-size: 2.5em;
+}
+
+.km-navbar-header img {
+  width: 80px;
+  margin-top: -15px;
+}
+
+.km-navbar-collapse {
+  display: inline-block;
+  float: right;
+  /*margin-top: -36px;
+  margin-bottom: 0;*/
+}
+
+.km-navbar-right {
+  text-align: right;
+  list-style: none;
+  padding: 0;
+}
+
+.km-navbar-right>a,
+.km-navbar-right>a.btn,
+.km-navbar-right>a.btn.btn-default {
+  display: inline-block;
+  margin-left: 15px;
+  margin-top: 6px;
+  margin-bottom: 8px;
+  border-color: #624a9d;
+  color: #624a9d;
+}
+
+
+.km-navbar-right>a:hover,
+.km-navbar-right>a.btn:hover,
+.km-navbar-right>a.btn.btn-default:hover {
+  font-weight: 700;
+  border-color: #624a9d;
+  background-color: #624a9d;
+  color: white;
+}
+
+
+.km-navbar-right li, .km-navbar-right li a {
+  display: inline-block;
+  margin: 0;
+}
+
+.km-navbar-right li {
+
+}
+
+.km-navbar-right li a {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 17px;
+  padding-bottom: 18px;
+  border-top-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-style: solid;
+  border-color: #624a9d;
+  color: #f47e21;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.km-navbar-right li a.km-navbar-tab-active {
+  padding-bottom: 15px;
+  border-bottom-width: 3px;
+}
