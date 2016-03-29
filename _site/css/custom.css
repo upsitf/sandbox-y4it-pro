@@ -1,5 +1,9 @@
 * {
-  font-family: Roboto;
+  font-family: Roboto !important;
+}
+
+p {
+  font-family: Nunito !important;
 }
 
 .row-limit {
@@ -316,6 +320,56 @@ p {
   }
   */
 /*}*/
+
+.panel-badges {
+  border-radius: 0;
+  border-style: none;
+}
+
+.panel-badges>.row>div {
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+
+.panel-badges>.row>div:nth-of-type(odd) {
+  background-color: aliceblue;
+}
+
+.panel-badges>.row>div:nth-of-type(even) {
+  background-color: green;
+}
+
+.panel-badges h2 {
+  color: black;
+}
+
+.panel-badges h3 {
+  color: black;
+}
+
+.panel-badges h3 small {
+  color: black;
+}
+
+.panel-badges span {
+  font-family: Nunito !important;
+  color: black;
+  font-size: 5em;
+}
+
+.panel-badges span span {
+  color: black;
+  vertical-align: super;
+  font-size: 0.5em;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .h3-badge-exception {
+    margin-top: 34px;
+    margin-bottom: 22px;
+  }
+}
 
 .production-control {
   display: none !important;

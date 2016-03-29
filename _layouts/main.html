@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-    <body>
+    <body{% if page.home %}{{ ' data-spy="scroll" data-target="#km-navbar" data-offset="5"'  }}{% endif %}>
 
 		{% include header.html %}
 

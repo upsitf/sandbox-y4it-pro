@@ -1,5 +1,6 @@
 ---
 layout: main
+home: true
 navHide: jumbotron
 parallax: true
 parallaxLarge: /images/art-landscape-web.png
@@ -52,7 +53,7 @@ animate: true
   }
 </style>
 
-<section class="section-default hidden">
+<section id="announcement" class="section-default hidden">
   <div class="container-fluid">
     <div class="row row-limit">
       <div class="col-lg-12">
@@ -62,7 +63,7 @@ animate: true
   </div>
 </section>
 
-<section class="section-default section-gray production-control">
+<section id="speakers" class="section-default section-gray production-control">
   <div class="container-fluid">
     <div class="row row-limit">
       <div class="col-lg-12">
@@ -98,7 +99,7 @@ animate: true
   </div>
 </section>
 
-<section class="section-default section-violet">
+<section id="details" class="section-default section-violet">
   <div class="container-fluid">
     <div class="row row-limit">
       <div class="col-lg-12">
@@ -213,9 +214,9 @@ animate: true
             <div class="row">
               <div class="col-lg-12">
                 <span style="display:block;margin-bottom:30px;">
-                  <strong>Badge claiming starts at 6am</strong> <br/>
-                  Gates open at 6am <br/>
-                  Event proper: 8am - 5pm || Break: 12nn - 1pm <br/>
+                  <strong>Badge claiming starts at 7am</strong> <br/>
+                  Gates open at 7am <br/>
+                  Event proper: 9am - 4pm || Break: 12nn - 1pm <br/>
                 </span>
                 <a class="btn btn-default" role="button">Get badges</a>
               </div>
@@ -229,18 +230,18 @@ animate: true
   </div>
 </section>
 
-<section class="section-default section-gray">
+<section id="about" class="section-default section-gray">
   <div class="container-fluid">
     <div class="row row-limit">
       <div class="col-lg-12">
 
         <img class="img-responsive" src="{{ site.baseurl }}/images/logo-y4it.png" style="width:100%;max-width:300px;margin:auto;margin-bottom:40px;">
-        <p>Established in 2003, the Youth Congress on Information Technology
+        <p style="max-width:480px;margin-left:auto;margin-right:auto;text-align:center;">Established in 2003, the Youth Congress on Information Technology
           (formerly known as the Philippine Youth Congress on Information
           Technology) — commonly known as Y4iT — is an annual information
           technology event in the Philippines, organized by the UP System
           Information Technology Foundation (UPSITF).</p>
-        <p>Aimed primarily at college students, professionals, educators, IT
+        <p style="max-width:480px;margin-left:auto;margin-right:auto;text-align:center;">Aimed primarily at college students, professionals, educators, IT
           experts and enthusiasts, Y4iT is an enabling event for today’s youth
           and aspires to recognize young Filipinos as key drivers in the
           dynamic IT industry. Since its launching, Y4iT has gone on to be at
@@ -263,7 +264,7 @@ animate: true
   </div>
 </section>
 
-<section class="section-default section-orange">
+<section id="badges" class="section-default section-orange">
   <div class="container-fluid">
     <div class="row row-limit">
       <div class="col-lg-12">
@@ -273,28 +274,40 @@ animate: true
           <small>Per Day</small>
         </h1>
 
-        <div class="panel panel-default">
+        <div class="panel panel-default panel-badges">
           <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-12 text-center">
               <h2>Early Bird Rate</h2>
               <span><span>P</span>600</span>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-12 text-center">
               <h2>Regular Rate</h2>
-              <h3>Individual</h3>
-              <span><span>P</span>700</span>
-              <h3>
-                Small Group
-                <small>50-99 people</small>
-              </h3>
-              <span><span>P</span>650</span>
-              <h3>
-                Big Group
-                <small>100 people or more</small>
-              </h3>
-              <span><span>P</span>600</span>
+              <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                      <h3 class="h3-badge-exception">Individual</h3>
+                      <span><span>P</span>700</span>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                      <h3>
+                        Small Group<br/>
+                        <small>50-99 people</small>
+                      </h3>
+                      <span><span>P</span>650</span>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                      <h3>
+                        Big Group<br/>
+                        <small>100 people or more</small>
+                      </h3>
+                      <span><span>P</span>600</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-12 text-center">
               <h2>Walk-In Rate</h2>
               <span><span>P</span>750</span>
             </div>
@@ -360,7 +373,7 @@ animate: true
   </div>
 </section>
 
-<section class="section-default section-violet">
+<section id="faq" class="section-default section-violet">
   <div class="container-fluid">
     <div class="row row-limit">
       <div class="col-lg-12">
@@ -370,10 +383,13 @@ animate: true
         <div class="row">
           <div class="col-lg-4 col-lg-push-4 col-md-4 col-md-push-4 col-sm-4 col-sm-push-4 col-xs-12">
             <p>
-              <strong>Lorem ipsum dolor sit amet?</strong> <br/>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-              diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-              aliquam erat volutpat.
+              <strong>How long will the program be?</strong> <br/>
+              The Youth Congress on Information Technology (commonly called
+              Y4iT) is an annual IT-gathering event, established in 2003 by the
+              UP System IT Foundation. Recognizing young Filipinos as key
+              drivers in the IT industry, it has consistently served as a
+              melting pot of the best minds in the industry, as it brings IT
+              leaders and experts from both the local and global arena.
             </p>
 
             <p>
@@ -408,7 +424,7 @@ animate: true
   </div>
 </section>
 
-<section class="section-default section-gray production-control">
+<section id="sponsors" class="section-default section-gray production-control">
   <div class="container-fluid">
     <div class="row row-limit">
       <div class="col-lg-12">
@@ -426,7 +442,7 @@ animate: true
   </div>
 </section>
 
-<section class="section-default section-orange">
+<section id="terms" class="section-default section-orange">
   <div class="container-fluid">
     <div class="row row-limit">
       <div class="col-lg-12">
@@ -462,7 +478,7 @@ animate: true
   </div>
 </section>
 
-<section class="section-default section-gray">
+<section id="organizer" class="section-default section-gray">
   <div class="container-fluid">
     <div class="row row-limit">
       <div class="col-lg-12">
@@ -470,24 +486,29 @@ animate: true
         <h1>The Organizer<br/>
           <small>UPSITF</small>
         </h1>
-
-        <p>The UP System Information Technology Foundation (UPSITF) Inc. is a
-          non-government organization focused on the application of Information
-          and Communication Technology for development. It partners with UP
-          Information Technology Development Center in providing various
-          services such as, but not limited to, Education Development, IT Human
-          Capital Development, Research &amp; Development, Software Engineering,
-          ICT Policy Development and Planning, and IT Project Management.</p>
-        <p>The foundation’s flagship project Youth on Information Technology or
-          popularly known as Y4iT is an annual event organized by UPSITF, in
-          cooperation with UP Information Technology Development Center (UP
-          ITDC) and Y4iT Volunteer Corps (YVC), that attracts at least 25,000
-          attendees every year. Apart from staging the biggest IT event in the
-          country, UPSITF also offers in information technology courses on
-          current IT trends and various programming languages and software
-          development projects. Course participants include fresh college
-          graduates, government employees, teachers, and professionals.</p>
-
+        <div class="row">
+          <div class="col-lg-3">
+            <img class="img-responsive" src="{{ site.baseurl }}/images/logo-sitf.png">
+          </div>
+          <div class="col-lg-9">
+            <p>The UP System Information Technology Foundation (UPSITF) Inc. is a
+              non-government organization focused on the application of Information
+              and Communication Technology for development. It partners with UP
+              Information Technology Development Center in providing various
+              services such as, but not limited to, Education Development, IT Human
+              Capital Development, Research &amp; Development, Software Engineering,
+              ICT Policy Development and Planning, and IT Project Management.</p>
+            <p>The foundation’s flagship project Youth on Information Technology or
+              popularly known as Y4iT is an annual event organized by UPSITF, in
+              cooperation with UP Information Technology Development Center (UP
+              ITDC) and Y4iT Volunteer Corps (YVC), that attracts at least 25,000
+              attendees every year. Apart from staging the biggest IT event in the
+              country, UPSITF also offers in information technology courses on
+              current IT trends and various programming languages and software
+              development projects. Course participants include fresh college
+              graduates, government employees, teachers, and professionals.</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
