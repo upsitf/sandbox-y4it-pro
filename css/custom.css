@@ -118,12 +118,14 @@ p:not(.fa) {
 }
 
 .km-jumbotron-margin-top {
-  height: calc(((100vh - 425px) / 2));
+  /*height: calc(((100vh - 425px) / 2));*/
+  height: calc(((100vh - 378px) / 2));
   min-height: 80px;
 }
 
 .km-jumbotron-margin-bottom {
-  height: calc(((100vh - 425px) / 2));
+  /*height: calc(((100vh - 425px) / 2));*/
+  height: calc(((100vh - 378px) / 2));
   min-height: 80px;
 }
 
