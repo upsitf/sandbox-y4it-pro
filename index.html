@@ -219,7 +219,7 @@ animate: true
                   Gates open at 7am <br/>
                   Event proper: 9am - 4pm || Break: 12nn - 1pm <br/>
                 </span>
-                <a class="btn btn-default btn-block-xs" role="button" href="{{ site.baseurl }}#badges">Get badges</a>
+                <a class="btn btn-default btn-block-xs" role="button" href="{% if page.home != true %}{{ site.baseurl }}{{ '/' }}{% endif %}#badges">Get badges</a>
               </div>
             </div>
           </div>
