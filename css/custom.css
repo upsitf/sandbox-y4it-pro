@@ -493,16 +493,34 @@ footer p {
   height: 8px;
   width: 30px;
   background-color: #d2d2d2;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
-.bar.bar-left {
+p+.bar {
+  margin-top: 0;
+}
+
+.bar.bar-lg-left {
   margin-right: auto;
 }
 
-.bar.bar-center {
+.bar.bar-lg-center {
   margin-left: auto;
   margin-right: auto;
 }
+
+@media (max-width: 768px) {
+  .bar.bar-xs-left {
+    margin-right: auto;
+    margin-left: initial;
+  }
+  .bar.bar-xs-center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 
 .section-violet .bar {
   background-color: #9e8dca;
@@ -510,6 +528,112 @@ footer p {
 
 .section-orange .bar {
   background-color: #f7c19c;
+}
+
+.section-title {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.div-title-layer-1 {
+  background-color: rgba(228,117,43,0.75);
+}
+
+.div-title-layer-2 {
+  background-size: cover;
+  background-position: center 50px;
+  background-repeat: no-repeat;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.section-title h1 {
+  font-size: 5em;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  text-shadow: 0 0 5px rgba(0,0,0,0.22);
+}
+
+@media (max-width: 768px) {
+  .section-title h1 {
+    font-size: 3.5em;
+  }
+}
+
+.section-title span {
+  color: whitesmoke;
+  max-width: 510px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.section-title a.btn {
+  margin-top: 15px;
+}
+
+.span-sponsor-highlight {
+  font-size: 2.5em;
+  font-weight: 200;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.span-sponsor-highlight .span-sponsor-highlight-small {
+  font-size: 0.75em;
+}
+
+.span-figure {
+
+}
+
+.span-figure .span-number {
+  font-size: 5em;
+  font-family: Nunito !important;
+}
+
+.div-mileage {
+  margin-bottom: 15px;
+}
+
+.panel-deck span {
+  color: #777;
+}
+
+.panel-deck button {
+
+}
+
+.panel-deck .btn,
+.panel-deck .btn.btn-default {
+  background: none;
+  border-radius: 0;
+  border-width: 3px;
+  border-color: #333;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  font-weight: 700;
+  margin-bottom: 0;
+  -webkit-transition: 250ms ease-out;
+  -moz-transition: 250ms ease-out;
+  -o-transition: 250ms ease-out;
+  transition: 250ms ease-out;
+}
+
+.panel-deck .btn:hover,
+.panel-deck .btn.btn-default:hover {
+  background-color: #333;
+  border-color: #333;
+  color: white;
+  font-weight: 400;
+  -webkit-transition: 250ms ease-out;
+  -moz-transition: 250ms ease-out;
+  -o-transition: 250ms ease-out;
+  transition: 250ms ease-out;
 }
 
 .wow {

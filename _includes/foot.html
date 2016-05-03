@@ -1,70 +1,107 @@
 <script type="text/javascript" src="{{ site.baseurl }}/js/jquery.min.js"></script>
 <script type="text/javascript" src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/slick.min.js"></script>
 <script type="text/javascript" src="{{ site.baseurl }}/js/smoothscroll.js"></script>
 
 {% if page.navHide %}
 
-  <script>
-  function hasClass(element, cls) {
-      return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
-  }
+<script>
+function hasClass(element, cls) {
+    return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
+}
 
-  /* NAVIGATION HEADER*/
+/* NAVIGATION HEADER*/
 
-  var didScroll = false;
+var didScroll = false;
 
-  var basis = document.getElementById('{{ page.navHide }}');
-  var basis_bcr = basis.getBoundingClientRect();
-  var navbar = document.getElementById('km-navbar');
-  var navbar_bcr = navbar.getBoundingClientRect();
-  window.onscroll = doOnScroll;
+var basis = document.getElementById('{{ page.navHide }}');
+var basis_bcr = basis.getBoundingClientRect();
+var navbar = document.getElementById('km-navbar');
+var navbar_bcr = navbar.getBoundingClientRect();
+window.onscroll = doOnScroll;
 
-  function doOnScroll() {
-      didScroll = true;
-      basis_bcr = basis.getBoundingClientRect();
-      navbar_bcr = navbar.getBoundingClientRect();
-      //if ((basis_bcr.bottom-(navbar_bcr.bottom-navbar_bcr.top)) <= 0) {
-      if (basis_bcr.bottom <= 0) {
-        if (hasClass(navbar,'navbar-hide')) {
-          navbar.classList.remove('navbar-hide');
-        }
+function doOnScroll() {
+    didScroll = true;
+    basis_bcr = basis.getBoundingClientRect();
+    navbar_bcr = navbar.getBoundingClientRect();
+    //if ((basis_bcr.bottom-(navbar_bcr.bottom-navbar_bcr.top)) <= 0) {
+    if (basis_bcr.bottom <= 0) {
+      if (hasClass(navbar,'navbar-hide')) {
+        navbar.classList.remove('navbar-hide');
       }
-      else {
-        if ((!(hasClass(navbar,'navbar-hide'))) && (basis.getBoundingClientRect().top == 0)) {
-          navbar.classList.add('navbar-hide');
-        }
+    }
+    else {
+      if ((!(hasClass(navbar,'navbar-hide'))) && (basis.getBoundingClientRect().top == 0)) {
+        navbar.classList.add('navbar-hide');
       }
-  }
+    }
+}
 
-  setInterval(function() {
-      if(didScroll) {
-          didScroll = false;
-      }
-  }, 100);
-  </script>
+setInterval(function() {
+    if(didScroll) {
+        didScroll = false;
+    }
+}, 100);
+</script>
 
 {% endif %}
 
 {% if page.parallax == true %}
-  <script type="text/javascript" src="{{ site.baseurl }}/js/parallax.min.js"></script>
-  <script>$('.parallax-window').parallax({imageSrc: '{{ site.baseurl }}{{ page.parallaxLarge }}',iosFix: false,androidFix: false});</script>
-  {% if page.parallaxSmall %}
-    <style>
-      @media (max-width: 768px) {
-        .parallax-window {
-          background-image: url('{{ site.baseurl }}{{ page.parallaxSmall }}');
-          background-size: cover;
-          background-position: center top;
-        }
-        .parallax-mirror {
-          display: none;
-        }
-      }
-    </style>
-  {% endif %}
+<script type="text/javascript" src="{{ site.baseurl }}/js/parallax.min.js"></script>
+<script>$('.parallax-window').parallax({imageSrc: '{{ site.baseurl }}{{ page.parallaxLarge }}',iosFix: false,androidFix: false});</script>
+{% if page.parallaxSmall %}
+<style>
+  @media (max-width: 768px) {
+    .parallax-window {
+      background-image: url('{{ site.baseurl }}{{ page.parallaxSmall }}');
+      background-size: cover;
+      background-position: center top;
+    }
+    .parallax-mirror {
+      display: none;
+    }
+  }
+</style>
+{% endif %}
 {% endif %}
 
-{% if page.animate == true %}
-  <script src="{{ site.baseurl }}/js/wow.min.js"></script>
-  <script>new WOW().init();</script>
+{% if page.animate %}
+<script src="{{ site.baseurl }}/js/wow.min.js"></script>
+<script>new WOW().init();</script>
+{% endif %}
+
+{% if page.slick %}
+<script type="text/javascript" src="{{ site.baseurl }}/js/slick.min.js"></script>
+<!--script>alert('{{ page.title }}')</script-->
+{% if page.title == 'Sponsors' %}
+<script>
+  $(document).ready(function(){
+    $('.slick-about').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: false,
+      arrows: false,
+      autoplay: true,
+      autoplaySpeed: 5000,
+      infinite: true,
+      speed: 500,
+      fade: true,
+      cssEase: 'linear',
+    });
+
+    $('.slick-lounge').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: false,
+      arrows: false,
+      autoplay: true,
+      autoplaySpeed: 5000,
+      infinite: true,
+      speed: 500,
+      fade: true,
+      cssEase: 'linear',
+    });
+  });
+</script>
+{% endif %}
 {% endif %}

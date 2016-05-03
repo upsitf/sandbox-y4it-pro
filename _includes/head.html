@@ -43,6 +43,11 @@
 	<link href='https://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap.min.css">
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/font-awesome.min.css">
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/arrow.css">
+	{% if page.slick == true %}
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/slick.css">
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/slick-theme.css">
+	{% endif %}
 	{% if page.animate == true %}
 		<link rel="stylesheet" href="{{ site.baseurl }}/css/animate.css">
 		<link rel="stylesheet" href="{{ site.baseurl }}/css/animate-custom.css">
