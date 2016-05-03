@@ -10,7 +10,7 @@
 .arrows path {
 	stroke: #9B64A5;
 	fill: transparent;
-	stroke-width: 2px;
+	stroke-width: 2.5px;
 	animation: arrow 2s infinite;
 	-webkit-animation: arrow 2s infinite;
 }
@@ -34,7 +34,8 @@
 {
   0% {opacity:0}
   40% {opacity:1}
-  80% {opacity:0}
+	60% {stroke: white}
+  80% {opacity:0;stroke: #9B64A5;}
   100% {opacity:0}
 }
 
