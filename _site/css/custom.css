@@ -254,17 +254,7 @@ p:not(.fa) {
   cursor: default !important;
 }
 
-#tjicy0qq {
-  cursor: text !important;
-  color: black !important;
-  text-decoration: none !important;
-}
 
-#vp2gdpm6 {
-  cursor: text !important;
-  color: white !important;
-  text-decoration: none !important;
-}
 
 .embed-sizer {
   max-width: 640px;
@@ -361,6 +351,14 @@ p {
     margin-bottom: 0;
   }
 }
+
+#tjicy0qq {
+  cursor: text !important;
+  color: black !important;
+  text-decoration: none !important;
+}
+
+
 
 /*@media (max-width: 768px) {*/
   .row-schedule>div>section {
@@ -562,6 +560,12 @@ p+.bar {
   background-repeat: no-repeat;
   padding-top: 150px;
   padding-bottom: 150px;
+}
+
+#vp2gdpm6 {
+  cursor: text !important;
+  color: white !important;
+  text-decoration: none !important;
 }
 
 .section-title h1 {
