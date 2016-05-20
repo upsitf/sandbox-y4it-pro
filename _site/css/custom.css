@@ -170,6 +170,7 @@ p:not(.fa) {
 }
 
 .section-gray {background-color: #edeeef;}
+.section-black {background-color: #000000;}
 .section-violet {
   background-color: #564387;
   background: -webkit-linear-gradient(-45deg, #47386F, #564387, #7257B5); /* For Safari 5.1 to 6.0 */

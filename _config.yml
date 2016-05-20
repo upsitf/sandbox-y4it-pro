@@ -1,6 +1,8 @@
 # Site settings
 title: Y4iT
 baseurl: http://toffmendoza.me/sandbox-y4it
+# baseurl: http://y4it.org
+
 
 # Build settings
 markdown: kramdown
