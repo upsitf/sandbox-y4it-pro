@@ -133,6 +133,10 @@ p:not(.fa) {
   padding-top: 85px;
   padding-bottom: 85px;
 }
+.section-default.section-withlink
+{
+  padding-bottom: 0;
+}
 @media(max-width: 960px) {
   .section-default {
     padding-top: 50px;
@@ -194,6 +198,15 @@ p:not(.fa) {
 .section-gray h6,
 .section-gray span,
 .section-gray p { }
+.section-black *:not(small),
+.section-black h1,
+.section-black h2,
+.section-black h3,
+.section-black h4,
+.section-black h5,
+.section-black h6,
+.section-black span,
+.section-black p { color: white;}
 .section-violet *,
 .section-violet h1,
 .section-violet h2,
@@ -655,6 +668,66 @@ p+.bar {
   -moz-transition: 250ms ease-out;
   -o-transition: 250ms ease-out;
   transition: 250ms ease-out;
+}
+
+.panel-country {
+  border-radius: 0;
+  background-color: #F47E21;
+  border-style: none;
+  padding: 15px;
+}
+
+a.a-panel,
+a.a-panel:link,
+a.a-panel:hover,
+a.a-panel:focus {
+  text-decoration: none !important;
+}
+
+a.a-panel .panel {
+  background: linear-gradient(-45deg, #e4752b, #e4752b 50%, #564387 50%);
+  background-size: 100% 300%;
+  background-position: center 100%;
+  -webkit-transition: 500ms ease-in-out;
+  -moz-transition: 500ms ease-in-out;
+  -o-transition: 500ms ease-in-out;
+  transition: 500ms ease-in-out;
+}
+
+a.a-panel:hover .panel {
+  background-position: center 0%;
+  -webkit-transition: 500ms ease-in-out;
+  -moz-transition: 500ms ease-in-out;
+  -o-transition: 500ms ease-in-out;
+  transition: 500ms ease-in-out;
+}
+
+.panel-country .small-day,
+.panel-country .h3-country {
+  color: white;
+  text-align: center;
+}
+
+.panel-country .h3-country {
+
+}
+
+.panel-country .small-day {
+
+}
+
+.panel-country .btn.btn-default {
+  border-color: white;
+  color: white;
+}
+
+.panel-country .btn.btn-default:hover {
+  background-color: white;
+  color: #564387;
+  -webkit-animation-duration: 250ms ease-out;
+  -moz-animation-duration: 250ms ease-out;
+  -o-animation-duration: 250ms ease-out;
+  animation-duration: 250ms ease-out;
 }
 
 .wow {
