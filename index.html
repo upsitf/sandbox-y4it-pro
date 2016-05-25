@@ -57,31 +57,61 @@ animate: true
   </div>
 </section>
 
-<style>
-  @media (max-width: 768px) {
-    .km-jumbotron-margin-top {
-      height: 88vw;
-      min-height: 245px;
-      max-height: 660px;
-    }
-    .km-jumbotron-margin-bottom {
-      height: 30px;
-      min-height: 0;
-    }
-  }
-</style>
-
 <section id="content">
 
-  <section id="announcement" class="section-default hidden">
+  {% if site.switchAnnouncement == true %}
+  <section id="announcement" class="section-default section-orange">
     <div class="container-fluid">
       <div class="row row-limit">
-        <div class="col-lg-12">
+        <div class="col-lg-4 col-lg-push-8 col-md-push-8 col-md-4 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
+          <img class="img-responsive img-bubble wow fadeInDown floating" src="{{ site.baseurl }}/images/art-bubble.png" style="">
+        </div>
+        <div class="col-lg-8 col-lg-pull-4 col-md-8 col-md-pull-4 col-sm-12 col-sm-pull-0 col-xs-12 col-xs-pull-0">
+          <h1>Announcement</h1>
+
+          <div class="panel panel-default panel-announcement wow fadeInDown">
+            {% for eachpost in site.posts %}
+            {% if eachpost.category == "Announcements" %}
+            <h2>
+              {{ eachpost.title }}<br/>
+              <small>
+                Posted {{ eachpost.date | date: '%B %d, %Y' }} -
+                {% if eachpost.time %}
+                {% for eachbullet in eachpost.time %}{% if forloop.index == 1 %}{% if eachbullet >= 0 and eachbullet < 24 %}{% if eachbullet > 12 %}{{ eachbullet | minus: 12 }}{% elsif eachbullet == 0 %}{{ "12" }}{% else %}{{ eachbullet }}{% endif %}{% else %}{{ "??" }}{% endif %}{% endif %}{% if forloop.index == 2 %}{{ ":" }}{% if eachbullet >= 0 and eachbullet <= 59 %}{% if eachbullet < 10 %}{{ "0" }}{{ eachbullet }}{% else %}{{ eachbullet }}{% endif %}{% else %}{{ "??" }}{% endif %}{% endif %}{% endfor %}
+                {% for eachbullet in eachpost.time %}{% if forloop.index == 1 %}{% if eachbullet >= 0 and eachbullet < 24 %}{% if eachbullet >= 12 %}{{ "PM" }}{% else %}{{ "AM" }}{% endif %}{% endif %}{% endif %}{% endfor %}
+                {% endif %}
+              </small>
+            </h2>
+
+            {% if eachpost.excerpt %}
+            <!--p>{{ eachpost.excerpt }}</p-->
+            {% endif %}
+
+            {% if eachpost.richexcerpt %}
+            {% assign waiting = 0 %}
+            {% assign type = "" %}
+            <p>
+            {% for eachbullet in eachpost.richexcerpt %}{% if waiting > 0 %}{{ eachbullet }}{% assign waiting = waiting | minus: 1 %}{% if type == "<img>" %}{{ '"/>' }}{% assign type = "" %}{% elsif type == "<a>" %}{% if waiting == 1 %}{{ '">' }}{% elsif waiting == 0 %}{{ '</a>' }}{% assign type = "" %}{% endif %}{% endif %}{% elsif eachbullet == "<a>" %}{{ '<a href="' }}{{ site.baseurl }}{% assign waiting = 2 %}{% assign type = eachbullet %}{% elsif eachbullet == "<img>" %}{{ '<img src="' }}{% assign waiting = 1 %}{% assign type = eachbullet %}{% else %}{{ eachbullet }}{% endif %}{% endfor %}
+            </p>
+            {% endif %}
+
+            <div class="hidden">
+            {% if eachpost.withContent == true %}
+            <a class="btn btn-default" href="{{ site.baseurl }}{{ eachpost.url }}">Read more</a>
+            &nbsp;<br class="visible-xs"/>or
+            {% endif %}
+            <a href="{{ site.baseurl }}/announcements">{% if eachpost.withContent == true %}s{% else %}S{% endif %}ee all announcements</a>
+            {% break %}
+            {% endif %}
+            {% endfor %}
+            </div>
+          </div>
 
         </div>
       </div>
     </div>
   </section>
+  {% endif %}
 
   <section id="speakers" class="section-default section-gray production-speakers">
     <div class="container-fluid">

@@ -8,3 +8,6 @@ baseurl: http://toffmendoza.me/sandbox-y4it
 markdown: kramdown
 permalink: pretty
 # baseurl:
+
+# Site variables
+switchAnnouncement: true

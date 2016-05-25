@@ -129,6 +129,18 @@ p:not(.fa) {
   min-height: 80px;
 }
 
+@media (max-width: 768px) {
+  .km-jumbotron-margin-top {
+    height: 88vw;
+    min-height: 245px;
+    max-height: 660px;
+  }
+  .km-jumbotron-margin-bottom {
+    height: 30px;
+    min-height: 0;
+  }
+}
+
 .section-default {
   padding-top: 85px;
   padding-bottom: 85px;
@@ -384,6 +396,33 @@ p {
   }
   */
 /*}*/
+
+.panel-announcement {
+  border-radius: 0;
+  border-width: 3px;
+  border-color: white;
+  background-color: transparent;
+  padding: 18px 15px 15px 15px;
+}
+
+.panel-announcement h2 {
+  line-height: 1.15em;
+}
+
+.panel-announcement p {
+  color: white;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .panel-announcement a.btn.btn-default {
+      margin-bottom: 10px;
+  }
+}
+
+.panel-announcement a:not(.btn) {
+  text-decoration: underline;
+}
 
 .panel-badges {
   border-radius: 0;
@@ -677,6 +716,14 @@ p+.bar {
   padding: 15px;
 }
 
+@media (max-width: 768px) {
+  .panel-country {
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 a.a-panel,
 a.a-panel:link,
 a.a-panel:hover,
@@ -730,6 +777,23 @@ a.a-panel:hover .panel {
   animation-duration: 250ms ease-out;
 }
 
+.small-first {
+  line-height: 2em !important;
+}
+
+.small-first:not(.small-sub) {
+  /*line-height: 3em;*/
+}
+
+.small-sub {
+  font-weight: 200;
+}
+
+.span-mileage {
+  text-align: center;
+  display: block;
+}
+
 .wow {
   -webkit-animation-duration: 500ms;
   -moz-animation-duration: 500ms;
@@ -755,6 +819,43 @@ a.a-panel:hover .panel {
 
 .production-others {
   display: none !important;
+}
+
+.img-bubble {
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+}
+
+@media (min-width: 992px) {
+  .img-bubble {
+    margin-top: 65px;
+    margin-bottom: 45px;
+  }
+}
+
+.floating {
+    -webkit-animation-name: Floatingx;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: Floating;
+    -moz-animation-duration: 3s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes Floatingx{
+    from {-webkit-transform:translate(0, 0px);}
+    65% {-webkit-transform:translate(0, 15px);}
+    to {-webkit-transform: translate(0, -0px);}
+}
+
+@-moz-keyframes Floating{
+    from {-moz-transform:translate(0, 0px);}
+    65% {-moz-transform:translate(0, 15px);}
+    to {-moz-transform: translate(0, -0px);}
 }
 
 @media (min-width: 768px) {
