@@ -1,17 +1,31 @@
 /* Jumbotron */
 
 #jumbotron {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
+
+  -webkit-background-attachment: fixed;
+  -moz-background-attachment: fixed;
+  -o-background-attachment: fixed;
   background-attachment: fixed;
+  
   background-repeat: no-repeat;
 }
 @media (min-width: 768px) {
   #jumbotron {
+    -webkit-background-position: center 35%;
+    -moz-background-position: center 35%;
+    -o-background-position: center 35%;
     background-position: center 35%;
   }
 }
 @media (max-width: 768px) {
   #jumbotron {
+    -webkit-background-position: center 50px;
+    -moz-background-position: center 50px;
+    -o-background-position: center 50px;
     background-position: center 50px;
   }
 }
@@ -92,6 +106,9 @@ a>.item-speaker img {
 a:hover>.item-speaker img,
 a:focus>.item-speaker img {
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  -webkit-transform: scale(1.025,1.025);
+  -moz-transform: scale(1.025,1.025);
+  -o-transform: scale(1.025,1.025);
   transform: scale(1.025,1.025);
   /*border-width: 5px;*/
   -webkit-transition: 150ms ease-out;
