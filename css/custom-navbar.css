@@ -4,7 +4,7 @@
   margin-bottom: 0;
 }
 
-/*@media (min-width: 768px) {*/
+/*@media (min-width: 768px) {
   .navbar-default.navbar-custom:not(.navbar-hide) {
     top: 0px;
     -webkit-transition: 250ms ease-out;
@@ -50,7 +50,7 @@
   }
 
 
-/*}*/
+}*/
 
 .navbar-default.navbar-custom .container {
   background-color: white;
