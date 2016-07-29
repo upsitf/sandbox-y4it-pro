@@ -82,7 +82,7 @@ animate: true
   {% endif %}
 
   {% if site.switchSpeakers == true %}
-  <section id="speakers" class="section-default section-violet">
+  <section id="speakers" class="section-default section-gray">
     <div class="container-fluid">
       <div class="row row-limit">
         <div class="col-lg-12">
@@ -120,7 +120,7 @@ animate: true
             {% assign checker4 = forloop.index | modulo: 4 %}
             {% if checker4 == 0 %}
             {% assign last4s = last4s | plus: 1 %}
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 visible-lg visible-md hidden-sm hidden-xs">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 visible-lg visible-md hidden-sm hidden-xs div-speaker-drilldown-multi">
               <div id="speakerdrilldown-4s-{% if last4s < 10 %}{{ "0" }}{% endif %}{{ last4s }}" class="speakerdrilldown-4s hidden-maxheight">
                 {% include content-lightbox.html %}
               </div>
@@ -130,7 +130,7 @@ animate: true
             {% assign checker3 = forloop.index | modulo: 3 %}
             {% if checker3 == 0 %}
             {% assign last3s = last3s | plus: 1 %}
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hidden-lg hidden-md visible-sm hidden-xs">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hidden-lg hidden-md visible-sm hidden-xs div-speaker-drilldown-multi">
               <div id="speakerdrilldown-3s-{% if last3s < 10 %}{{ "0" }}{% endif %}{{ last3s }}" class="speakerdrilldown-3s hidden-maxheight">
                 {% include content-lightbox.html %}
               </div>
@@ -141,7 +141,7 @@ animate: true
 
             {% if checker4 == 0 %}{{ "" }}{% else %}
             {% assign last4s = last4s | plus: 1 %}
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 visible-lg visible-md hidden-sm hidden-xs">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 visible-lg visible-md hidden-sm hidden-xs div-speaker-drilldown-multi">
               <div id="speakerdrilldown-4s-{% if last4s < 10 %}{{ "0" }}{% endif %}{{ last4s }}" class="speakerdrilldown-4s hidden-maxheight">
                 {% include content-lightbox.html %}
               </div>
@@ -149,7 +149,7 @@ animate: true
             {% endif %}
             {% if checker3 == 0 %}{{ "" }}{% else %}
             {% assign last3s = last3s | plus: 1 %}
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hidden-lg hidden-md visible-sm hidden-xs">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hidden-lg hidden-md visible-sm hidden-xs div-speaker-drilldown-multi">
               <div id="speakerdrilldown-3s-{% if last3s < 10 %}{{ "0" }}{% endif %}{{ last3s }}" class="speakerdrilldown-3s hidden-maxheight">
                 {% include content-lightbox.html %}
               </div>
@@ -164,7 +164,7 @@ animate: true
 
         </div>
         <div class="col-lg-12">
-          <span class="span-copy" style="margin-top:30px">...and many more!</span>
+          <span class="span-copy" style="margin-top:30px">...and many more coming up!</span>
         </div>
       </div>
 
@@ -177,7 +177,7 @@ animate: true
   </section>
   {% endif %}
 
-  <section id="details" class="section-default section-gray">
+  <section id="details" class="section-default section-violet">
     <div class="container-fluid">
       <div class="row row-limit">
         <div class="col-lg-12">
@@ -263,7 +263,7 @@ animate: true
                     Gates open at 7am <br/>
                     Event proper: 9am - 4pm || Break: 12nn - 1pm <br/>
                   </span>
-                  <a class="btn btn-default btn-block-xs btn-violet" role="button" href="{% if page.home != true %}{{ site.baseurl }}{{ '/' }}{% endif %}#badges">Get badges</a>
+                  <a class="btn btn-default btn-block-xs btn-white-on-violet" role="button" href="{% if page.home != true %}{{ site.baseurl }}{{ '/' }}{% endif %}#badges">Get badges</a>
                   <a class="btn btn-default btn-block-xs btn-orange" role="button" href="http://reg2016.y4it.org" target="_blank">Register</a>
                 </div>
               </div>

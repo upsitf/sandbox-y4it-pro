@@ -73,12 +73,44 @@
   }
 }
 
+a>.item-speaker img {
+  border-style: solid;
+  border-color: #f47e21;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.0);
+/*  */
+}
+
+a>.item-speaker img {
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.0);
+  /*border-width: 0px;*/
+  -webkit-transition: 250ms ease-out;
+  -moz-transition: 250ms ease-out;
+  -o-transition: 250ms ease-out;
+  transition: 250ms ease-out;
+}
+
+a:hover>.item-speaker img,
+a:focus>.item-speaker img {
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.025,1.025);
+  /*border-width: 5px;*/
+  -webkit-transition: 150ms ease-out;
+  -moz-transition: 150ms ease-out;
+  -o-transition: 150ms ease-out;
+  transition: 150ms ease-out;
+}
+
+
 .item-speaker h4 {
   text-align: center;
   font-weight: 400;
   font-size: 1.25em;
-  color: white;
   font-family: Roboto Slab;
+  color: #333;
+}
+
+.section-default:not(.section-gray) .item-speaker h4 {
+  color: white;
 }
 
 .item-speaker h4 small {
@@ -89,6 +121,9 @@
   font-style: italic;
   line-height: 1.25em;
   margin-top: 5px;
+}
+
+.section-default:not(.section-gray) .item-speaker h4 small {
   color: #9e8dca;
 }
 
@@ -174,6 +209,14 @@
     -o-transition: 250ms ease-out;
     transition: 250ms ease-out;
   }
+}
+
+.div-speaker-drilldown {
+  margin-bottom: 30px;
+}
+
+.div-speaker-drilldown-multi {
+  margin-bottom: 15px;
 }
 
 .div-lightbox {
@@ -652,7 +695,7 @@ footer.section-violet>.container-fluid>.row:not(.row-limit) span {
 .section-default.section-violet .btn.btn-white-on-violet:focus,
 .section-default.section-violet .btn.btn-default.btn-white-on-violet:hover,
 .section-default.section-violet .btn.btn-default.btn-white-on-violet:focus {
-  color: #f57c00;
+  color: #564387;
   background-color: white;
   -webkit-transition: 250ms ease-out;
   -moz-transition: 250ms ease-out;
@@ -696,6 +739,35 @@ footer.section-violet>.container-fluid>.row:not(.row-limit) span {
 .section-violet,
 .section-default.section-violet {
   background-color: #564387;
+}
+
+.section-violet *,
+.section-default.section-violet * {
+  color: #9e8dca;
+}
+
+.section-violet small,
+.section-default.section-violet small {
+  color: #9e8dca !important;
+}
+
+.section-violet strong,
+.section-default.section-violet strong,
+.section-violet strong,
+.section-default.section-violet strong,
+.section-violet h1,
+.section-default.section-violet h1,
+.section-violet h2,
+.section-default.section-violet h2,
+.section-violet h3,
+.section-default.section-violet h3,
+.section-violet h4,
+.section-default.section-violet h4,
+.section-violet h5,
+.section-default.section-violet h5,
+.section-violet h6,
+.section-default.section-violet h6 {
+  color: white;
 }
 
 .section-orange,
