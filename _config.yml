@@ -46,16 +46,6 @@ speakers:
    social:
     - type: ""
       url: ""
- - id: "caragon"
-   name: "Claudine Aragon"
-   image: "Aragon_Claudine-edit-web.jpg"
-   professional:
-    - designation: "Country Marketing Director"
-      company: "Open Garden"
-   description: "Claudine is the country marketing director of Open Garden, makers of FireChat - a mobile messaging app that works even without signal or internet connection. Passionate about the intersection of business, marketing, and technology, Claudine has immersed herself in the digital space --- from working on e-commerce to peer-to-peer mesh network technology. She recently relocated back to Manila from Hong Kong to lead the growth and adoption of FireChat in the Philippines. She is a magna cum laude graduate of the University of the Philippines with Bachelor of Science degree in Business Administration."
-   social:
-    - type: ""
-      url: ""
  - id: "msantos"
    name: "Mary Grace Mirandilla-Santos"
    image: "Mirandilla-Santos_Grace-edit-web.jpg"
@@ -63,6 +53,18 @@ speakers:
     - designation: "Vice President for Policy"
       company: "Internet Society Philippines Chapter"
    description: "She is an independent researcher specializing in telecommunications and information and communications technology (ICT) policy, and technology’s impact on development and society. Her areas of interest include telecom/ICT regulation and competition policy, e-government, e-democracy, and universal ICT access. Currently, she is a national ICT research consultant at the Asian Development Bank and a local expert for a European Union-funded research project on telecommunications competition mapping. Her personal advocacy is better telecom and Internet services in the Philippines. She is a research fellow of LIRNEasia, a regional ICT policy think tank, and vice president for policy of the Internet Society (ISOC) Philippine Chapter."
+   social:
+    - type: ""
+      url: ""
+
+speakersLegacy:
+ - id: "caragon"
+   name: "Claudine Aragon"
+   image: "Aragon_Claudine-edit-web.jpg"
+   professional:
+    - designation: "Country Marketing Director"
+      company: "Open Garden"
+   description: "Claudine is the country marketing director of Open Garden, makers of FireChat - a mobile messaging app that works even without signal or internet connection. Passionate about the intersection of business, marketing, and technology, Claudine has immersed herself in the digital space --- from working on e-commerce to peer-to-peer mesh network technology. She recently relocated back to Manila from Hong Kong to lead the growth and adoption of FireChat in the Philippines. She is a magna cum laude graduate of the University of the Philippines with Bachelor of Science degree in Business Administration."
    social:
     - type: ""
       url: ""
