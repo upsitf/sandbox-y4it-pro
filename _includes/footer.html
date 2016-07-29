@@ -1,15 +1,44 @@
-<footer>
+<footer class="section-violet">
   <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <a target="_blank" href="http://y4it.org/"><i class="fa fa-globe" aria-hidden="true"></i></a>
+    <div class="row row-limit">
+      <div class="col-lg-{% if site.switchFooterSitemap == true %}12 text-center{% else %}5 col-md-5 col-sm-5 col-xs-12{% endif %}">
+        <a href="http://y4it.org/"><i class="fa fa-globe" aria-hidden="true"></i></a>
         <a target="_blank" href="https://www.facebook.com/ilove.Y4iT/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
         <a target="_blank" href="https://twitter.com/y4it"><i class="fa fa-twitter" aria-hidden="true"></i></a>
         <a target="_blank" href="https://www.instagram.com/y4it/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <br class="visible-xs"/>
         <a target="_blank" href="https://www.youtube.com/user/iloveY4iT"><i class="fa fa-youtube" aria-hidden="true"></i></a>
         <a target="_blank" href="https://www.snapchat.com/add/y4it"><i class="fa fa-snapchat-ghost" aria-hidden="true"></i></a>
-        <br/>
-        <p>&copy; 2016 University of the Philippines System Information Technology Foundation, Inc. All the contents on this site are protected by copyright law.</p>
+        <a target="_blank" href="http://chats.viber.com/y4it"><i class="fa fa-phone-square" aria-hidden="true"></i></a>
+      </div>
+    {% if site.switchFooterSitemap == true %}
+    </div>
+    <div class="row row-limit">
+      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+
+      </div>
+    {% endif %}
+
+      <div class="col-lg-2 col-lg-push-5 col-md-2 col-md-push-5 col-sm-2 col-sm-push-5 col-xs-12">
+        <img id="logo-sitf" class="img-responsive" src="{{ site.baseurl }}/images/logo-sitf-white.png">
+      </div>
+
+      <div class="col-lg-5 col-lg-pull-2 col-md-5 col-md-pull-2 col-sm-5 col-sm-pull-2 col-xs-12">
+        <span>
+          <span>
+            UP System Information<br/>Technology Foundation<span class="hidden-sm hidden-xs">, Inc.</span><br/>
+          </span>
+          3/F Vidal A. Tan Hall<span class="hidden-sm hidden-xs">, </span><span class="hidden-lg hidden-md"><br/></span>Quirino Ave. cor. Velasquez St.<br/>
+          University of the Philippines <span class="hidden-lg hidden-md"><br/></span>Diliman, Quezon City<br/>
+          920 2036 | 436 2217 | 0917 563 5682<br/>
+          info@y4it.org
+        </span>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <span>&copy; 2016 UP System Information Technology Foundation, Inc. All the contents on this site are protected by copyright law.</span>
       </div>
     </div>
   </div>

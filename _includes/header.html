@@ -1,5 +1,5 @@
 <!--nav id="navbar" class="navbar navbar-default navbar-fixed-top{% if page.navHide %}{{ ' navbar-hide' }}{% endif %}"-->
-<nav id ="km-navbar" class="navbar navbar-default navbar-fixed-top{% if page.navHide %}{{ ' navbar-hide' }}{% endif %}">
+<nav id ="km-navbar" class="navbar navbar-default navbar-custom navbar-fixed-top{% if page.navHide %}{{ ' navbar-hide' }}{% endif %}">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -8,21 +8,19 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/logo-y4it-logotype.png"></a>
+      <a class="navbar-brand" href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/logo-y4it-wordmark.png"></a>
     </div>
     <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
       <ul class="nav navbar-nav navbar-right">
-        <li class="production-speakers" ><a href="{% if page.home != true %}{{ site.baseurl }}{{ '/' }}{% endif %}#speakers">Speakers</a></li>
-        <li><a class="hidden">FILLER FOR SPEAKERS</a></li>
+        {% if site.switchSpeakers == true %}<li><a href="{% if page.home != true %}{{ site.baseurl }}{{ '/' }}{% endif %}#speakers">Speakers</a></li>{% endif %}
         <li><a href="{% if page.home != true %}{{ site.baseurl }}{{ '/' }}{% endif %}#details">Details</a></li>
         <li><a href="{% if page.home != true %}{{ site.baseurl }}{{ '/' }}{% endif %}#about">About</a></li>
-        <li class="production-faq"><a href="{% if page.home != true %}{{ site.baseurl }}{{ '/' }}{% endif %}#faq">FAQ</a></li>
-        <li><a class="hidden">FILLER FOR FAQ</a></li>
+        <li><a href="{% if page.home != true %}{{ site.baseurl }}{{ '/' }}{% endif %}#badges">Badges</a></li>
+        {% if site.switchFAQ == true %}<li><a href="{% if page.home != true %}{{ site.baseurl }}{{ '/' }}{% endif %}#faq">FAQ</a></li>{% endif %}
+        {% if site.switchTerms == true %}<li><a href="{% if page.home != true %}{{ site.baseurl }}{{ '/' }}{% endif %}#terms">Terms</a></li>{% endif %}
         <li><a href="{% if page.home != true %}{{ site.baseurl }}{{ '/' }}{% endif %}#organizer">Organizer</a></li>
-        <li><a class="hidden" href="{% if page.home != true %}{{ site.baseurl }}{{ '/' }}{% endif %}#badges">Badges</a></li>
-        <li class="production-terms"><a class="hidden" href="{% if page.home != true %}{{ site.baseurl }}{{ '/' }}{% endif %}#terms">Terms</a></li>
-        <li><a class="hidden">FILLER FOR TERMS</a></li>
-        <li><a id="btn-badges" href="{% if page.home != true %}{{ site.baseurl }}{{ '/' }}{% endif %}#badges">Get Badges</a></li>
+        <li><a class="navbar-btn" href="https://reg2016.y4it.org" target="_blank">Register</a></li>
+        {% if site.switchSponsors == true %}<li><a class="navbar-btn" href="{{ site.baseurl }}{{ '/' }}sponsors">Sponsor</a></li>{% endif %}
       </ul>
     </div><!--/.nav-collapse -->
   </div>

@@ -1,0 +1,37 @@
+<div class="panel panel-default panel-announcement wow fadeInDown">
+  {% for eachpost in site.posts %}
+  {% if eachpost.category == "Announcements" %}
+  <h2>
+    {{ eachpost.title }}<br/>
+    <small>
+      Posted {{ eachpost.date | date: '%B %d, %Y' }} -
+      {% if eachpost.time %}
+      {% for eachbullet in eachpost.time %}{% if forloop.index == 1 %}{% if eachbullet >= 0 and eachbullet < 24 %}{% if eachbullet > 12 %}{{ eachbullet | minus: 12 }}{% elsif eachbullet == 0 %}{{ "12" }}{% else %}{{ eachbullet }}{% endif %}{% else %}{{ "??" }}{% endif %}{% endif %}{% if forloop.index == 2 %}{{ ":" }}{% if eachbullet >= 0 and eachbullet <= 59 %}{% if eachbullet < 10 %}{{ "0" }}{{ eachbullet }}{% else %}{{ eachbullet }}{% endif %}{% else %}{{ "??" }}{% endif %}{% endif %}{% endfor %}
+      {% for eachbullet in eachpost.time %}{% if forloop.index == 1 %}{% if eachbullet >= 0 and eachbullet < 24 %}{% if eachbullet >= 12 %}{{ "PM" }}{% else %}{{ "AM" }}{% endif %}{% endif %}{% endif %}{% endfor %}
+      {% endif %}
+    </small>
+  </h2>
+
+  {% if eachpost.excerpt %}
+  <!--p>{{ eachpost.excerpt }}</p-->
+  {% endif %}
+
+  {% if eachpost.richexcerpt %}
+  {% assign waiting = 0 %}
+  {% assign type = "" %}
+  <p>
+  {% for eachbullet in eachpost.richexcerpt %}{% if waiting > 0 %}{{ eachbullet }}{% assign waiting = waiting | minus: 1 %}{% if type == "<img>" %}{{ '"/>' }}{% assign type = "" %}{% elsif type == "<a>" %}{% if waiting == 1 %}{{ '">' }}{% elsif waiting == 0 %}{{ '</a>' }}{% assign type = "" %}{% endif %}{% endif %}{% elsif eachbullet == "<a>" %}{{ '<a href="' }}{{ site.baseurl }}{% assign waiting = 2 %}{% assign type = eachbullet %}{% elsif eachbullet == "<img>" %}{{ '<img src="' }}{% assign waiting = 1 %}{% assign type = eachbullet %}{% else %}{{ eachbullet }}{% endif %}{% endfor %}
+  </p>
+  {% endif %}
+
+  <div class="hidden">
+  {% if eachpost.withContent == true %}
+  <a class="btn btn-default" href="{{ site.baseurl }}{{ eachpost.url }}">Read more</a>
+  &nbsp;<br class="visible-xs"/>or
+  {% endif %}
+  <a href="{{ site.baseurl }}/announcements">{% if eachpost.withContent == true %}s{% else %}S{% endif %}ee all announcements</a>
+  {% break %}
+  {% endif %}
+  {% endfor %}
+  </div>
+</div>

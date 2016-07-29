@@ -1,7 +1,7 @@
 # Site settings
 title: Y4iT
 baseurl: http://toffmendoza.me/sandbox-y4it
-# baseurl: http://y4it.org
+#baseurl: http://y4it.org
 
 
 # Build settings
@@ -10,4 +10,196 @@ permalink: pretty
 # baseurl:
 
 # Site variables
-switchAnnouncement: true
+switchAnnouncement: false
+switchSpeakers: true
+switchSpeakersHeader: false
+switchParallel: false
+switchPayment: false
+switchFAQ: true
+switchSponsors: false
+switchTerms: true
+
+switchFooterSitemap: false
+
+
+speakers:
+ - id: "jdeluzuriaga"
+   name: "Jonathan Defensor De Luzuriaga"
+   image: "De_Luzuriaga_Jonathan-edit-web.jpg"
+   professional:
+    - designation: "President"
+      company: "Philippine Software Industry Association"
+    - designation: "Founder and Chief Executive Officer"
+      company: "CMI Tech"
+   description: "As the President of the Philippine Software Industry Association, Jonathan leads the way for the Information Technology industry of the Philippines. He is also the Founder and CEO of CMI Tech, a software innovations company involved in developments in web, mobile and cloud solutions for various verticals. Jonathan is a seasoned independent World Bank Consultant for global information technology initiatives responsible for the design and implementation of such projects as the Center of Excellence in IT-BPO for Central Africa, the feasibility study of the Malili Technopark in Kenya as well as a multitude of talent mapping initiatives in Southeast Asia. He has been invited in numerous occasions to lecture about outsourcing and offshoring in various events and conferences in all parts of the world. He is known simply as JDL within the different sectors of business processing, information technology and innovation sectors. He holds a Political Science degree from the De La Salle University."
+   social:
+    - type: ""
+      url: ""
+ - id: "psmithson"
+   name: "Phil Smithson"
+   image: "Smithson_Phil1-edit-web.jpg"
+   professional:
+    - designation: "Lead Service Designer and Director"
+      company: "On-Off Group"
+   description: "Phil is a Lead Service Designer and Director of On-Off Group. He's been helping companies design experiences for over 10 years and has taught UX to over 1,500 people. In 2015, he spent 3 months travelling the Philippines introducing UX to multiple universities. He finds it difficult to switch off the 'designer' part of his brain and is always thinking about how to improve experiences wherever he goes."
+   social:
+    - type: ""
+      url: ""
+ - id: "caragon"
+   name: "Claudine Aragon"
+   image: "Aragon_Claudine-edit-web.jpg"
+   professional:
+    - designation: "Country Marketing Director"
+      company: "Open Garden"
+   description: "Claudine is the country marketing director of Open Garden, makers of FireChat - a mobile messaging app that works even without signal or internet connection. Passionate about the intersection of business, marketing, and technology, Claudine has immersed herself in the digital space --- from working on e-commerce to peer-to-peer mesh network technology. She recently relocated back to Manila from Hong Kong to lead the growth and adoption of FireChat in the Philippines. She is a magna cum laude graduate of the University of the Philippines with Bachelor of Science degree in Business Administration."
+   social:
+    - type: ""
+      url: ""
+ - id: "msantos"
+   name: "Mary Grace Mirandilla-Santos"
+   image: "Mirandilla-Santos_Grace-edit-web.jpg"
+   professional:
+    - designation: "Vice President for Policy"
+      company: "Internet Society Philippines Chapter"
+   description: "She is an independent researcher specializing in telecommunications and information and communications technology (ICT) policy, and technology’s impact on development and society. Her areas of interest include telecom/ICT regulation and competition policy, e-government, e-democracy, and universal ICT access. Currently, she is a national ICT research consultant at the Asian Development Bank and a local expert for a European Union-funded research project on telecommunications competition mapping. Her personal advocacy is better telecom and Internet services in the Philippines. She is a research fellow of LIRNEasia, a regional ICT policy think tank, and vice president for policy of the Internet Society (ISOC) Philippine Chapter."
+   social:
+    - type: ""
+      url: ""
+
+schedules:
+ - morning:
+    - id: "jcruz1"
+      topic: "Topic One"
+    - id: "jcruz2"
+      topic: "Topic Two"
+   noon:
+    - id: "jcruz3"
+      topic: "Topic Three"
+    - id: "jcruz4"
+      topic: "Topic Four"
+ - morning:
+    - id: "jcruz5"
+      topic: "Topic Five"
+    - id: "jcruz6"
+      topic: "Topic Six"
+   noon:
+    - id: "jcruz2"
+      topic: "Topic Seven"
+    - id: "jcruz4"
+      topic: "Topic Eight"
+ - morning:
+    - id: "jcruz6"
+      topic: "Topic Nine"
+    - id: "jcruz1"
+      topic: "Topic Ten"
+   noon:
+    - id: "jcruz3"
+      topic: "Topic Eleven"
+    - id: "jcruz5"
+      topic: "Topic Twelve"
+
+
+parallels:
+ - id: "paloalto"
+   name: "Computer Security"
+   image: ""
+   description: "Lorem ipsum"
+   profile: ""
+   speaker: "Speaker Name"
+   designation: ""
+   company: "Paloalto"
+   social:
+    - type: ""
+      url: ""
+    - type: ""
+      url: ""
+    - type: ""
+      url: ""
+ - id: "onoffgroup"
+   name: "User Experience Design"
+   image: ""
+   description: "Lorem ipsum"
+   profile: ""
+   speaker: "Speaker Name"
+   designation: ""
+   company: "Paloalto"
+   social:
+    - type: ""
+      url: ""
+    - type: ""
+      url: ""
+    - type: ""
+      url: ""
+ - id: "microsoft"
+   name: "Internet of Things"
+   image: ""
+   description: "Lorem ipsum"
+   profile: ""
+   speaker: "Speaker Name"
+   designation: ""
+   company: "Paloalto"
+   social:
+    - type: ""
+      url: ""
+    - type: ""
+      url: ""
+    - type: ""
+      url: ""
+
+
+sponsors:
+ - id: ""
+   name: ""
+   logo: ""
+
+
+inclusions:
+ - name: "Admission"
+   description:
+    - "<strong>"
+    - "Entrance to the Y4iT Plenary and Exhibit Halls."
+    - "</>"
+    - "You will be granted access to talks of IT experts and booths and activities of Y4iT partners."
+ - name: "Congress Kit"
+   description:
+    - "<strong>"
+    - "The official Y4iT Congress Kit."
+    - "</>"
+    - "This includes AM and PM snacks, souvenir program, and many more freebies from us and from our sponsors!"
+ - name: "Certificate"
+   description:
+    - "<strong>"
+    - "Certificate of Participation for each congress day."
+    - "</>"
+    - "This shall serve as proof of your attendance and participation in this year’s Y4iT."
+
+
+faqs:
+ - question: "Who can attend the event?"
+   answer: "Y4iT is mostly attended by IT students, professionals, and enthusiasts, but of course, everyone is invited to join."
+ - question: "How do I register for the event?"
+   answer: "To register online, go to reg2016.y4it.org and follow the steps provided. To register on-site, just go to the registration booth, provide the Secretariat with necessary information, and pay for the total registration fee."
+ - question: "Can I register online and pay on-site (during event day)?"
+   answer: "Yes, you may accomplish the registration form online and pay during event day. However, badge rates depend on the date of purchase and not of registration. Payments made during the event day will follow the walk-in rate."
+ - question: "Can I register online and pay offsite (direct payment at UPSITF office or bank deposit) but claim my badge/s on-site?"
+   answer: "Yes, you may claim your badge/s on-site or during the event when you register online and pay before the event. Just present the Registration Summary and proof of payment."
+ - question: "Why should we register online?"
+   answer: "Those who register online will be prioritized during the event. On-site registrants (walk-in participants) will only be accommodated at 9am."
+ - question: "I failed to bring or print out my Registration Summary. Would I still be able to claim my badges?"
+   answer: "Yes. Just bring proof of payment to claim your badges."
+ - question: "I lost my badge, would the management still be able to replace it?"
+   answer: "Unfortunately, Y4iT will not replace lost badge/s."
+ - question: "How long will the program be?"
+   answer: "Gates open at 7am. The program starts at 9am and ends at 4pm."
+ - question: "Will there be different programs per day?"
+   answer: "Yes, there will be a different program for each day. Expect to learn and be inspired by different speakers and topics each day."
+
+
+terms:
+ - name: "Refund"
+   description: "Tickets are non-refundable but transferrable."
+ - name: "Speakers"
+   description: "Y4iT reserves the right to cancel or replace speakers."
+
+organizerDescription:
+ - "The UP System Information Technology Foundation (UPSITF) Inc. is a non-government organization focused on the application of Information and Communication Technology for development. It partners with UP Information Technology Development Center in providing various services such as, but not limited to, Education Development, IT Human Capital Development, Research &amp; Development, Software Engineering, ICT Policy Development and Planning, and IT Project Management."

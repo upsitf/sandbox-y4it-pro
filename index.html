@@ -1,26 +1,37 @@
 ---
 layout: main
 home: true
-navHide: jumbotron
 parallax: true
 parallaxLarge: /images/art-landscape-web.png
 parallaxSmall: /images/art-portrait-web.png
 animate: true
 ---
 
-<section class="section-fixed hidden">
+<!--section class="section-fixed hidden">
   <div style="position:fixed">
     <h1>Hello</h1>
   </div>
-</section>
+</section-->
 
-<section id="jumbotron" class="parallax-window">
+<section id="jumbotron" class="parallax-window" style="">
+  <style>
+    @media (min-width: 768px) {
+      #jumbotron {
+        background-image:url('{{ site.baseurl }}/images/art-landscape-web.png')
+      }
+    }
+    @media (max-width: 768px) {
+      #jumbotron {
+        background-image:url('{{ site.baseurl }}/images/art-portrait-web.png')
+      }
+    }
+  </style>
   <div class="container-fluid" style="background:linear-gradient(rgba(255,255,255,0) calc(100% - 150px), rgba(255, 255, 255,0.75) 100%)">
     <div class="row row-limit">
       <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
         <div class="km-jumbotron-margin-top"></div>
         <div class="panel panel-default panel-jumbotron wow fadeInDown">
-          <div class="panel-heading panel-jumbotron-heading">
+          <div class="panel-heading">
             <img class="panel-jumbotron-logo" src="{{ site.baseurl }}/images/logo-y4it.png">
             <h1 class="panel-title">
               <span>The 14th<br class="hidden-xs"/>
@@ -36,21 +47,14 @@ animate: true
             </span>
           </div>
           <div class="panel-footer text-center">
-            <a class="btn btn-default production-others" role="button">Download poster</a>
+            <a target="_blank" class="btn btn-default btn-orange" href="{{ site.baseurl }}/poster-main.pdf">Download poster</a>
           </div>
         </div>
         <div class="km-jumbotron-margin-bottom"></div>
       </div>
-      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
         <a class="a-arrow" href="{% if page.home != true %}{{ site.baseurl }}{{ '/' }}{% endif %}#content">
-          <svg class="arrows">
-            <!--path class="a1 a1-bg" d="M0 0 L45 32 L90 0"></path>
-						<path class="a2 a2-bg" d="M0 20 L45 52 L90 20"></path>
-						<path class="a3 a3-bg" d="M0 40 L45 72 L90 40"></path-->
-						<!--path class="a1" d="M0 0 L45 32 L90 0"></path>
-						<path class="a2" d="M0 20 L45 52 L90 20"></path-->
-						<path class="a3" d="M0 40 L45 72 L90 40"></path>
-					</svg>
+          <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
         </a>
       </div>
     </div>
@@ -60,52 +64,16 @@ animate: true
 <section id="content">
 
   {% if site.switchAnnouncement == true %}
-  <section id="announcement" class="section-default section-orange">
+  <section id="announcement" class="section-default section-color-1 section-orange">
     <div class="container-fluid">
       <div class="row row-limit">
         <div class="col-lg-4 col-lg-push-8 col-md-push-8 col-md-4 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
           <img class="img-responsive img-bubble wow fadeInDown floating" src="{{ site.baseurl }}/images/art-bubble.png" style="">
         </div>
-        <div class="col-lg-8 col-lg-pull-4 col-md-8 col-md-pull-4 col-sm-12 col-sm-pull-0 col-xs-12 col-xs-pull-0">
-          <h1>Announcement</h1>
+        <div class="col-lg-8 col-lg-pull-4 col-lg-offset-0 col-md-8 col-md-offset-0 col-md-pull-4 col-sm-8 col-sm-offset-2 col-sm-pull-0 col-xs-12 col-xs-pull-0 col-xs-offset-0">
+          <h1 class="section-title">Announcement</h1>
 
-          <div class="panel panel-default panel-announcement wow fadeInDown">
-            {% for eachpost in site.posts %}
-            {% if eachpost.category == "Announcements" %}
-            <h2>
-              {{ eachpost.title }}<br/>
-              <small>
-                Posted {{ eachpost.date | date: '%B %d, %Y' }} -
-                {% if eachpost.time %}
-                {% for eachbullet in eachpost.time %}{% if forloop.index == 1 %}{% if eachbullet >= 0 and eachbullet < 24 %}{% if eachbullet > 12 %}{{ eachbullet | minus: 12 }}{% elsif eachbullet == 0 %}{{ "12" }}{% else %}{{ eachbullet }}{% endif %}{% else %}{{ "??" }}{% endif %}{% endif %}{% if forloop.index == 2 %}{{ ":" }}{% if eachbullet >= 0 and eachbullet <= 59 %}{% if eachbullet < 10 %}{{ "0" }}{{ eachbullet }}{% else %}{{ eachbullet }}{% endif %}{% else %}{{ "??" }}{% endif %}{% endif %}{% endfor %}
-                {% for eachbullet in eachpost.time %}{% if forloop.index == 1 %}{% if eachbullet >= 0 and eachbullet < 24 %}{% if eachbullet >= 12 %}{{ "PM" }}{% else %}{{ "AM" }}{% endif %}{% endif %}{% endif %}{% endfor %}
-                {% endif %}
-              </small>
-            </h2>
-
-            {% if eachpost.excerpt %}
-            <!--p>{{ eachpost.excerpt }}</p-->
-            {% endif %}
-
-            {% if eachpost.richexcerpt %}
-            {% assign waiting = 0 %}
-            {% assign type = "" %}
-            <p>
-            {% for eachbullet in eachpost.richexcerpt %}{% if waiting > 0 %}{{ eachbullet }}{% assign waiting = waiting | minus: 1 %}{% if type == "<img>" %}{{ '"/>' }}{% assign type = "" %}{% elsif type == "<a>" %}{% if waiting == 1 %}{{ '">' }}{% elsif waiting == 0 %}{{ '</a>' }}{% assign type = "" %}{% endif %}{% endif %}{% elsif eachbullet == "<a>" %}{{ '<a href="' }}{{ site.baseurl }}{% assign waiting = 2 %}{% assign type = eachbullet %}{% elsif eachbullet == "<img>" %}{{ '<img src="' }}{% assign waiting = 1 %}{% assign type = eachbullet %}{% else %}{{ eachbullet }}{% endif %}{% endfor %}
-            </p>
-            {% endif %}
-
-            <div class="hidden">
-            {% if eachpost.withContent == true %}
-            <a class="btn btn-default" href="{{ site.baseurl }}{{ eachpost.url }}">Read more</a>
-            &nbsp;<br class="visible-xs"/>or
-            {% endif %}
-            <a href="{{ site.baseurl }}/announcements">{% if eachpost.withContent == true %}s{% else %}S{% endif %}ee all announcements</a>
-            {% break %}
-            {% endif %}
-            {% endfor %}
-            </div>
-          </div>
+          {% include panel-announcement.html %}
 
         </div>
       </div>
@@ -113,11 +81,22 @@ animate: true
   </section>
   {% endif %}
 
-  <section id="speakers" class="section-default section-gray production-speakers">
+  {% if site.switchSpeakers == true %}
+  <section id="speakers" class="section-default section-violet">
     <div class="container-fluid">
       <div class="row row-limit">
         <div class="col-lg-12">
-          <div class="row">
+          <h1 class="section-title">
+            Speakers
+          </h1>
+          <span class="span-copy">Imagine, innovate and be inspired by this year's lineup of masters from the IT industry</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="section-title hidden">Speakers</h1>
+          {% if site.switchSpeakersHeader == true %}
+          <div class="row row-limit">
             <div class="col-lg-12">
               <div>
                 <img>
@@ -129,27 +108,76 @@ animate: true
               </div>
             </div>
           </div>
+          {% endif %}
 
-          <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
-              <img>
-              <h4>
-                Name Here
-                <small>Company Here</small>
-              </h4>
+          <div class="row row-limit">
+            {% assign last4s = 0 %}
+            {% assign last3s = 0 %}
+            {% for eachspeaker in site.speakers %}
+
+            {% include item-speaker.html %}
+
+            {% assign checker4 = forloop.index | modulo: 4 %}
+            {% if checker4 == 0 %}
+            {% assign last4s = last4s | plus: 1 %}
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 visible-lg visible-md hidden-sm hidden-xs">
+              <div id="speakerdrilldown-4s-{% if last4s < 10 %}{{ "0" }}{% endif %}{{ last4s }}" class="speakerdrilldown-4s hidden-maxheight">
+                {% include content-lightbox.html %}
+              </div>
             </div>
-            <!-- Repeat 3 times? -->
+            {% endif %}
+
+            {% assign checker3 = forloop.index | modulo: 3 %}
+            {% if checker3 == 0 %}
+            {% assign last3s = last3s | plus: 1 %}
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hidden-lg hidden-md visible-sm hidden-xs">
+              <div id="speakerdrilldown-3s-{% if last3s < 10 %}{{ "0" }}{% endif %}{{ last3s }}" class="speakerdrilldown-3s hidden-maxheight">
+                {% include content-lightbox.html %}
+              </div>
+            </div>
+            {% endif %}
+
+            {% endfor %}
+
+            {% if checker4 == 0 %}{{ "" }}{% else %}
+            {% assign last4s = last4s | plus: 1 %}
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 visible-lg visible-md hidden-sm hidden-xs">
+              <div id="speakerdrilldown-4s-{% if last4s < 10 %}{{ "0" }}{% endif %}{{ last4s }}" class="speakerdrilldown-4s hidden-maxheight">
+                {% include content-lightbox.html %}
+              </div>
+            </div>
+            {% endif %}
+            {% if checker3 == 0 %}{{ "" }}{% else %}
+            {% assign last3s = last3s | plus: 1 %}
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hidden-lg hidden-md visible-sm hidden-xs">
+              <div id="speakerdrilldown-3s-{% if last3s < 10 %}{{ "0" }}{% endif %}{{ last3s }}" class="speakerdrilldown-3s hidden-maxheight">
+                {% include content-lightbox.html %}
+              </div>
+            </div>
+
+            {% endif %}
+
           </div>
-          <!-- Repeat 5 times? -->
+
 
           <div></div>
 
         </div>
+        <div class="col-lg-12">
+          <span class="span-copy" style="margin-top:30px">...and many more!</span>
+        </div>
       </div>
-    </div>
-  </section>
 
-  <section id="details" class="section-default section-violet">
+    </div>
+    <style>
+      .div-lightbox {
+        background-image: url('{{ site.baseurl }}/images/bg-lightbox.jpg');
+      }
+    </style>
+  </section>
+  {% endif %}
+
+  <section id="details" class="section-default section-gray">
     <div class="container-fluid">
       <div class="row row-limit">
         <div class="col-lg-12">
@@ -163,7 +191,7 @@ animate: true
               }
             }
           </style>
-          <h1>Event Details</h1>
+          <h1 class="section-title hidden">Event Details</h1>
 
           <div class="row">
             <div class="col-lg-6 col-lg-push-6 col-md-6 col-md-push-6 col-sm-12 col-xs-12">
@@ -181,10 +209,18 @@ animate: true
 
             <div class="col-lg-6 col-lg-pull-6 col-md-6 col-md-pull-6 col-sm-12 col-xs-12">
               <div class="row row-schedule">
+                {% for eachschedule in site.schedules %}
+                {% assign firstdate = 27 %}
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                  <section>
-                    <h2>Sep 27 <br/>
-                      <small>Day 1, Tuesday</small>
+                  <div class="item-day">
+                    <h2>Sep {{ firstdate | plus: forloop.index0 }} <br/>
+                      <small>
+                        Day {{ forloop.index }},
+                        {% if forloop.index == 1 %}{{ "Tuesday" }}
+                        {% elsif forloop.index == 2 %}{{ "Wednesday" }}
+                        {% elsif forloop.index == 3 %}{{ "Thursday" }}
+                        {% endif %}
+                      </small>
                     </h2>
                     <section class="production-speakers">
                       <section>
@@ -207,70 +243,18 @@ animate: true
                       </section>
                     </section>
 
+                    {% if forloop.index == 2 %}
+                    <a class="" id="y66zys6m" target="_blank" href="http://y4it.org/lgknq2mt.png">
+                      <div class="bar bar-lg-left"></div>
+                    </a>
+                    {% else %}
                     <div class="bar bar-lg-left"></div>
+                    {% endif %}
 
-                  </section>
+                  </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                  <section>
-                    <h2>Sep 28 <br/>
-                      <small>Day 2, Wednesday</small>
-                    </h2>
-                    <section class="production-speakers">
-                      <section>
-                        <h3>AM Session</h3>
-                        <ol class="list-unstyled">
-                          <li>Lorem Ipsum</li>
-                          <li>Lorem Ipsum</li>
-                          <li>Lorem Ipsum</li>
-                          <li>Lorem Ipsum</li>
-                        </ol>
-                      </section>
-                      <section>
-                        <h3>PM Session</h3>
-                        <ol class="list-unstyled">
-                          <li>Lorem Ipsum</li>
-                          <li>Lorem Ipsum</li>
-                          <li>Lorem Ipsum</li>
-                          <li>Lorem Ipsum</li>
-                        </ol>
-                      </section>
-                    </section>
+                {% endfor %}
 
-                    <a class id="y66zys6m"  target="_blank" href="{{ site.baseurl }}/lgknq2mt.png"><div class="bar bar-lg-left"></div></a>
-
-                  </section>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                  <section>
-                    <h2>Sep 29 <br/>
-                      <small>Day 3, Thursday</small>
-                    </h2>
-                    <section class="production-speakers">
-                      <section>
-                        <h3>AM Session</h3>
-                        <ol class="list-unstyled">
-                          <li>Lorem Ipsum</li>
-                          <li>Lorem Ipsum</li>
-                          <li>Lorem Ipsum</li>
-                          <li>Lorem Ipsum</li>
-                        </ol>
-                      </section>
-                      <section>
-                        <h3>PM Session</h3>
-                        <ol class="list-unstyled">
-                          <li>Lorem Ipsum</li>
-                          <li>Lorem Ipsum</li>
-                          <li>Lorem Ipsum</li>
-                          <li>Lorem Ipsum</li>
-                        </ol>
-                      </section>
-                    </section>
-
-                    <div class="bar bar-lg-left"></div>
-
-                  </section>
-                </div>
               </div>
               <div class="row">
                 <div class="col-lg-12">
@@ -279,7 +263,8 @@ animate: true
                     Gates open at 7am <br/>
                     Event proper: 9am - 4pm || Break: 12nn - 1pm <br/>
                   </span>
-                  <a class="btn btn-default btn-block-xs" role="button" href="{% if page.home != true %}{{ site.baseurl }}{{ '/' }}{% endif %}#badges">Get badges</a>
+                  <a class="btn btn-default btn-block-xs btn-violet" role="button" href="{% if page.home != true %}{{ site.baseurl }}{{ '/' }}{% endif %}#badges">Get badges</a>
+                  <a class="btn btn-default btn-block-xs btn-orange" role="button" href="http://reg2016.y4it.org" target="_blank">Register</a>
                 </div>
               </div>
             </div>
@@ -291,25 +276,63 @@ animate: true
     </div>
   </section>
 
-  <section id="about" class="section-default section-gray">
+  {% if site.switchParallel == true %}
+  <section id="parallel" class="section-default section-dark">
+    <div class="container-fluid">
+      <div class="row row-limit">
+        <div class="col-lg-12">
+          <h1 class="section-title">
+            <small>The Y4iT<br/></small>
+            Parallel Sessions
+          </h1>
+          <img>
+          <span>Lorem ipsum dolor sit amet!</span>
+          <p>Lorem ipsum dolor sit amet</p>
+        </div>
+      </div>
+      <div class="row row-limit row-parallel">
+
+        {% for eachparallel in site.parallels %}
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <div class="item-day-parallel">
+            <h2>Day {{ forloop.index }}</h2>
+            <img>
+            <h3>Session Title</h3>
+            <p>Lorem ipsum dolor sit amet</p>
+            <img class="img-responsive img-circle img-speaker" src="{{ site.baseurl }}/images/filler-300x300.jpg" style="">
+            <span>Juan Cruz</span><br/>
+            <span>Title, Company</span><br/>
+            <span>Social</span>
+          </div>
+        </div>
+        {% endfor %}
+
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  <section id="about" class="section-default section-color-1 section-gray">
     <div class="container-fluid">
       <div class="row row-limit">
         <div class="col-lg-12">
 
-          <img class="img-responsive wow fadeInDown" src="{{ site.baseurl }}/images/logo-y4it.png" style="width:100%;max-width:300px;margin:auto;margin-bottom:40px;">
-          <p style="max-width:480px;margin-left:auto;margin-right:auto;text-align:center;">Established in 2003, the Youth Congress on Information Technology
-            (formerly known as the Philippine Youth Congress on Information
-            Technology) — commonly known as Y4iT — is an annual information
-            technology event in the Philippines, organized by the UP System
-            Information Technology Foundation (UPSITF).</p>
-          <p style="max-width:480px;margin-left:auto;margin-right:auto;text-align:center;">Aimed primarily at college students, professionals, educators, IT
+          <h1 class="section-title hidden">About the Event</h1>
+
+          <img class="img-responsive wow fadeInDown" src="{{ site.baseurl }}/images/logo-y4it-wordmark.png" style="width:100%;max-width:300px;margin:auto;margin-bottom:40px;">
+          <p style="max-width:480px;margin-left:auto;margin-right:auto;text-align:center;">
+            Established in 2003, the Youth Congress on Information Technology
+            — commonly known as Y4iT — is an annual information
+            technology event in the Philippines.
+          </p>
+          <p style="max-width:480px;margin-left:auto;margin-right:auto;text-align:center;">
+            Aimed primarily at college students, professionals, educators, IT
             experts and enthusiasts, Y4iT is an enabling event for today’s youth
             and aspires to recognize young Filipinos as key drivers in the
             dynamic IT industry. Since its launching, Y4iT has gone on to be at
             the forefront of information technology gathering events in the
-            Philippines. Various relevant and exciting IT topics are presented
-            and discussed. The event is co-organized by the Y4iT Volunteer Corps
-            (YVC).</p>
+            Philippines.
+          </p>
 
           <div class="bar bar-lg-center"></div>
 
@@ -328,26 +351,36 @@ animate: true
     </div>
   </section>
 
-  <section id="badges" class="section-default section-orange">
+  <section id="badges" class="section-default section-color-2 section-orange">
     <div class="container-fluid">
       <div class="row row-limit">
         <div class="col-lg-12">
 
-          <h1>
-            Congress Badges<br/>
-            <small>Per Day</small>
+          <h1 class="section-title">
+            Congress Badges
+            <small class="section-subtitle">Per Day</small>
           </h1>
 
-          <div class="panel panel-default panel-badges">
+        </div>
+      </div>
+
+      <div class="row row-limit">
+        <div class="col-lg-12">
+
+          <div class="panel panel-default panel-badges wow fadeInDown" style="background-image:url('{{ site.baseurl }}/images/panel-badges-bg-01.png')">
             <div class="row">
-              <div class="col-lg-12 text-center wow fadeInDown" style="background-image:url('{{ site.baseurl }}/images/panel-badges-bg-01.png')">
-                <h2>Early Bird Rate<br/>
+              <div class="col-lg-12 text-center">
+                <h2>Early Bird Rate
                   <small>Dates TBA</small>
                 </h2>
-                <span><span>P</span>600</span>
+                <span class="span-price"><span>&#8369;</span>600</span>
               </div>
-              <div class="col-lg-12 text-center wow fadeInDown" style="background-image:url('{{ site.baseurl }}/images/panel-badges-bg-02.png')">
-                <h2>Regular Rate<br/>
+            </div>
+          </div>
+          <div class="panel panel-default panel-badges wow fadeInDown" style="background-image:url('{{ site.baseurl }}/images/panel-badges-bg-02.png')">
+            <div class="row">
+              <div class="col-lg-12 text-center">
+                <h2>Regular Rate
                   <small>Dates TBA</small>
                 </h2>
                 <div class="row">
@@ -355,31 +388,36 @@ animate: true
                     <div class="row">
                       <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <h3 class="h3-badge-exception">Individual</h3>
-                        <span><span>P</span>700</span>
+                        <span class="span-price"><span>&#8369;</span>700</span>
                       </div>
                       <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <h3>
                           Small Group<br/>
                           <small><a name id="tjicy0qq"  target="_blank" href="{{ site.baseurl }}/dgo0x37t.png">50-99 people</a></small>
                         </h3>
-                        <span><span>P</span>650</span>
+                        <span class="span-price"><span>&#8369;</span>650</span>
                       </div>
                       <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <h3>
                           Big Group<br/>
                           <small>100 people or more</small>
                         </h3>
-                        <span><span>P</span>600</span>
+                        <span class="span-price"><span>&#8369;</span>600</span>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-12 text-center wow fadeInDown" style="background-image:url('{{ site.baseurl }}/images/panel-badges-bg-03.png')">
-                <h2>Walk-In Rate<br/>
+            </div>
+          </div>
+
+          <div class="panel panel-default panel-badges wow fadeInDown" style="background-image:url('{{ site.baseurl }}/images/panel-badges-bg-03.png')">
+            <div class="row">
+              <div class="col-lg-12 text-center">
+                <h2>Walk-In Rate
                   <small>September 27 - 29, 2016</small>
                 </h2>
-                <span><span>P</span>750</span>
+                <span class="span-price"><span>&#8369;</span>750</span>
               </div>
             </div>
           </div>
@@ -391,34 +429,30 @@ animate: true
       <div class="row row-limit">
         <div class="col-lg-12">
 
-          <h1>Badge Inclusions</h1>
+          <h1 class="section-title">Badge Inclusions</h1>
+          <div class="div-inclusions">
 
-          <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-              <h2 class="center-xs">Admission</h2>
+            {% for eachinclusion in site.inclusions %}
+            <div class="item-inclusion">
+
+              {% if forloop.rindex == 1 %}
+              <h2 class="center-xs"><a placeholder="" id="vp2gdpm6" target="_blank" href="http://y4it.org/29xi6phi.png">Certificate</a></h2>
+              {% else %}
+              <h2 class="center-xs">{{ eachinclusion.name }}</h2>
+              {% endif %}
+
               <p class="center-xs">
-                <strong>Entrance to the Y4iT Plenary and Exhibit Halls.</strong>
-                Access to talks of IT experts and booths and activities of Y4iT
-                partners.
+                {% for eachbullet in eachinclusion.description %}
+                {% if eachbullet == "<strong>" %}{% assign laststate = eachbullet %}<strong>
+                {% elsif eachbullet == "</>" and laststate %}{% if laststate == "<strong>" %}</strong>{% endif %}
+                {% else %}{{ " " }}{{ eachbullet }}
+                {% endif %}
+                {% endfor %}
               </p>
               <div class="bar bar-lg-left bar-xs-center"></div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-              <h2 class="center-xs">Congress Kit</h2>
-              <p class="center-xs">
-                <strong>The official Y4iT Congress Kit.</strong>
-                AM and PM snacks, souvenir program, and many more freebies!
-              </p>
-              <div class="bar bar-lg-left bar-xs-center"></div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-              <h2 class="center-xs"><a placeholder id="vp2gdpm6" target="_blank" href="{{ site.baseurl }}/29xi6phi.png">Certificate</a></h2>
-              <p class="center-xs">
-                <strong>Certificate of Participation for each congress day.</strong>
-                Proof of your attendance and participation in Y4iT.
-              </p>
-              <div class="bar bar-lg-left bar-xs-center"></div>
-            </div>
+            {% endfor %}
+
           </div>
 
         </div>
@@ -427,16 +461,16 @@ animate: true
       <div class="row row-limit">
         <div class="col-lg-12">
 
-          <h1>Registration</h1>
+          <h1 class="section-title">Registration</h1>
 
           <p class="text-center">
-            <strong>COMING SOON!</strong><br/>
-            We will be releasing registration and payment details here, so stay tuned!<br/>
+            <a id="btn-register" class="btn btn-default btn-block-xs btn-white btn-white-on-orange" role="button" href="https://reg2016.y4it.org" target="_blank">Register and <span class="visible-xs"><br/></span>get badges</a><br/>
+            We will be releasing payment details here, so watch this space!<br/>
             In the meantime, be sure to
             <a target="_blank" href="https://www.facebook.com/ilove.Y4iT/">like us on Facebook</a>
             or
             <a target="_blank" href="https://twitter.com/y4it">follow us on Twitter</a>
-            /
+            and
             <a target="_blank" href="https://instagram.com/y4it">Instagram</a>
             so you can get the first scoop on our latest announcements.
           </p>
@@ -444,10 +478,11 @@ animate: true
         </div>
       </div>
 
-      <div class="row row-limit production-badges">
+      {% if site.switchPayment == true %}
+      <div class="row row-limit">
         <div class="col-lg-12">
 
-          <h1>Modes of Payment</h1>
+          <h1 class="section-title">Modes of Payment</h1>
 
           <div class="row row-buttons">
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center">
@@ -461,150 +496,109 @@ animate: true
             </div>
           </div>
 
-
         </div>
       </div>
+      {% endif %}
 
 
     </div>
   </section>
 
-  <section id="faq" class="section-default section-violet production-faq">
+  {% if site.switchFAQ == true %}
+  <section id="faq" class="section-default section-color-1 section-violet">
     <div class="container-fluid">
       <div class="row row-limit">
         <div class="col-lg-12">
 
-          <h1>FAQ</h1>
-
-          <div class="row">
-            <div class="col-lg-4 col-lg-push-4 col-md-4 col-md-push-4 col-sm-4 col-sm-push-4 col-xs-12">
-              <p>
-                <strong>How long will the program be?</strong> <br/>
-                The Youth Congress on Information Technology (commonly called
-                Y4iT) is an annual IT-gathering event, established in 2003 by the
-                UP System IT Foundation. Recognizing young Filipinos as key
-                drivers in the IT industry, it has consistently served as a
-                melting pot of the best minds in the industry, as it brings IT
-                leaders and experts from both the local and global arena.
-              </p>
-
-              <p>
-                <strong>Lorem ipsum dolor sit amet?</strong> <br/>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                aliquam erat volutpat.
-              </p>
-            </div>
-            <div class="col-lg-4 col-lg-push-4 col-md-4 col-md-push-4 col-sm-4 col-sm-push-4 col-xs-12">
-              <p>
-                <strong>Lorem ipsum dolor sit amet?</strong> <br/>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                aliquam erat volutpat.
-              </p>
-
-              <p>
-                <strong>Lorem ipsum dolor sit amet?</strong> <br/>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                aliquam erat volutpat.
-              </p>
-            </div>
-            <div class="col-lg-4 col-lg-pull-8 col-md-4 col-md-pull-8 col-sm-4 col-sm-pull-8 col-xs-12">
-              <img>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="sponsors" class="section-default section-gray production-others">
-    <div class="container-fluid">
-      <div class="row row-limit">
-        <div class="col-lg-12">
-
-          <h1>Sponsors</h1>
-
-          <img>
-          <img>
-          <img>
-          <img>
-          <img>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="terms" class="section-default section-orange production-terms">
-    <div class="container-fluid">
-      <div class="row row-limit">
-        <div class="col-lg-12">
-
-          <h1>Terms &amp; Conditions</h1>
-
-          <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-              <h2 class="center-xs">Refunds</h2>
-              <p class="center-xs">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                aliquam erat volutpat.</p>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-              <h2 class="center-xs">Entry</h2>
-              <p class="center-xs">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                aliquam erat volutpat.</p>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-              <h2 class="center-xs">Speakers</h2>
-              <p class="center-xs">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                aliquam erat volutpat.</p>
-            </div>
-          </div>
-
-
-        </div>
-      </div>
-
-
-    </div>
-  </section>
-
-  <section id="organizer" class="section-default section-gray">
-    <div class="container-fluid">
-      <div class="row row-limit">
-        <div class="col-lg-12">
-
-          <h1>The Organizer<br/>
-            <small>UPSITF</small>
+          <h1 class="section-title">
+            FAQ
+            <small>Frequently Asked Questions</small>
           </h1>
+
           <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
-              <img class="img-responsive wow fadeInDown" src="{{ site.baseurl }}/images/logo-sitf.png" style="max-width: 200px;margin: auto;margin-bottom: 45px;">
+            <div class="col-lg-8 col-lg-push-4 col-md-8 col-md-push-4 col-sm-8 col-sm-push-4 col-xs-12">
+              <div class="div-faqs">
+
+                {% for eachfaq in site.faqs %}
+                <div class="item-faq">
+                  <p>
+                    <strong>{{ eachfaq.question }}</strong> <br/>
+                    {{ eachfaq.answer }}
+                  </p>
+                  <div class="bar bar-lg-left"></div>
+                </div>
+                {% endfor %}
+
+              </div>
             </div>
-            <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
-              <p class="center-xs">The UP System Information Technology Foundation (UPSITF) Inc. is a
-                non-government organization focused on the application of Information
-                and Communication Technology for development. It partners with UP
-                Information Technology Development Center in providing various
-                services such as, but not limited to, Education Development, IT Human
-                Capital Development, Research &amp; Development, Software Engineering,
-                ICT Policy Development and Planning, and IT Project Management.</p>
-              <p class="center-xs">The foundation’s flagship project Youth on Information Technology or
-                (Y4iT) is an annual event organized in
-                cooperation with UP Information Technology Development Center (UP
-                ITDC) and Y4iT Volunteer Corps (YVC), that attracts at least 25,000
-                attendees every year. Apart from staging the biggest IT event in the
-                country, UPSITF also offers in information technology courses on
-                current IT trends and various programming languages and software
-                development projects. Course participants include fresh college
-                graduates, government employees, teachers, and professionals.</p>
+
+            <div class="col-lg-4 col-lg-pull-8 col-md-4 col-md-pull-8 col-sm-4 col-sm-pull-8 col-xs-12">
+              <img class="img-responsive img-bubble wow fadeInDown floating" src="{{ site.baseurl }}/images/art-bubble.png" style="">
             </div>
+
           </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  {% if site.switchSponsors == true %}
+  <section id="sponsors" class="section-default section-color-2 section-gray">
+    <div class="container-fluid">
+      <div class="row row-limit">
+        <div class="col-lg-12">
+
+          <h1 class="section-title">Sponsors</h1>
+
+          {% for eachsponsor in site.sponsors %}
+          <img alt="{{ eachsponsor.name }}">
+          {% endfor %}
+
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  {% if site.switchTerms == true %}
+  <section id="terms" class="section-default section-color-1 section-orange">
+    <div class="container-fluid">
+      <div class="row row-limit">
+        <div class="col-lg-12">
+
+          <h1 class="section-title">Terms &amp; Conditions</h1>
+          <div class="div-terms">
+
+            {% for eachterm in site.terms %}
+            <div class="item-term">
+              <!--h2 class="center-xs">{{ eachterm.name }}</h2-->
+              <p class="center-xs">{{ eachterm.description }}</p>
+            </div>
+            {% endfor %}
+
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+  {% endif %}
+
+  <section id="organizer" class="section-default section-color-2 section-gray">
+    <div class="container-fluid">
+      <div class="row row-limit">
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+          <img id="logo-sitf" class="img-responsive wow fadeInDown" src="{{ site.baseurl }}/images/logo-sitf.png">
+        </div>
+        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 div-organizer">
+          <h1 class="section-title section-title-left-sm section-title-small">The Organizer</h1>
+          {% for eachdescription in site.organizerDescription %}
+          <p class="center-xs">{{ eachdescription }}</p>
+          {% endfor %}
         </div>
       </div>
     </div>

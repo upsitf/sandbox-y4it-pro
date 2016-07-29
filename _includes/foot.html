@@ -3,50 +3,71 @@
 <script type="text/javascript" src="{{ site.baseurl }}/js/slick.min.js"></script>
 <script type="text/javascript" src="{{ site.baseurl }}/js/smoothscroll.js"></script>
 
-{% if page.navHide %}
 
+{% if page.home %}
 <script>
-function hasClass(element, cls) {
-    return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
-}
 
-/* NAVIGATION HEADER*/
+var current = -1;
 
-var didScroll = false;
+$(document).ready(function(){
+  $('[id^="speaker-"]').click(function(){
 
-var basis = document.getElementById('{{ page.navHide }}');
-var basis_bcr = basis.getBoundingClientRect();
-var navbar = document.getElementById('km-navbar');
-var navbar_bcr = navbar.getBoundingClientRect();
-window.onscroll = doOnScroll;
+    var speakerindex_str = $(this).attr('id').substring(8);
+    //var speakerindex_int = parseInt(speakerindex_str);
+    var speakerindex0_int = parseInt(speakerindex_str) - 1;
 
-function doOnScroll() {
-    didScroll = true;
-    basis_bcr = basis.getBoundingClientRect();
-    navbar_bcr = navbar.getBoundingClientRect();
-    //if ((basis_bcr.bottom-(navbar_bcr.bottom-navbar_bcr.top)) <= 0) {
-    if (basis_bcr.bottom <= 0) {
-      if (hasClass(navbar,'navbar-hide')) {
-        navbar.classList.remove('navbar-hide');
-      }
+    if (current != speakerindex0_int) {
+
+    var speakerindex3s_int = Math.floor(speakerindex0_int/3) + 1;
+    if (speakerindex3s_int < 10) {var speakerindex3s_str = "0".concat(speakerindex3s_int.toString());}
+    else {var speakerindex3s_str = speakerindex3s_int.toString();}
+    var speakerindex3srel_int = (speakerindex0_int%3)+1;
+    var speakerindex3srel_str = speakerindex3srel_int.toString();
+
+    var speakerindex4s_int = Math.floor(speakerindex0_int/4) + 1;
+    if (speakerindex4s_int < 10) {var speakerindex4s_str = "0".concat(speakerindex4s_int.toString());}
+    else {var speakerindex4s_str = speakerindex4s_int.toString();}
+    var speakerindex4srel_int = (speakerindex0_int%4)+1;
+    var speakerindex4srel_str = speakerindex4srel_int.toString();
+
+    $('[id^="speakerdrilldown-"]').removeClass("visible-maxheight");
+
+    //setTimeout(function(){
+      $('#speakerdrilldown-3s-'+speakerindex3s_str).find(".arrow-up").removeClass("arrow-up-1-of-3 arrow-up-2-of-3 arrow-up-3-of-3").addClass("arrow-up-"+speakerindex3srel_str+"-of-3");
+      $('#speakerdrilldown-3s-'+speakerindex3s_str).find(".span-speaker").html($('#speakerdrilldown-'+speakerindex_str).find(".span-speaker").html());
+      $('#speakerdrilldown-3s-'+speakerindex3s_str).find(".span-company").html($('#speakerdrilldown-'+speakerindex_str).find(".span-company").html());
+      $('#speakerdrilldown-3s-'+speakerindex3s_str).find("p").html($('#speakerdrilldown-'+speakerindex_str).find("p").html());
+
+      $('#speakerdrilldown-4s-'+speakerindex4s_str).find(".arrow-up").removeClass("arrow-up-1-of-4 arrow-up-2-of-4 arrow-up-3-of-4 arrow-up-4-of-4").addClass("arrow-up-"+speakerindex4srel_str+"-of-4");
+      $('#speakerdrilldown-4s-'+speakerindex4s_str).find(".span-speaker").html($('#speakerdrilldown-'+speakerindex_str).find(".span-speaker").html());
+      $('#speakerdrilldown-4s-'+speakerindex4s_str).find(".span-company").html($('#speakerdrilldown-'+speakerindex_str).find(".span-company").html());
+      $('#speakerdrilldown-4s-'+speakerindex4s_str).find("p").html($('#speakerdrilldown-'+speakerindex_str).find("p").html());
+
+
+      $('#speakerdrilldown-'+speakerindex_str).addClass("visible-maxheight");
+      $('#speakerdrilldown-3s-'+speakerindex3s_str).addClass("visible-maxheight");
+      $('#speakerdrilldown-4s-'+speakerindex4s_str).addClass("visible-maxheight");
+
+    //}, 500);
+
+    current = speakerindex0_int;
+
     }
     else {
-      if ((!(hasClass(navbar,'navbar-hide'))) && (basis.getBoundingClientRect().top == 0)) {
-        navbar.classList.add('navbar-hide');
-      }
-    }
-}
 
-setInterval(function() {
-    if(didScroll) {
-        didScroll = false;
+      $('[id^="speakerdrilldown-"]').removeClass("visible-maxheight");
+      current = -1;
+
     }
-}, 100);
+
+  });
+});
+
 </script>
-
 {% endif %}
 
 {% if page.parallax == true %}
+<!--
 <script type="text/javascript" src="{{ site.baseurl }}/js/parallax.min.js"></script>
 <script>$('.parallax-window').parallax({imageSrc: '{{ site.baseurl }}{{ page.parallaxLarge }}',iosFix: false,androidFix: false});</script>
 {% if page.parallaxSmall %}
@@ -62,6 +83,7 @@ setInterval(function() {
     }
   }
 </style>
+-->
 {% endif %}
 {% endif %}
 
