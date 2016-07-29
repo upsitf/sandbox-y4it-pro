@@ -1,6 +1,5 @@
 <script type="text/javascript" src="{{ site.baseurl }}/js/jquery.min.js"></script>
-<script type="text/javascript" src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="{{ site.baseurl }}/js/slick.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script type="text/javascript" src="{{ site.baseurl }}/js/smoothscroll.js"></script>
 
 
@@ -64,27 +63,7 @@ $(document).ready(function(){
 });
 
 </script>
-{% endif %}
 
-{% if page.parallax == true %}
-<!--
-<script type="text/javascript" src="{{ site.baseurl }}/js/parallax.min.js"></script>
-<script>$('.parallax-window').parallax({imageSrc: '{{ site.baseurl }}{{ page.parallaxLarge }}',iosFix: false,androidFix: false});</script>
-{% if page.parallaxSmall %}
-<style>
-  @media (max-width: 768px) {
-    .parallax-window {
-      background-image: url('{{ site.baseurl }}{{ page.parallaxSmall }}');
-      background-size: cover;
-      background-position: center top;
-    }
-    .parallax-mirror {
-      display: none;
-    }
-  }
-</style>
--->
-{% endif %}
 {% endif %}
 
 {% if page.animate %}
@@ -92,7 +71,7 @@ $(document).ready(function(){
 <script>new WOW().init();</script>
 {% endif %}
 
-{% if page.slick %}
+{% if page.slick == true %}
 <script type="text/javascript" src="{{ site.baseurl }}/js/slick.min.js"></script>
 <!--script>alert('{{ page.title }}')</script-->
 {% if page.title == 'Sponsors' %}
