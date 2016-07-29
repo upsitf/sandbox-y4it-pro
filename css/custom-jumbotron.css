@@ -10,9 +10,9 @@
 
 @media (max-width: 768px) {
   #jumbotron {
-    -webkit-background-position: center 50px;
-    -moz-background-position: center 50px;
-    -o-background-position: center 50px;
-    background-position: center 50px;
+    -webkit-background-position: center 27px;
+    -moz-background-position: center 27px;
+    -o-background-position: center 27px;
+    background-position: center 27px;
   }
 }
