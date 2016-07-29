@@ -10,25 +10,10 @@
   -moz-background-attachment: fixed;
   -o-background-attachment: fixed;
   background-attachment: fixed;
-  
+
   background-repeat: no-repeat;
 }
-@media (min-width: 768px) {
-  #jumbotron {
-    -webkit-background-position: center 35%;
-    -moz-background-position: center 35%;
-    -o-background-position: center 35%;
-    background-position: center 35%;
-  }
-}
-@media (max-width: 768px) {
-  #jumbotron {
-    -webkit-background-position: center 50px;
-    -moz-background-position: center 50px;
-    -o-background-position: center 50px;
-    background-position: center 50px;
-  }
-}
+
 
 .panel-jumbotron {
   padding-bottom: 15px;
