@@ -388,12 +388,14 @@ a:focus>.item-speaker img {
 
 .section-default:not(.section-gray) .item-inclusion h2 {
   font-family: Roboto Slab;
+  line-height: 1em;
 }
 
 #vp2gdpm6 {
     cursor: text !important;
     color: white !important;
     text-decoration: none !important;
+    font-family: Roboto Slab !important;
 }
 
 .section-default.section-orange .item-inclusion p {
