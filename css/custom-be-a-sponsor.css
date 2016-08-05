@@ -109,6 +109,10 @@
   margin-bottom: 15px;
 }
 
+.panel-default.panel-figure ul {
+  margin-bottom: 15px;
+}
+
 .ul-partners {
   list-style: none;
   padding: 0;

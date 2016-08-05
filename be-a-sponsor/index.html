@@ -133,11 +133,21 @@ mileages:
               Y4iT offers different sponsorship mileages designed to help meet your various objectives and targets.
               Collaborate with us to craft the perfect sponsorship for your company.
             </span>
-            <div class="text-center">
-              <a class="btn btn-default btn-white-on-orange">Download <br class="visible-xs"/>Sponsorship <br class="visible-xs"/>Deck</a><br/>
-              <a class="btn btn-default btn-white-on-orange">Download <br class="visible-xs"/>Sponsorship <br class="visible-xs"/>Package</a><br/>
-              <a class="btn btn-default btn-white-on-orange">Become a <br class="visible-xs"/>sponsor now!</a>
+            <div id="btn-group" class="text-center">
+              <a href="http://y4it.org/y4it2016-deck.pdf" class="btn btn-default btn-white-on-orange">Download <br class="visible-xs"/>Sponsorship <br class="visible-xs"/>Deck</a><br class="visible-sm visible-xs"/>
+              <a href="http://y4it.org/y4it2016-sponsorshippackage.pdf" class="btn btn-default btn-white-on-orange">Download <br class="visible-xs"/>Sponsorship <br class="visible-xs"/>Package</a><br/>
+              <a href="http://y4it.org/isupporty4it" class="btn btn-default btn-white-on-orange">Become a <br class="visible-xs"/>sponsor now!</a>
             </div>
+            <style>
+              @media (min-width: 992px) {
+                #btn-group .btn:nth-of-type(1) {
+                  margin-right: 7.5px;
+                }
+                #btn-group .btn:nth-of-type(2) {
+                  margin-left: 7.5px;
+                }
+              }
+            </style>
           </div>
         </div>
       </div>
@@ -209,7 +219,7 @@ mileages:
 
       <div class="row row-limit">
         <div class="col-lg-12">
-          <img class="img-responsive" src="{{ site.baseurl }}/images/filler-640x480-1.jpg" style="margin-left:auto;margin-right:auto;margin-bottom:30px;">
+          <img class="img-responsive" src="{{ site.baseurl }}/images/art_doc-pool.png" style="margin-left:auto;margin-right:auto;margin-bottom:30px;max-width:640px;">
         </div>
 
         <div class="col-lg-12">
@@ -442,14 +452,14 @@ mileages:
           <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
               <div class="panel panel-default panel-doc">
-                <a class="btn btn-default btn-white-on-orange">Download <br class="visible-xs"/>Sponsorship <br class="visible-xs"/>Deck</a>
+                <a href="http://y4it.org/y4it2016-deck.pdf" class="btn btn-default btn-lg btn-white-on-orange">Download <br class="visible-sm visible-xs"/>Sponsorship <br class="visible-xs"/>Deck</a>
                 <p>Lorem ipsum dolor sit amet</p>
               </div>
             </div>
 
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
               <div class="panel panel-default panel-doc">
-                <a class="btn btn-default btn-white-on-orange">Download <br class="visible-xs"/>Sponsorship <br class="visible-xs"/>Package</a>
+                <a href="http://y4it.org/y4it2016-sponsorshippackage.pdf" class="btn btn-default btn-lg btn-white-on-orange">Download <br class="visible-sm visible-xs"/>Sponsorship <br class="visible-xs"/>Package</a>
                 <p>Lorem ipsum dolor sit amet</p>
               </div>
             </div>
@@ -478,7 +488,7 @@ mileages:
             company’s objectives and budget.
           </p>
 
-          <a class="btn btn-default btn-lg btn-orange">Become a <br class="visible-xs"/>sponsor now!</a>
+          <a href="http://y4it.org/isupporty4it" class="btn btn-default btn-lg btn-orange">Become a <br class="visible-xs"/>sponsor now!</a>
 
         </div>
       </div>
