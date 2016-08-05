@@ -33,7 +33,7 @@ sponsors:
  - name: "ION Management Solutions"
  - name: "Jobstreet"
    logo: "jobstreet.png"
- - name: "Legend Hotels International, Inc."
+ - name: "Legend Hotels International, Inc. - Kabayan Hotel"
    logo: "legendhotels.png"
  - name: "Microsoft Philippines"
    logo: "microsoft.png"
@@ -47,7 +47,6 @@ sponsors:
 
 otherSponsors:
  - "Asia-Pacific Network Information Centre (APNIC)"
- - "BPO CareerHub"
  - "British Council"
  - "Codetoki"
  - "Concentrix"
@@ -136,7 +135,7 @@ mileages:
             <div id="btn-group" class="text-center">
               <a href="http://y4it.org/y4it2016-deck.pdf" class="btn btn-default btn-white-on-orange">Download <br class="visible-xs"/>Sponsorship <br class="visible-xs"/>Deck</a><br class="visible-sm visible-xs"/>
               <a href="http://y4it.org/y4it2016-sponsorshippackage.pdf" class="btn btn-default btn-white-on-orange">Download <br class="visible-xs"/>Sponsorship <br class="visible-xs"/>Package</a><br/>
-              <a href="http://y4it.org/isupporty4it" class="btn btn-default btn-white-on-orange">Become a <br class="visible-xs"/>sponsor now!</a>
+              <a href="http://y4it.org/isupporty4it" class="btn btn-default btn-lg btn-white-on-orange">Become a <br class="visible-xs"/>sponsor now!</a>
             </div>
             <style>
               @media (min-width: 992px) {
@@ -219,7 +218,7 @@ mileages:
 
       <div class="row row-limit">
         <div class="col-lg-12">
-          <img class="img-responsive" src="{{ site.baseurl }}/images/art_doc-pool.png" style="margin-left:auto;margin-right:auto;margin-bottom:30px;max-width:640px;">
+          <img class="img-responsive wow fadeInDown" src="{{ site.baseurl }}/images/art_doc-pool.png" style="margin-left:auto;margin-right:auto;margin-bottom:30px;max-width:640px;">
         </div>
 
         <div class="col-lg-12">
@@ -258,13 +257,13 @@ mileages:
           <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
               <div class="panel panel-default panel-figure">
-                <img class="img-responsive" src="{{ site.baseurl }}/images/filler-300x300.jpg">
+                <img class="img-responsive" src="{{ site.baseurl }}/images/art_doc-figure-01.png">
                 <p>Average participants for the past three years is around 23,000 student, faculty, and young professionals. With 2012 having the largest attendees at 28,000~.</p>
               </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
               <div class="panel panel-default panel-figure">
-                <img class="img-responsive" src="{{ site.baseurl }}/images/filler-300x300.jpg">
+                <img class="img-responsive" src="{{ site.baseurl }}/images/art_doc-figure-02.png">
                 <p>Y4iT is attended by IT students, faculty, professionals, and enthusiasts <span>nationwide</span>.</p>
                 <ul>
                   <li>96% from Luzon</li>
@@ -275,8 +274,8 @@ mileages:
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
               <div class="panel panel-default panel-figure">
-                <img class="img-responsive" src="{{ site.baseurl }}/images/filler-300x300.jpg">
-                <p>Average participants for the past three years is around 23,000 student, faculty, and young professionals. With 2012 having the largest attendees at 28,000~.</p>
+                <img class="img-responsive" src="{{ site.baseurl }}/images/art_doc-figure-03.png">
+                <p>Average number of participants for the past three years is around 23,000 student, faculty, and young professionals. With 2012 having the largest attendees at 28,000~.</p>
                 <ul>
                   <li>6.25% - First year</li>
                   <li>7.66% - Second year</li>
@@ -375,7 +374,7 @@ mileages:
 
           <div class="div-partners" style="text-align:center;">
             {% for eachsponsor in page.sponsors %}
-            <img alt="{{ eachsponsor.name }}" src="{{ site.baseurl }}/images/partners/{{ eachsponsor.logo }}" style="max-height: 85px;display: inline-block;margin-right: 15px;margin-left: 15px;margin-bottom: 30px;">
+            <img alt="{{ eachsponsor.name }}" class="wow fadeInDown" src="{{ site.baseurl }}/images/partners/{{ eachsponsor.logo }}">
             {% endfor %}
           </div>
 
@@ -394,7 +393,7 @@ mileages:
 
           <div class="div-partners" style="text-align:center;">
             {% for eachpartner in page.partners %}
-            <img alt="{{ eachpartner.name }}" src="{{ site.baseurl }}/images/partners/{{ eachpartner.logo }}" style="max-height: 85px;display: inline-block;margin-right: 15px;margin-left: 15px;margin-bottom: 30px;">
+            <img  class="wow fadeInDown" alt="{{ eachpartner.name }}" src="{{ site.baseurl }}/images/partners/{{ eachpartner.logo }}">
             {% endfor %}
           </div>
 

@@ -194,6 +194,12 @@
   }
 }
 
+@media (max-width: 768px) {
+  .navbar-default.navbar-custom .navbar-nav>li:last-of-type>a.navbar-btn {
+    margin-bottom: 15px;
+  }
+}
+
 @media (min-width: 768px) {
   .navbar-default.navbar-custom .navbar-nav>li>a {
     padding-left: 12px;

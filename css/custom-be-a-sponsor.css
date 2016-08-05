@@ -87,13 +87,13 @@
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .panel-default.panel-figure {
-    min-height: 530px;
+    min-height: 550px;
   }
 }
 
 @media (min-width: 1200px) {
   .panel-default.panel-figure {
-    min-height: 530px;
+    min-height: 550px;
   }
 }
 
@@ -155,7 +155,7 @@
 }
 
 .section-default.section-orange .panel-default.panel-doc {
-  background-color: #f6af75;
+  background-color: #f8a24a;
 }
 
 .panel-default.panel-doc .btn.btn-default {
