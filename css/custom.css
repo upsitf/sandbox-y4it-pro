@@ -797,6 +797,29 @@ footer.section-violet>.container-fluid>.row:not(.row-limit) span {
   color: white;
 }
 
+.section-dark span,
+.section-default.section-dark span,
+.section-dark p,
+.section-default.section-dark p,
+.section-dark strong,
+.section-default.section-dark strong,
+.section-dark strong,
+.section-default.section-dark strong,
+.section-dark h1,
+.section-default.section-dark h1,
+.section-dark h2,
+.section-default.section-dark h2,
+.section-dark h3,
+.section-default.section-dark h3,
+.section-dark h4,
+.section-default.section-dark h4,
+.section-dark h5,
+.section-default.section-dark h5,
+.section-dark h6,
+.section-default.section-dark h6 {
+  color: white;
+}
+
 .section-orange,
 .section-default.section-orange {
   background-color: #f57c00;

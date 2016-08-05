@@ -77,6 +77,9 @@
   padding: 15px 15px 0.1px 15px;
   border-style: none;
   /*border-radius: 0;*/
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -159,7 +162,8 @@
 }
 
 .panel-default.panel-doc .btn.btn-default {
-  margin-bottom: 12.5px;
+  /*margin-bottom: 12.5px;*/
+  margin-bottom: 22.5px;
   margin-top: 7.5px;
 }
 
@@ -198,4 +202,13 @@
 
 .section-default.section-orange .panel-default.panel-doc p {
   color: white;
+}
+
+.section-title .div-cta-layer {
+  padding-top: 85px;
+  padding-bottom: 85px;
+}
+
+.section-title.section-dark .div-cta-layer {
+  background-color: rgba(0,0,0,0.5);
 }
