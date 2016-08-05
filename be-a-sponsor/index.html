@@ -21,28 +21,31 @@ photosLounge:
 
 sponsors:
  - name: "Accenture"
-   logo: "accenture.png"
+   logo: "logo_past-accenture.png"
  - name: "Acer"
-   logo: "acer.png"
+   logo: "logo_past-acer.png"
  - name: "Asus"
-   logo: "asus.png"
+   logo: "logo_past-asus.png"
  - name: "Enchanted Kingdom"
-   logo: "enchanted.png"
+   logo: "logo_past-ek.png"
  - name: "Intel"
-   logo: "intel.png"
+   logo: "logo_past-intel.png"
  - name: "ION Management Solutions"
+   logo: "logo_past-ion.png"
  - name: "Jobstreet"
-   logo: "jobstreet.png"
+   logo: "logo_sponsor-jobstreet.png"
  - name: "Legend Hotels International, Inc. - Kabayan Hotel"
-   logo: "legendhotels.png"
+   logo: "logo_past-kabayan.png"
  - name: "Microsoft Philippines"
-   logo: "microsoft.png"
+   logo: "logo_past-microsoft.png"
  - name: "Mozilla Philippines"
-   logo: "mozilla.png"
+   logo: "logo_past-mozilla.png"
  - name: "Oracle"
+   logo: "logo_past-oracleacademy.png"
  - name: "PLDT"
+   logo: "logo_past-pldt.png"
  - name: "Smart"
-   logo: "smart.png"
+   logo: "logo_past-smart.png"
 
 
 otherSponsors:
@@ -82,12 +85,12 @@ otherSponsors:
 
 
 partners:
- - name: Computing Society of the Philippines
-   logo: compsoc.png
- - name: Philippine Society of IT Educators
-   logo: psite.png
- - name: Philippine Software Industry Association
-   logo: psia.png
+ - name: "Computing Society of the Philippines"
+   logo: "logo_org-compsoc.png"
+ - name: "Philippine Society of IT Educators"
+   logo: "logo_org-psite.png"
+ - name: "Philippine Software Industry Association"
+   logo: "logo_org-psia.png"
 
 
 mileages:
@@ -372,7 +375,7 @@ mileages:
             <small>Through the Years</small>
           </h1>
 
-          <div class="div-partners" style="text-align:center;">
+          <div class="div-partners div-partners-small" style="text-align:center;">
             {% for eachsponsor in page.sponsors %}
             <img alt="{{ eachsponsor.name }}" class="wow fadeInDown" src="{{ site.baseurl }}/images/partners/{{ eachsponsor.logo }}">
             {% endfor %}
@@ -391,7 +394,7 @@ mileages:
             Partner Organizations<br/>
           </h1>
 
-          <div class="div-partners" style="text-align:center;">
+          <div class="div-partners div-partners-small" style="text-align:center;">
             {% for eachpartner in page.partners %}
             <img  class="wow fadeInDown" alt="{{ eachpartner.name }}" src="{{ site.baseurl }}/images/partners/{{ eachpartner.logo }}">
             {% endfor %}

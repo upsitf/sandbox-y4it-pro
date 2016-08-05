@@ -16,7 +16,7 @@ switchSpeakersHeader: false
 switchParallel: false
 switchPayment: false
 switchFAQ: true
-switchSponsor: false
+switchSponsor: true
 switchPartners: true
 switchTerms: true
 
@@ -151,22 +151,28 @@ parallels:
 
 
 sponsors:
+ - id: "cognizant"
+   name: "Cognizant"
+   logo: "logo_sponsor-cognizant.png"
  - id: "jobstreet"
    name: "Jobstreet"
-   logo: "logo_jsph_transparent.png"
+   logo: "logo_sponsor-jobstreet.png"
  - id: "payoneer"
    name: "Payoneer"
-   logo: "Payoneer_Logo_800_01.png"
+   logo: "logo_sponsor-payoneer.png"
 
 
 media:
- - id: "speedmag"
-   name: "Speed Magazine"
-   logo: "Speed_Magazine.png"
-   type: "media"
+ - id: "manilabulletin"
+   name: "Manila Bulletin"
+   logo: "logo_media-manilabulletin.png"
  - id: "scoutmag"
    name: "Scout Magazine"
-   logo: "Scout___Black__2_.png"
+   logo: "logo_media-scoutmag.png"
+ - id: "speedmag"
+   name: "Speed Magazine"
+   logo: "logo_media-speedmag.png"
+
 
 
 inclusions:

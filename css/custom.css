@@ -883,9 +883,15 @@ p {
 }
 
 .div-partners img {
-  max-height: 85px;
   display: inline-block;
+  max-height: 85px;
+  max-width: 300px;
+  vertical-align: middle;
   margin-right: 15px;
   margin-left: 15px;
   margin-bottom: 30px;
+}
+
+.div-partners.div-partners-small img {
+  max-width: 150px;
 }
