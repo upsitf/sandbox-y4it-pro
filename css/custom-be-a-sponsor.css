@@ -1,0 +1,197 @@
+.section-title .div-title-layer-1 {
+  background-color: rgba(244, 126, 33, 0.75);
+}
+
+.section-title h1 {
+  font-family: Roboto Slab;
+}
+
+.section-orange.section-title h1 {
+  color: white;
+}
+
+.section-orange.section-title span {
+  color: white;
+}
+
+.span-sponsor-highlight {
+  font-weight: 400;
+  line-height: 1.45em;
+  font-size: 1.75em;
+}
+
+.section-violet .span-sponsor-highlight,
+.section-default.section-violet .span-sponsor-highlight {
+  color: #9e8dca;
+}
+
+.span-sponsor-highlight .span-sponsor-highlight-em {
+  font-size: 1.5em;
+}
+
+.section-default .h2-title-minor {
+  line-height: 1em;
+}
+
+.section-default .h2-title-minor small {
+  display: block;
+}
+
+.span-figure .span-number {
+  display: block;
+  color: white;
+  font-family: Roboto Slab;
+  line-height: 1em;
+}
+
+.section-violet .span-sponsor-highlight .span-sponsor-highlight-em,
+.section-default.section-violet .span-sponsor-highlight .span-sponsor-highlight-em {
+  color: white;
+}
+
+.span-sponsor-highlight+p {
+  margin-bottom: 30px;
+}
+
+.section-orange .span-copy {
+  color: white;
+}
+
+.span-copy-above-title {
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+.span-copy-above-title+h1.h1-title {
+  margin-top: 0 !important;
+}
+
+.span-copy .span-copy-em {
+  display: block;
+  font-family: Roboto Slab;
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.panel-default.panel-figure {
+  padding: 15px 15px 0.1px 15px;
+  border-style: none;
+  /*border-radius: 0;*/
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .panel-default.panel-figure {
+    min-height: 530px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .panel-default.panel-figure {
+    min-height: 530px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .panel-default.panel-figure {
+    min-height: 530px;
+  }
+}
+
+.section-default.section-violet .panel-default.panel-figure {
+  background-color: #655295;
+}
+
+.section-default.section-violet .panel-default.panel-figure * {
+  color: white;
+}
+
+.panel-default.panel-figure img {
+  margin-bottom: 15px;
+}
+
+.ul-partners {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  line-height: 3em;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  font-size: 0.75em;
+}
+
+.ul-partners li {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.div-mileage {
+  margin-bottom: 30px;
+}
+
+
+.div-mileage img {
+  margin-bottom: 15px;
+}
+
+.div-mileage h2 {
+  font-family: Roboto Slab;
+  line-height: 1em;
+}
+
+.section-default.section-orange .div-mileage h2 {
+  color: white;
+}
+
+.panel-default.panel-doc {
+  padding: 15px 15px 0.1px 15px;
+  border-style: none;
+  text-align: center;
+  /*border-radius: 0;*/
+}
+
+.section-default.section-orange .panel-default.panel-doc {
+  background-color: #f6af75;
+}
+
+.panel-default.panel-doc .btn.btn-default {
+  margin-bottom: 12.5px;
+  margin-top: 7.5px;
+}
+
+.section-orange .panel-default.panel-doc .btn.btn-white-on-orange,
+.section-default.section-orange .panel-default.panel-doc .btn.btn-white-on-orange,
+.section-orange .panel-default.panel-doc .btn.btn-default.btn-white-on-orange,
+.section-default.section-orange .panel-default.panel-doc .btn.btn-default.btn-white-on-orange {
+  color: white;
+  background-color: transparent;
+  border-color: white;
+  -webkit-transition: 250ms ease-out;
+  -moz-transition: 250ms ease-out;
+  -o-transition: 250ms ease-out;
+  transition: 250ms ease-out;
+}
+
+.section-orange .panel-default.panel-doc .btn.btn-white-on-orange:hover,
+.section-default.section-orange .panel-default.panel-doc .btn.btn-white-on-orange:hover,
+.section-orange .panel-default.panel-doc .btn.btn-white-on-orange:focus,
+.section-default.section-orange .panel-default.panel-doc .btn.btn-white-on-orange:focus,
+.section-orange .panel-default.panel-doc .btn.btn-default.btn-white-on-orange:hover,
+.section-default.section-orange .panel-default.panel-doc .btn.btn-default.btn-white-on-orange:hover,
+.section-orange .panel-default.panel-doc .btn.btn-default.btn-white-on-orange:focus,
+.section-default.section-orange .panel-default.panel-doc .btn.btn-default.btn-white-on-orange:focus {
+  color: #f57c00;
+  background-color: white;
+  -webkit-transition: 250ms ease-out;
+  -moz-transition: 250ms ease-out;
+  -o-transition: 250ms ease-out;
+  transition: 250ms ease-out;
+}
+
+.panel-default.panel-doc p {
+  text-align: left;
+}
+
+.section-default.section-orange .panel-default.panel-doc p {
+  color: white;
+}

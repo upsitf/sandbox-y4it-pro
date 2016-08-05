@@ -112,7 +112,8 @@ a:focus>.item-speaker img {
   color: #333;
 }
 
-.section-default:not(.section-gray) .item-speaker h4 {
+.section-default.section-violet .item-speaker h4.
+.section-default.section-orange .item-speaker h4 {
   color: white;
 }
 
@@ -126,7 +127,8 @@ a:focus>.item-speaker img {
   margin-top: 5px;
 }
 
-.section-default:not(.section-gray) .item-speaker h4 small {
+.section-default.section-white .item-speaker h4 small,
+.section-default.section-orange .item-speaker h4 small {
   color: #9e8dca;
 }
 
@@ -381,12 +383,15 @@ a:focus>.item-speaker img {
 
 /* Inclusions */
 
-.section-default:not(.section-gray) .item-inclusion h2,
-.section-default:not(.section-gray) .item-inclusion p strong {
+.section-default.section-violet .item-inclusion h2,
+.section-default.section-orange .item-inclusion h2,
+.section-default.section-violet .item-inclusion p strong,
+.section-default.section-orange  .item-inclusion p strong {
   color: white;
 }
 
-.section-default:not(.section-gray) .item-inclusion h2 {
+.section-default.section-violet .item-inclusion h2,
+.section-default.section-orange .item-inclusion h2 {
   font-family: Roboto Slab;
   line-height: 1em;
 }
@@ -438,7 +443,8 @@ a:focus>.item-speaker img {
   font-weight: 500;
 }
 
-.section-default:not(.section-gray) .item-faq p strong {
+.section-default.section-violet .item-faq p strong.
+.section-default.section-orange .item-faq p strong {
   color: white;
 }
 
@@ -468,12 +474,12 @@ a:focus>.item-speaker img {
 }
 
 @media (min-width: 768px) {
-  .section-default h1.section-title.section-title-left-sm {
+  .section-default h1.h1-title.h1-title-left-sm {
     text-align: left;
   }
 }
 
-.section-default h1.section-title.section-title-small {
+.section-default h1.h1-title.h1-title-small {
   font-size: 2em;
 }
 
@@ -491,7 +497,7 @@ a:focus>.item-speaker img {
   }
 }
 
-.section-default .div-organizer h1.section-title {
+.section-default .div-organizer h1.h1-title {
   margin-bottom: 15px;
   margin-top: 0;
 }
@@ -516,11 +522,13 @@ footer>.container-fluid>.row.row-limit>div {
   }
 }
 
-footer:not(.section-gray)>.container-fluid>.row.row-limit>div:nth-of-type(3) {
+footer.section-violet>.container-fluid>.row.row-limit>div:nth-of-type(3),
+footer.section-orange>.container-fluid>.row.row-limit>div:nth-of-type(3) {
   text-align: right;
 }
 
-footer:not(.section-gray)>.container-fluid>.row.row-limit>div:nth-of-type(3) span {
+footer.section-violet>.container-fluid>.row.row-limit>div:nth-of-type(3) span,
+footer.section-orange>.container-fluid>.row.row-limit>div:nth-of-type(3) span {
   color: white;
 }
 
@@ -552,10 +560,10 @@ footer.section-violet>.container-fluid>.row.row-limit>div:first-of-type a i.fa {
   transition: 250ms ease-out;
 }
 
-footer:not(.section-gray)>.container-fluid>.row.row-limit>div:first-of-type a:hover,
-footer:not(.section-gray)>.container-fluid>.row.row-limit>div:first-of-type a:focus,
-footer:not(.section-gray)>.container-fluid>.row.row-limit>div:first-of-type a:hover i.fa,
-footer:not(.section-gray)>.container-fluid>.row.row-limit>div:first-of-type a:focus i.fa {
+footer.section-violet>.container-fluid>.row.row-limit>div:first-of-type a:hover,
+footer.section-violet>.container-fluid>.row.row-limit>div:first-of-type a:focus,
+footer.section-violet>.container-fluid>.row.row-limit>div:first-of-type a:hover i.fa,
+footer.section-violet>.container-fluid>.row.row-limit>div:first-of-type a:focus i.fa {
   color: white !important;
   -webkit-transition: 250ms ease-out;
   -moz-transition: 250ms ease-out;
@@ -639,6 +647,14 @@ footer.section-violet>.container-fluid>.row:not(.row-limit) span {
   transition: 250ms ease-out;
 }
 
+@media (max-width: 768px) {
+  .btn-lg,
+  .btn.btn-lg,
+  .btn.btn-default.btn-lg {
+    line-height: 1em !important;
+  }
+}
+
 .btn.btn-orange,
 .btn.btn-default.btn-orange {
   color: #f47e21;
@@ -708,7 +724,9 @@ footer.section-violet>.container-fluid>.row:not(.row-limit) span {
   transition: 250ms ease-out;
 }
 
+.section-orange .btn.btn-white-on-orange,
 .section-default.section-orange .btn.btn-white-on-orange,
+.section-orange .btn.btn-default.btn-white-on-orange,
 .section-default.section-orange .btn.btn-default.btn-white-on-orange {
   color: white;
   background-color: transparent;
@@ -719,9 +737,13 @@ footer.section-violet>.container-fluid>.row:not(.row-limit) span {
   transition: 250ms ease-out;
 }
 
+.section-orange .btn.btn-white-on-orange:hover,
 .section-default.section-orange .btn.btn-white-on-orange:hover,
+.section-orange .btn.btn-white-on-orange:focus,
 .section-default.section-orange .btn.btn-white-on-orange:focus,
+.section-orange .btn.btn-default.btn-white-on-orange:hover,
 .section-default.section-orange .btn.btn-default.btn-white-on-orange:hover,
+.section-orange .btn.btn-default.btn-white-on-orange:focus,
 .section-default.section-orange .btn.btn-default.btn-white-on-orange:focus {
   color: #f57c00;
   background-color: white;
@@ -780,7 +802,7 @@ footer.section-violet>.container-fluid>.row:not(.row-limit) span {
   background-color: #f57c00;
 }
 
-.section-default .section-title {
+.section-default h1.h1-title {
   font-family: Roboto Slab;
   font-size: 3.5em;
   font-weight: 500;
@@ -788,17 +810,18 @@ footer.section-violet>.container-fluid>.row:not(.row-limit) span {
 }
 
 @media (max-width: 768px) {
-  .section-default .section-title {
+  .section-default h1.h1-title {
     font-size: 2.75em;
     font-weight: 600;
   }
 }
 
-.section-default:not(.section-gray) .section-title {
+.section-default.section-violet h1.h1-title,
+.section-default.section-orange h1.h1-title {
   color: white;
 }
 
-.section-default .section-title small {
+.section-default h1.h1-title small {
   display: block;
   font-size: 0.3em;
   margin-top: 3px;
@@ -806,11 +829,11 @@ footer.section-violet>.container-fluid>.row:not(.row-limit) span {
   font-weight: 300;
 }
 
-.section-default.section-violet .section-title small {
+.section-default.section-violet h1.h1-title small {
   color: #9e8dca;
 }
 
-.section-default.section-orange .section-title small {
+.section-default.section-orange h1.h1-title small {
   color: #f7c19c;
 }
 
@@ -822,7 +845,7 @@ footer.section-violet>.container-fluid>.row:not(.row-limit) span {
   font-size: 1.5em;
 }
 
-.section-title+.span-copy {
+.h1-title+.span-copy {
   margin-bottom: 45px;
   margin-top: -15px;
 }
@@ -844,10 +867,17 @@ p {
   color: #f7c19c;
 }
 
-.section-default:not(.section-gray) p a {
+.section-default.section-violet p a,
+.section-default.section-orange p a {
   color: white;
 }
 
-.section-default:not(.section-gray) div.bar {
+.section-default.section-violet div.bar,
+.section-default.section-orange div.bar {
   background-color: white;
+}
+
+.section-default h2.h2-title {
+  font-family: Roboto Slab;
+  font-weight: 500;
 }

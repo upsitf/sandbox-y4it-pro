@@ -71,7 +71,7 @@ animate: true
           <img class="img-responsive img-bubble wow fadeInDown floating" src="{{ site.baseurl }}/images/art-bubble.png" style="">
         </div>
         <div class="col-lg-8 col-lg-pull-4 col-lg-offset-0 col-md-8 col-md-offset-0 col-md-pull-4 col-sm-8 col-sm-offset-2 col-sm-pull-0 col-xs-12 col-xs-pull-0 col-xs-offset-0">
-          <h1 class="section-title">Announcement</h1>
+          <h1 class="h1-title">Announcement</h1>
 
           {% include panel-announcement.html %}
 
@@ -86,7 +86,7 @@ animate: true
     <div class="container-fluid">
       <div class="row row-limit">
         <div class="col-lg-12">
-          <h1 class="section-title">
+          <h1 class="h1-title">
             Speakers
           </h1>
           <span class="span-copy">Imagine, innovate and be inspired by this year's lineup of masters from the IT industry</span>
@@ -94,7 +94,7 @@ animate: true
       </div>
       <div class="row">
         <div class="col-lg-12">
-          <h1 class="section-title hidden">Speakers</h1>
+          <h1 class="h1-title hidden">Speakers</h1>
           {% if site.switchSpeakersHeader == true %}
           <div class="row row-limit">
             <div class="col-lg-12">
@@ -191,7 +191,7 @@ animate: true
               }
             }
           </style>
-          <h1 class="section-title hidden">Event Details</h1>
+          <h1 class="h1-title hidden">Event Details</h1>
 
           <div class="row">
             <div class="col-lg-6 col-lg-push-6 col-md-6 col-md-push-6 col-sm-12 col-xs-12">
@@ -281,7 +281,7 @@ animate: true
     <div class="container-fluid">
       <div class="row row-limit">
         <div class="col-lg-12">
-          <h1 class="section-title">
+          <h1 class="h1-title">
             <small>The Y4iT<br/></small>
             Parallel Sessions
           </h1>
@@ -317,7 +317,7 @@ animate: true
       <div class="row row-limit">
         <div class="col-lg-12">
 
-          <h1 class="section-title hidden">About the Event</h1>
+          <h1 class="h1-title hidden">About the Event</h1>
 
           <img class="img-responsive wow fadeInDown" src="{{ site.baseurl }}/images/logo-y4it-wordmark.png" style="width:100%;max-width:300px;margin:auto;margin-bottom:40px;">
           <p style="max-width:480px;margin-left:auto;margin-right:auto;text-align:center;">
@@ -356,16 +356,16 @@ animate: true
       <div class="row row-limit">
         <div class="col-lg-12">
 
-          <h1 class="section-title">
+          <h1 class="h1-title">
             Congress Badges
             <small class="section-subtitle">Per Day</small>
           </h1>
 
-        </div>
+        <!--/div>
       </div>
 
       <div class="row row-limit">
-        <div class="col-lg-12">
+        <div class="col-lg-12"-->
 
           <div class="panel panel-default panel-badges wow fadeInDown" style="background-image:url('{{ site.baseurl }}/images/panel-badges-bg-01.png')">
             <div class="row">
@@ -429,7 +429,7 @@ animate: true
       <div class="row row-limit">
         <div class="col-lg-12">
 
-          <h1 class="section-title">Badge Inclusions</h1>
+          <h1 class="h1-title">Badge Inclusions</h1>
           <div class="div-inclusions">
 
             {% for eachinclusion in site.inclusions %}
@@ -461,10 +461,10 @@ animate: true
       <div class="row row-limit">
         <div class="col-lg-12">
 
-          <h1 class="section-title">Registration</h1>
+          <h1 class="h1-title">Registration</h1>
 
           <p class="text-center">
-            <a id="btn-register" class="btn btn-default btn-block-xs btn-white btn-white-on-orange" role="button" href="https://reg2016.y4it.org" target="_blank">Register and <span class="visible-xs"><br/></span>get badges</a><br/>
+            <a id="btn-register" class="btn btn-default btn-block-xs btn-lg btn-white-on-orange" role="button" href="https://reg2016.y4it.org" target="_blank">Register <br class="visible-xs"/>and Get <br class="visible-xs"/>Badges</a><br/>
             We will be releasing payment details here, so watch this space!<br/>
             In the meantime, be sure to
             <a target="_blank" href="https://www.facebook.com/ilove.Y4iT/">like us on Facebook</a>
@@ -482,7 +482,7 @@ animate: true
       <div class="row row-limit">
         <div class="col-lg-12">
 
-          <h1 class="section-title">Modes of Payment</h1>
+          <h1 class="h1-title">Modes of Payment</h1>
 
           <div class="row row-buttons">
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center">
@@ -510,7 +510,7 @@ animate: true
       <div class="row row-limit">
         <div class="col-lg-12">
 
-          <h1 class="section-title">
+          <h1 class="h1-title">
             FAQ
             <small>Frequently Asked Questions</small>
           </h1>
@@ -544,18 +544,28 @@ animate: true
   </section>
   {% endif %}
 
-  {% if site.switchSponsors == true %}
-  <section id="sponsors" class="section-default section-color-2 section-gray">
+  {% if site.switchPartners == true %}
+  <section id="partners" class="section-default section-white">
     <div class="container-fluid">
       <div class="row row-limit">
         <div class="col-lg-12">
 
-          <h1 class="section-title">Sponsors</h1>
+          <h1 class="h1-title">Partners</h1>
 
-          <div class="div-sponsors" style="text-align:center;">
-          {% for eachsponsor in site.sponsors %}
-          <img alt="{{ eachsponsor.name }}" src="{{ site.baseurl }}/images/sponsors/{{ eachsponsor.logo }}" style="max-height: 85px;display: inline-block;margin-right: 15px;margin-left: 15px;margin-bottom: 30px;">
-          {% endfor %}
+          <h2 class="h2-title">Sponsors</h2>
+
+          <div class="div-partners" style="text-align:center;">
+            {% for eachsponsor in site.sponsors %}
+            <img alt="{{ eachsponsor.name }}" src="{{ site.baseurl }}/images/partners/{{ eachsponsor.logo }}" style="max-height: 85px;display: inline-block;margin-right: 15px;margin-left: 15px;margin-bottom: 30px;">
+            {% endfor %}
+          </div>
+
+          <h2 class="h2-title">Media Partners</h2>
+
+          <div class="div-partners" style="text-align:center;">
+            {% for eachmedia in site.media %}
+            <img alt="{{ eachsponsor.name }}" src="{{ site.baseurl }}/images/partners/{{ eachmedia.logo }}" style="max-height: 85px;display: inline-block;margin-right: 15px;margin-left: 15px;margin-bottom: 30px;">
+            {% endfor %}
           </div>
 
         </div>
@@ -570,7 +580,7 @@ animate: true
       <div class="row row-limit">
         <div class="col-lg-12">
 
-          <h1 class="section-title">Terms &amp; Conditions</h1>
+          <h1 class="h1-title">Terms &amp; Conditions</h1>
           <div class="div-terms">
 
             {% for eachterm in site.terms %}
@@ -597,7 +607,7 @@ animate: true
           <img id="logo-sitf" class="img-responsive wow fadeInDown" src="{{ site.baseurl }}/images/logo-sitf.png">
         </div>
         <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 div-organizer">
-          <h1 class="section-title section-title-left-sm section-title-small">The Organizer</h1>
+          <h1 class="h1-title h1-title-left-sm h1-title-small">The Organizer</h1>
           {% for eachdescription in site.organizerDescription %}
           <p class="center-xs">{{ eachdescription }}</p>
           {% endfor %}

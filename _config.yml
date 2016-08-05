@@ -17,7 +17,7 @@ switchParallel: false
 switchPayment: false
 switchFAQ: true
 switchSponsor: false
-switchSponsors: true
+switchPartners: true
 switchTerms: true
 
 switchFooterSitemap: false
@@ -154,15 +154,19 @@ sponsors:
  - id: "jobstreet"
    name: "Jobstreet"
    logo: "logo_jsph_transparent.png"
-   type: ""
  - id: "payoneer"
    name: "Payoneer"
    logo: "Payoneer_Logo_800_01.png"
-   type: ""
+
+
+media:
  - id: "speedmag"
    name: "Speed Magazine"
    logo: "Speed_Magazine.png"
    type: "media"
+ - id: "scoutmag"
+   name: "Scout Magazine"
+   logo: "Scout___Black__2_.png"
 
 
 inclusions:

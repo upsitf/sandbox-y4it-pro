@@ -39,7 +39,7 @@
   }
 }
 
-.section-default h1.section-title {
+.section-default h1.h1-title {
   text-align: center;
   text-transform: uppercase;
   line-height: 1em;
@@ -47,6 +47,9 @@
   margin-bottom: 45px;
 }
 
+.section-default h2.h2-title {
+  text-align: center;
+}
 
 
 .section-default h1:empty {
