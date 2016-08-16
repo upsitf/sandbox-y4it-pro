@@ -1,9 +1,10 @@
 <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 div-speaker">
   <a id="speaker-{% if forloop.index < 10 %}{{ "0" }}{% endif %}{{ forloop.index }}">
     <div class="item-speaker">
+
       <img class="img-responsive img-circle img-speaker" src="{{ site.baseurl }}/images/speakers/{{ eachspeaker.image }}" style="">
       <h4>
-        {{ eachspeaker.name }}<br/>
+        {{ eachspeaker.name }}{% if eachspeaker.special %}{% for eachspecial in eachspeaker.special %}<span class="span-special" title="{{ eachspecial.title }}" alt="{{ eachspecial.title }}">{{ eachspecial.display }}</span>{% endfor %}{% endif %}<br/>
         <small>
           {% for eachprofessional in eachspeaker.professional %}
           {{ eachprofessional.designation }} at {{ eachprofessional.company }}
@@ -27,12 +28,16 @@
             <small class="span-company">
               {% for eachprofessional in eachspeaker.professional %}
               {{ eachprofessional.designation }} at {{ eachprofessional.company }}
-              {% if forloop.last != true %} | {% endif %}
+              {% if forloop.last != true %}<br/>{% endif %}
               {% endfor %}
 
             </small>
           </h4>
-          <p>{{ eachspeaker.description }}</p>
+          <p>
+            {% for eachdescription in eachspeaker.description %}
+            {{ eachdescription }}{% if forloop.last != true %}<br/><br/>{% endif %}
+            {% endfor %}
+          </p>
 
         </div>
       </div>

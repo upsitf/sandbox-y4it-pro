@@ -73,6 +73,19 @@
   }
 }
 
+a>.item-speaker .span-special {
+  display: inline-block;
+  font-family: Roboto Slab;
+  padding: 2px 4px;
+  margin-left: 4px;
+  background-color: #1c8bbe;
+  color: white;
+  border-radius: 5px;
+  font-size: 0.75em;
+  vertical-align: top;
+  cursor: default;
+}
+
 a>.item-speaker img {
   border-style: solid;
   border-color: #f47e21;

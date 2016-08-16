@@ -56,6 +56,91 @@ speakers:
    social:
     - type: ""
       url: ""
+ - id: "mwarren"
+   name: "Miguel Warren"
+   image: "Warren_Miguel-edit-web.jpg"
+   professional:
+    - designation: "Country Manager"
+      company: "Payoneer"
+   description:
+    - "Miguel is the Country Manager of Payoneer Philippines, a leading cross-border payments company for small businesses and professionals worldwide. Founded in 2005 and based in New York, Payoneer is venture-backed, profitable and ranked in the top 100 of Inc. 5000’s Financial Services companies. Miguel has been involved in financial services technology since 2003 with global solution providers such as FIS, SunGard and GFG Group (now Wirecard). He has worked with banks, mobile payment operators and payment schemes (Visa, Mastercard, UnionPay) across South East Asia to deliver card, mobile and cross border payment solutions for consumer and business-to-business (B2B) payments."
+    - "Miguel graduated from Ateneo De Manila University with a Bachelor of Science in Management Engineering."
+   social:
+    - type: ""
+      url: ""
+ - id: "jchen"
+   name: "Joyce Chen"
+   image: "Chen_Joyce-edit-web.jpg"
+   professional:
+    - designation: "GSE Strategy & Development Senior Manager"
+      company: "ICANN"
+   description: "Joyce joined ICANN staff on February 2016. She currently serves the organization as GSE Strategy and Development Senior Manager in the Asia Pacific APAC Hub based in Singapore. Her main focus will be in deepening ICANN’s engagement within Southeast Asia and other countries in the APAC region. She previously worked in Singapore Institute of Technology for Corporate Communications as well as Strategic Planning. Joyce has experience in corporate development strategies and media relations. Joyce was also a young diplomat with Singapore’s Ministry of Foreign Affairs upon graduating from National University of Singapore. She handled the ASEAN portfolio while in the Foreign Affairs."
+   social:
+    - type: ""
+      url: ""
+ - id: "mibrahim"
+   name: "Monchito Ibrahim"
+   image: "Ibrahim_Monchito-edit-web.jpg"
+   professional:
+    - designation: "Consultant for eInnovation"
+      company: "Department of Information & Communications Technology"
+    - designation: "President"
+      company: "UP System IT Foundation, Inc."
+   description:
+    - "Currently with the Department of Information and Communications Technology (DICT) as Consultant for eInnovation, he served as Commissioner of the former Commission on Information and Communications Technology (CICT) from 2007 until 2011."
+    - "In the course of his extensive involvement in the IT industry, he has worked for multinational companies like Fujitsu, WeServ, Siemens-Nixdorf, Comparex Germany and Unisys Australia in various executive positions. During the 2012 International ICT Awards organized by the Canadian Chamber of Commerce of the Philippines, he was given the ICT Individual Contributor Award for his contributions to the growth of the Philippine IT-BPO Industry. He was also recently named as one of the Ten ICT Industry Movers and Shakers for the period 2002-2012 and recipient of the Boards’ Choice as Government Champion, both given by the Contact Center Association of the Philippines (CCAP)."
+   social:
+    - type: ""
+      url: ""
+ - id: "shermoso"
+   name: "Sheryl Hermoso"
+   image: "Hermoso_Sheryl-edit-web.jpg"
+   professional:
+    - designation: "Senior Training Officer"
+      company: "Asia-Pacific Network Information Centre (APNIC)"
+   description:
+    - "Sheryl has had various roles as Network and Systems Administrator before joining the Asia Pacific Network Information Centre (APNIC). She started her career as a Technical Support Assistant while studying at the University of the Philippines."
+    - "She later finished her degree in BS Computer Engineering and continued to work in the same University as a Network Engineer, where she managed the Diliman Network (DilNet) backbone and wireless infrastructure."
+    - "Her areas of interest include wireless and Wi-Fi technologies, DNS/DNSSEC, IPv6, and network security concerns, among others."
+   social:
+    - type: ""
+      url: ""
+ - id: "jjanssens"
+   name: "Johan Janssens"
+   image: "Janssens_Johan-edit-web.jpg"
+   professional:
+    - designation: "Chief Innovator"
+      company: "Timble"
+   description: "Johan is a Belgian web architect, tech entrepreneur and free software advocate. In the past 10 years Johan has spent most his time creating and advocating free and open source software and helping evolve the world wide web. Johan is most known as co-founder and lead developer of Joomla, an open source content management system used by more than 3% of all the sites on the internet. Johan is passionate about creating software architectures that help other developers get things done faster. Today, Johan spends most of his time helping governments and large organisations implementing open data web solutions using open source technologies. Johan is Director of Timble and founder of Joomlatools and Wordplugs. Johan is a firm believer in sharing and collaboration, in spreading good ideas and in the power of technology to make the world a better place. He continually pushes the people around him to be creative and connect the dots."
+   social:
+    - type: ""
+      url: ""
+ - id: "pgioca"
+   name: "Philip Gioca"
+   image: "Gioca_Philip-edit-web.jpg"
+   professional:
+    - designation: "Country Manager"
+      company: "Jobstreet.com Philippines"
+   description: "As Jobstreet.com Philippines’s top executive, Philip is responsible for the overall strategy and execution for the company’s online recruitment services in the Philippines. Prior to his installation in his new role earlier this year, he was the company&apos;s Director for Sales, where he managed and grew sales through broad organizational developments, marketing strategies, and leadership. He spearheaded various sales teams to be in a market leading position. Prior to his years in JobStreet.com, he had been a part of the executive committee of the leading multinational insurance company in the country. He graduated with a degree of BS Management in Ateneo de Manila University."
+   social:
+    - type: ""
+      url: ""
+ - id: "hduh"
+   name: "Henry Duh"
+   image: "Duh_Henry-edit-web.jpg"
+   special:
+    - display: "ACM"
+      title: "ACM Distinguished Speaker"
+   professional:
+    - designation: "Director"
+      company: "Human Interface Technology Laboratory Australia"
+   description: "Professor Duh is the Director of Human Interface Technology Laboratory Australia and Professor of School of Engineering & ICT at University of Tasmania. He is a Fellow of the Institution of Engineering and Technology and British Computer Society, ACM Distinguished Speaker; the Australian National Representative of IFIP TC on HCI and Entertainment Computing; Steering committee chair of ChineseCHI and steering committee member of IEEE ISMAR. He is the Editor-in-Chief, Journal of Visual Languages and Computing (Springer), editorial board members of HCI book series (Springer), and published more than 120 conference and journal papers in HCI area. Professor Duh has served the program/organizing committee for IEEE/ACM International Symposium of Mixed and Augmented Reality (ISMAR) and IEEE Virtual Reality for years. His research focuses on augmented/virtual reality, user experience and interaction design, and gaming effects in mobile systems."
+   social:
+    - type: ""
+      url: ""
+
+
+
 
 speakersLegacy:
  - id: "caragon"
@@ -68,6 +153,8 @@ speakersLegacy:
    social:
     - type: ""
       url: ""
+
+
 
 schedules:
  - morning:
@@ -151,6 +238,9 @@ parallels:
 
 
 sponsors:
+ - id: "cdu"
+   name: "Cosmic Digital Universe"
+   logo: "logo_sponsor-cdu.png"
  - id: "cognizant"
    name: "Cognizant"
    logo: "logo_sponsor-cognizant.png"
@@ -160,9 +250,22 @@ sponsors:
  - id: "payoneer"
    name: "Payoneer"
    logo: "logo_sponsor-payoneer.png"
+ - id: "piktochart"
+   name: "Piktochart"
+   logo: "logo_sponsor-piktochart.png"
+ - id: "teradoor"
+   name: "Teradoor"
+   logo: "logo_sponsor-teradoor.png"
+
 
 
 media:
+ - id: "anc"
+   name: "ABS-CBN News Channel (ANC)"
+   logo: "logo_media-anc.png"
+ - id: "bworld"
+   name: "Business World"
+   logo: "logo_media-bworld.png"
  - id: "manilabulletin"
    name: "Manila Bulletin"
    logo: "logo_media-manilabulletin.png"
