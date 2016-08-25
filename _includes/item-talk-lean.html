@@ -1,0 +1,14 @@
+<li>
+  <h4>{{ eachtalk.topic }}</h4>
+  <span>
+  {% if eachtalk.name %}
+  {% if eachtalk.title %}{{ eachtalk.title }} {% endif %}{{ eachtalk.name }}
+  {% else %}
+  {% for onlyspeaker in site.speakers %}
+  {% if onlyspeaker.id == eachtalk.id %}
+  {% if onlyspeaker.title %}{{ onlyspeaker.title }} {% endif %}{{ onlyspeaker.name }}
+  {% endif %}
+  {% endfor %}
+  {% endif %}
+  </span>
+</li>

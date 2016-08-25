@@ -318,6 +318,35 @@ a:focus>.item-speaker img {
   }
 }
 
+/* Details */
+
+
+@media (min-width: 768px) {
+  .item-day>section>section:first-of-type {
+    min-height: 400px;
+  }
+
+  .item-day>section>section:last-of-type {
+    min-height: 200px;
+  }
+}
+
+.list-schedule li {
+  line-height: 1em;
+}
+
+.list-schedule li h4 {
+  font-size: 1em;
+  line-height: 1.35em;
+  margin-bottom: 0;
+  margin-top: 15px;
+}
+
+.list-schedule li h4+span {
+  font-size: 0.8em;
+  line-height: 0.5em !important;
+}
+
 /* insert Parallel Sessions CSS here */
 
 /* About */

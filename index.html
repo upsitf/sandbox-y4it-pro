@@ -194,20 +194,37 @@ animate: true
           <h1 class="h1-title hidden">Event Details</h1>
 
           <div class="row">
-            <div class="col-lg-6 col-lg-push-6 col-md-6 col-md-push-6 col-sm-12 col-xs-12">
-              <div class="embed-sizer">
-                <div id="map" class="embed-responsive embed-responsive-4by3">
-                  <div class="div-map-overlay" onClick="style.pointerEvents='none'"></div>
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d16049.023489840933!2d120.98115258483915!3d14.53198344958815!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcf52fb438feb5a6c!2sSMX+Convention+Center!5e0!3m2!1sen!2sph!4v1457683347486" frameborder="0" style="border:0" allowfullscreen></iframe>
+            {% if site.switchSchedule == "lean" %}
+            <div class="{% if site.switchSchedule == "lean" %}col-lg-6 col-md-6 col-sm-12 col-xs-12 col-lg-push-6 col-md-push-6 col-sm-push-0 col-xs-push-0{% endif %}">
+              <div class="row">
+                <div class="{% if site.switchSchedule == "lean" %}col-lg-12{% endif %}">
+                  <div class="embed-sizer">
+                    <div id="map" class="embed-responsive embed-responsive-4by3">
+                      <div class="div-map-overlay" onClick="style.pointerEvents='none'"></div>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d16049.023489840933!2d120.98115258483915!3d14.53198344958815!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcf52fb438feb5a6c!2sSMX+Convention+Center!5e0!3m2!1sen!2sph!4v1457683347486" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                    <span class="span-caption">
+                      <strong>SMX Convention Center</strong> <br/>
+                      Mall of Asia Complex, Pasay City
+                    </span>
+                  </div>
                 </div>
-                <span class="span-caption">
-                  <strong>SMX Convention Center</strong> <br/>
-                  Mall of Asia Complex, Pasay City
-                </span>
+              </div>
+              <div class="row hidden-sm hidden-xs">
+                <div class="{% if site.switchSchedule == "lean" %}col-lg-12{% endif %}">
+                  <span style="display:block;margin-bottom:30px;">
+                    <strong>Badge claiming starts at 7am</strong> <br/>
+                    Gates open at 7am <br/>
+                    Event proper: 9am - 4pm || Break: 12nn - 1pm <br/>
+                  </span>
+                  <a class="btn btn-default btn-block-xs btn-white-on-violet" role="button" href="{% if page.home != true %}{{ site.baseurl }}{{ '/' }}{% endif %}#badges">Get badges</a>
+                  <a class="btn btn-default btn-block-xs btn-orange" role="button" href="http://reg2016.y4it.org" target="_blank">Register</a>
+                </div>
               </div>
             </div>
+            {% endif %}
 
-            <div class="col-lg-6 col-lg-pull-6 col-md-6 col-md-pull-6 col-sm-12 col-xs-12">
+            <div class="{% if site.switchSchedule == "lean" %}col-lg-6 col-lg-pull-6 col-md-6 col-md-pull-6{% elsif site.switchSchedule == "leanfull" %}col-lg-12 col-md-12{% endif %} col-sm-12 col-xs-12">
               <div class="row row-schedule">
                 {% for eachschedule in site.schedules %}
                 {% assign firstdate = 27 %}
@@ -222,26 +239,34 @@ animate: true
                         {% endif %}
                       </small>
                     </h2>
-                    <section class="production-speakers">
+
+                    {% if eachschedule.morning or eachschedule.afternoon %}
+                    <!--section{% if forloop.first == false %} class="production-speakers"{% endif %}-->
+                    <section>
+                      {% if eachschedule.morning %}
                       <section>
                         <h3>AM Session</h3>
-                        <ol class="list-unstyled">
-                          <li>Lorem Ipsum</li>
-                          <li>Lorem Ipsum</li>
-                          <li>Lorem Ipsum</li>
-                          <li>Lorem Ipsum</li>
+                        <ol class="list-unstyled list-schedule">
+                          {% for eachtalk in eachschedule.morning %}
+                          {% include item-talk-lean.html %}
+                          {% endfor %}
                         </ol>
                       </section>
+                      {% endif %}
+
+                      {% if eachschedule.afternoon %}
                       <section>
                         <h3>PM Session</h3>
-                        <ol class="list-unstyled">
-                          <li>Lorem Ipsum</li>
-                          <li>Lorem Ipsum</li>
-                          <li>Lorem Ipsum</li>
-                          <li>Lorem Ipsum</li>
+                        <ol class="list-unstyled list-schedule">
+                          {% for eachtalk in eachschedule.afternoon %}
+                          {% include item-talk-lean.html %}
+                          {% endfor %}
                         </ol>
                       </section>
+                      {% endif %}
+
                     </section>
+                    {% endif %}
 
                     {% if forloop.index == 2 %}
                     <a class="" id="y66zys6m" target="_blank" href="http://y4it.org/lgknq2mt.png">
@@ -256,8 +281,22 @@ animate: true
                 {% endfor %}
 
               </div>
-              <div class="row">
-                <div class="col-lg-12">
+              <div class="row{% if site.switchSchedule == "lean" %} hidden-lg hidden-md{% endif %}">
+                {% if site.switchSchedule == "leanfull" %}
+                <div class="{% if site.switchSchedule == "leanfull" %}col-lg-6 col-lg-push-6 col-md-6 col-md-push-6 col-sm-6 col-sm-push-6 col-xs-12 col-xs-push-0{% endif %}">
+                  <div class="embed-sizer">
+                    <div id="map" class="embed-responsive embed-responsive-4by3">
+                      <div class="div-map-overlay" onClick="style.pointerEvents='none'"></div>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d16049.023489840933!2d120.98115258483915!3d14.53198344958815!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcf52fb438feb5a6c!2sSMX+Convention+Center!5e0!3m2!1sen!2sph!4v1457683347486" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                    <span class="span-caption">
+                      <strong>SMX Convention Center</strong> <br/>
+                      Mall of Asia Complex, Pasay City
+                    </span>
+                  </div>
+                </div>
+                {% endif %}
+                <div class="{% if site.switchSchedule == "lean" %}col-lg-12{% elsif site.switchSchedule == "leanfull" %}col-lg-6 col-lg-pull-6 col-md-6 col-md-pull-6 col-sm-6 col-sm-pull-6 col-xs-12 col-xs-pull-0{% endif %}">
                   <span style="display:block;margin-bottom:30px;">
                     <strong>Badge claiming starts at 7am</strong> <br/>
                     Gates open at 7am <br/>

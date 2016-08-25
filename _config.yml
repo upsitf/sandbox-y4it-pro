@@ -1,4 +1,5 @@
 # Site settings
+
 title: Y4iT
 baseurl: http://toffmendoza.me/sandbox-y4it
 #baseurl: http://y4it.org
@@ -7,13 +8,14 @@ baseurl: http://toffmendoza.me/sandbox-y4it
 # Build settings
 markdown: kramdown
 permalink: pretty
-# baseurl:
 
 # Site variables
 switchAnnouncement: false
 switchSpeakers: true
 switchSpeakersHeader: false
 switchParallel: false
+switchSchedule: "leanfull"
+# switchSchedule values can be "lean," "leanfull" (full-length "lean") or "full"
 switchPayment: false
 switchFAQ: true
 switchSponsor: true
@@ -22,14 +24,26 @@ switchTerms: true
 
 switchFooterSitemap: false
 
+urlPackage: "http://y4it.org/y4it2016-sponsorshippackage.pdf"
+urlDeck: "http://y4it.org/y4it2016-deck.pdf"
+urlPartnerConfirmation: "http://y4it.org/isupporty4it"
+
+urlOfficial: "http://y4it.org/"
+urlFacebook: "https://www.facebook.com/ilove.Y4iT/"
+urlTwitter: "https://twitter.com/y4it"
+urlInstagram: "https://www.instagram.com/y4it/"
+urlYouTube: "https://www.youtube.com/user/iloveY4iT"
+urlSnapchat: "https://www.snapchat.com/add/y4it"
+urlViber: "http://chats.viber.com/y4it"
 
 speakers:
  - id: "jdeluzuriaga"
    name: "Jonathan Defensor De Luzuriaga"
+   title: "Mr."
    image: "De_Luzuriaga_Jonathan-edit-web.jpg"
    professional:
     - designation: "President"
-      company: "Philippine Software Industry Association"
+      company: "Philippine Software Industry Association (PSIA)"
     - designation: "Founder and Chief Executive Officer"
       company: "CMI Tech"
    description: "As the President of the Philippine Software Industry Association, Jonathan leads the way for the Information Technology industry of the Philippines. He is also the Founder and CEO of CMI Tech, a software innovations company involved in developments in web, mobile and cloud solutions for various verticals. Jonathan is a seasoned independent World Bank Consultant for global information technology initiatives responsible for the design and implementation of such projects as the Center of Excellence in IT-BPO for Central Africa, the feasibility study of the Malili Technopark in Kenya as well as a multitude of talent mapping initiatives in Southeast Asia. He has been invited in numerous occasions to lecture about outsourcing and offshoring in various events and conferences in all parts of the world. He is known simply as JDL within the different sectors of business processing, information technology and innovation sectors. He holds a Political Science degree from the De La Salle University."
@@ -38,6 +52,7 @@ speakers:
       url: ""
  - id: "psmithson"
    name: "Phil Smithson"
+   title: "Mr."
    image: "Smithson_Phil1-edit-web.jpg"
    professional:
     - designation: "Lead Service Designer and Director"
@@ -48,16 +63,18 @@ speakers:
       url: ""
  - id: "msantos"
    name: "Mary Grace Mirandilla-Santos"
+   title: "Ms."
    image: "Mirandilla-Santos_Grace-edit-web.jpg"
    professional:
     - designation: "Vice President for Policy"
       company: "Internet Society Philippines Chapter"
-   description: "She is an independent researcher specializing in telecommunications and information and communications technology (ICT) policy, and technology’s impact on development and society. Her areas of interest include telecom/ICT regulation and competition policy, e-government, e-democracy, and universal ICT access. Currently, she is a national ICT research consultant at the Asian Development Bank and a local expert for a European Union-funded research project on telecommunications competition mapping. Her personal advocacy is better telecom and Internet services in the Philippines. She is a research fellow of LIRNEasia, a regional ICT policy think tank, and vice president for policy of the Internet Society (ISOC) Philippine Chapter."
+   description: "Mary Grace is an independent researcher specializing in telecommunications and information and communications technology (ICT) policy, and technology’s impact on development and society. Her areas of interest include telecom/ICT regulation and competition policy, e-government, e-democracy, and universal ICT access. Currently, she is a national ICT research consultant at the Asian Development Bank and a local expert for a European Union-funded research project on telecommunications competition mapping. Her personal advocacy is better telecom and Internet services in the Philippines. She is a research fellow of LIRNEasia, a regional ICT policy think tank, and vice president for policy of the Internet Society (ISOC) Philippine Chapter."
    social:
     - type: ""
       url: ""
  - id: "mwarren"
    name: "Miguel Warren"
+   title: "Mr."
    image: "Warren_Miguel-edit-web.jpg"
    professional:
     - designation: "Country Manager"
@@ -70,16 +87,18 @@ speakers:
       url: ""
  - id: "jchen"
    name: "Joyce Chen"
+   title: "Ms."
    image: "Chen_Joyce-edit-web.jpg"
    professional:
     - designation: "GSE Strategy & Development Senior Manager"
-      company: "ICANN"
-   description: "Joyce joined ICANN staff on February 2016. She currently serves the organization as GSE Strategy and Development Senior Manager in the Asia Pacific APAC Hub based in Singapore. Her main focus will be in deepening ICANN’s engagement within Southeast Asia and other countries in the APAC region. She previously worked in Singapore Institute of Technology for Corporate Communications as well as Strategic Planning. Joyce has experience in corporate development strategies and media relations. Joyce was also a young diplomat with Singapore’s Ministry of Foreign Affairs upon graduating from National University of Singapore. She handled the ASEAN portfolio while in the Foreign Affairs."
+      company: "Internet Corporation for Assigned Names and Numbers (ICANN)"
+   description: "Joyce joined the ICANN staff on February 2016. She currently serves the organization as GSE Strategy and Development Senior Manager in the Asia Pacific APAC Hub based in Singapore. Her main focus will be in deepening ICANN’s engagement within Southeast Asia and other countries in the APAC region. She previously worked in Singapore Institute of Technology for Corporate Communications as well as Strategic Planning. Joyce has experience in corporate development strategies and media relations. Joyce was also a young diplomat with Singapore’s Ministry of Foreign Affairs upon graduating from National University of Singapore. She handled the ASEAN portfolio while in the Foreign Affairs."
    social:
     - type: ""
       url: ""
  - id: "mibrahim"
    name: "Monchito Ibrahim"
+   title: "Comm."
    image: "Ibrahim_Monchito-edit-web.jpg"
    professional:
     - designation: "Consultant for eInnovation"
@@ -94,6 +113,7 @@ speakers:
       url: ""
  - id: "shermoso"
    name: "Sheryl Hermoso"
+   title: "Ms."
    image: "Hermoso_Sheryl-edit-web.jpg"
    professional:
     - designation: "Senior Training Officer"
@@ -107,6 +127,7 @@ speakers:
       url: ""
  - id: "jjanssens"
    name: "Johan Janssens"
+   title: "Mr."
    image: "Janssens_Johan-edit-web.jpg"
    professional:
     - designation: "Chief Innovator"
@@ -117,6 +138,7 @@ speakers:
       url: ""
  - id: "pgioca"
    name: "Philip Gioca"
+   title: "Mr."
    image: "Gioca_Philip-edit-web.jpg"
    professional:
     - designation: "Country Manager"
@@ -127,6 +149,7 @@ speakers:
       url: ""
  - id: "hduh"
    name: "Henry Duh"
+   title: "Prof."
    image: "Duh_Henry-edit-web.jpg"
    special:
     - display: "ACM"
@@ -138,13 +161,46 @@ speakers:
    social:
     - type: ""
       url: ""
-
+ - id: "kjones"
+   name: "Keith Jones"
+   title: "Mr."
+   image: "Jones_Keith-edit-web.jpg"
+   professional:
+    - designation: "CIS Divisional Head, Philippines"
+      company: "Cognizant Technology Solutions"
+   description: "Keith leads the Infrastructure practice in the Philippines for Cognizant which is a global IT outsourcer with 210,000 employees and 5000+ in the Philippines. He has 15 years of outsourcing experience. He has enhanced his exceptional leadership skills and expertise via his research work on “Sustainable Excellence: An integrated Plan to become a Strategic Asset” and “Cultural Transformation: Inspire People and Move your Organization forward.” His work has produced ~$8M  in financial improvements for his clients. He has orchestrated program turnarounds resulting in top tier employee satisfaction and reduced attrition rates by 50%. Recently his Manila team achieved Help Desk Institute certification. This is the first such certification earned by Filipino talent and represents global excellence in Service Desk operations. He is a Six Sigma Black Belt, previous quality auditor for the state of Florida, and holds an MBA from the University of South Florida."
+   social:
+    - type: ""
+      url: ""
+ - id: "jjensen"
+   name: "Jacqueline Jensen"
+   title: "Ms."
+   image: "Jensen_Jacqueline-edit-web.jpg"
+   professional:
+    - designation: "Community Evangelist"
+      company: "Piktochart"
+   description: "Jacqueline is the Community Evangelist at Piktochart. She is a recognized storyteller and relationship builder. As Community Evangelist, Jacqueline shares Piktochart innovation with various groups at conferences and summits worldwide. Jacqueline enjoys meeting users around the globe."
+   social:
+    - type: ""
+      url: ""
+ - id: "dhaas"
+   name: "Damian Haas"
+   title: "Mr."
+   image: "Haas_Damian-edit-web.jpg"
+   professional:
+    - designation: "Oracle Academy Regional Director, Asia Pacific"
+      company: "Oracle Corporation"
+   description: "Damian is the Regional Director for Oracle Academy across Asia Pacific and Japan.  The role involves the oversight of activities to support Oracle Academy’s mission to advance computer science education globally through its portfolio of learning resources and to make it accessible and engaging to students.  Oracle Academy is an entirely free and philanthropic program designed to enable higher education learners to advance proficiency in core, in-demand skills which are fundamental to modern computing. Damian has over 20 years experience in sales, marketing and business development within the information technology industry in Australia/New Zealand and internationally. In 2011, Damian was engaged by Oracle University as an Education Solution Consultant and was subsequently appointed the Director of Oracle University for Australasia until his appointment with Oracle Academy in 2016."
+   social:
+    - type: ""
+      url: ""
 
 
 
 speakersLegacy:
  - id: "caragon"
    name: "Claudine Aragon"
+   title: "Ms."
    image: "Aragon_Claudine-edit-web.jpg"
    professional:
     - designation: "Country Marketing Director"
@@ -158,35 +214,65 @@ speakersLegacy:
 
 schedules:
  - morning:
-    - id: "jcruz1"
-      topic: "Topic One"
-    - id: "jcruz2"
-      topic: "Topic Two"
-   noon:
-    - id: "jcruz3"
-      topic: "Topic Three"
-    - id: "jcruz4"
-      topic: "Topic Four"
+    - id: "jdeluzuriaga"
+      topic: "Welcome Address"
+    - id: ""
+      topic: "Keynote Speech"
+    - id: "pgioca"
+      topic: "Tech Talk"
+    - id: "psmithson"
+      topic: "Human-Centered Design"
+    - id: "dhaas"
+      topic: "Think Big, Start Small, Grow Fast - Working with Industry for ‘Work Ready’ Students"
+    - id: "msantos"
+      topic: "PH Broadband: Current State and The Way Forward"
+   afternoon:
+    - id: "jjensen"
+      topic: "14 Million Infographics Later, Here Are 24 Ideas For Your Inspiration"
+    - id: "shermoso"
+      topic: "Tech Talk"
+    - id: "jchen"
+      topic: "Tech Talk"
  - morning:
-    - id: "jcruz5"
-      topic: "Topic Five"
-    - id: "jcruz6"
-      topic: "Topic Six"
-   noon:
-    - id: "jcruz2"
-      topic: "Topic Seven"
-    - id: "jcruz4"
-      topic: "Topic Eight"
+    - id: "mibrahim"
+      topic: "Welcome Address"
+    - id: ""
+      topic: "Keynote Speech"
+    - id: "hduh"
+      topic: "Next Generation User Interface: Virtual and Augmented Reality"
+    - id: "jjanssens"
+      topic: "Captains of Spaceship Earth - An Exploration of Technology, Philippines, and… YOU(th)!"
+    - id: ""
+      topic: "Tech Talk"
+    - id: ""
+      topic: "Tech Talk"
+   afternoon:
+    - id: ""
+      topic: "Tech Talk"
+    - id: ""
+      topic: "Tech Talk"
+    - id: "kjones"
+      topic: "How to Prepare for the 4th Industrial Revolution"
  - morning:
-    - id: "jcruz6"
-      topic: "Topic Nine"
-    - id: "jcruz1"
-      topic: "Topic Ten"
-   noon:
-    - id: "jcruz3"
-      topic: "Topic Eleven"
-    - id: "jcruz5"
-      topic: "Topic Twelve"
+    - id: ""
+      topic: "Welcome Address"
+    - id: ""
+      topic: "Keynote Speech"
+    - id: "mwarren"
+      topic: "Tech Talk"
+    - id: ""
+      topic: "Tech Talk"
+    - id: ""
+      topic: "Tech Talk"
+    - id: ""
+      topic: "Tech Talk"
+   afternoon:
+    - id: ""
+      topic: "Tech Talk"
+    - id: ""
+      topic: "Tech Talk"
+    - id: ""
+      topic: "Tech Talk"
 
 
 parallels:
@@ -244,9 +330,18 @@ sponsors:
  - id: "cognizant"
    name: "Cognizant"
    logo: "logo_sponsor-cognizant.png"
+ - id: "ek"
+   name: "Enchanted Kingdom"
+   logo: "logo_sponsor-ek.png"
  - id: "jobstreet"
    name: "Jobstreet"
    logo: "logo_sponsor-jobstreet.png"
+ - id: "lesliescheezy"
+   name: "Leslie's Cheezy"
+   logo: "logo_sponsor-lesliescheezy.png"
+ - id: "lesliesfarmerjohn"
+   name: "Leslie's Farmer John"
+   logo: "logo_sponsor-lesliesfarmerjohn.png"
  - id: "payoneer"
    name: "Payoneer"
    logo: "logo_sponsor-payoneer.png"
@@ -275,6 +370,9 @@ media:
  - id: "speedmag"
    name: "Speed Magazine"
    logo: "logo_media-speedmag.png"
+ - id: "wheninmanila"
+   name: "When In Manila"
+   logo: "logo_media-wheninmanila.png"
 
 
 
