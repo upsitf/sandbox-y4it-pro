@@ -3,16 +3,19 @@
     <div class="row row-limit">
       <div class="col-lg-{% if site.switchFooterSitemap == true %}12 text-center{% else %}5 col-md-5 col-sm-5 col-xs-12{% endif %}">
         <a href="{{  site.urlOfficial }}"><i class="fa fa-globe" aria-hidden="true"></i></a>
-        <a target="_blank" href="{{  site.urlFacebook }}"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-        <a target="_blank" href="{{  site.urlTwitter }}"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-        <a target="_blank" href="{{  site.urlInstagram }}"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a target="_blank" rel="noopener noreferrer" href="{{  site.urlFacebook }}"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+        <a target="_blank" rel="noopener noreferrer" href="{{  site.urlTwitter }}"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a target="_blank" rel="noopener noreferrer" href="{{  site.urlInstagram }}"><i class="fa fa-instagram" aria-hidden="true"></i></a>
         <br class="visible-sm visible-xs"/>
-        <a target="_blank" href="{{  site.urlYouTube }}"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-        <a target="_blank" href="{{  site.urlSnapchat }}"><i class="fa fa-snapchat-ghost" aria-hidden="true"></i></a>
-        <a target="_blank" href="{{  site.urlViber }}"><i class="fa fa-phone-square" aria-hidden="true"></i></a>
+        <a target="_blank" rel="noopener noreferrer" href="{{  site.urlYouTube }}"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+        <a target="_blank" rel="noopener noreferrer" href="{{  site.urlSnapchat }}"><i class="fa fa-snapchat-ghost" aria-hidden="true"></i></a>
+        <a target="_blank" rel="noopener noreferrer" href="{{  site.urlViber }}"><i class="fa fa-phone-square" aria-hidden="true"></i></a>
         {% if site.switchSponsor == true %}
         <br/>
-        <span style="display:block;margin-top:15px;">Collaborate with us, <a href="{{ site.baseurl }}/be-a-sponsor" style="text-decoration:underline">be a sponsor now!</a></span>
+        <span style="display:block;margin-top:15px;">
+          Y4iT 2016 is <a target="_blank" rel="noopener noreferrer" href="{{ site.baseurl }}/CHEDEndorsement2016.jpeg" style="text-decoration:underline">endorsed by the Commission on Higher Education (CHED)</a>.<br/>
+          Collaborate with us, <a href="{{ site.baseurl }}/be-a-sponsor" style="text-decoration:underline">be a sponsor now!</a>
+        </span>
         {% endif %}
       </div>
     {% if site.switchFooterSitemap == true %}

@@ -47,7 +47,7 @@ animate: true
             </span>
           </div>
           <div class="panel-footer text-center">
-            <a target="_blank" class="btn btn-default btn-orange" href="{{ site.baseurl }}/poster-main.pdf">Download poster</a>
+            <a target="_blank" rel="noopener noreferrer" class="btn btn-default btn-orange" href="{{ site.baseurl }}/poster-main.pdf">Download poster</a>
           </div>
         </div>
         <div class="km-jumbotron-margin-bottom"></div>
@@ -183,7 +183,7 @@ animate: true
         <div class="col-lg-12">
 
           <img id="img-smx" class="img-responsive img-small-full wow fadeInDown" src="{{ site.baseurl }}/images/smx.jpg">
-          <small class="small-caption small-citation"><a target="_blank" href="http://www.smxconventioncenter.com/manila">SMX Convention Center</a></small>
+          <small class="small-caption small-citation"><a target="_blank" rel="noopener noreferrer" href="http://www.smxconventioncenter.com/manila">SMX Convention Center</a></small>
           <style>
             @media (max-width:768px) {
               #img-smx {
@@ -218,7 +218,7 @@ animate: true
                     Event proper: 9am - 4pm || Break: 12nn - 1pm <br/>
                   </span>
                   <a class="btn btn-default btn-block-xs btn-white-on-violet" role="button" href="{% if page.home != true %}{{ site.baseurl }}{{ '/' }}{% endif %}#badges">Get badges</a>
-                  <a class="btn btn-default btn-block-xs btn-orange" role="button" href="http://reg2016.y4it.org" target="_blank">Register</a>
+                  <a class="btn btn-default btn-block-xs btn-orange" role="button" href="http://reg2016.y4it.org" target="_blank" rel="noopener noreferrer">Register</a>
                 </div>
               </div>
             </div>
@@ -269,7 +269,7 @@ animate: true
                     {% endif %}
 
                     {% if forloop.index == 2 %}
-                    <a class="" id="y66zys6m" target="_blank" href="http://y4it.org/lgknq2mt.png">
+                    <a class="" id="y66zys6m" target="_blank" rel="noopener noreferrer" href="http://y4it.org/lgknq2mt.png">
                       <div class="bar bar-lg-left"></div>
                     </a>
                     {% else %}
@@ -303,7 +303,7 @@ animate: true
                     Event proper: 9am - 4pm || Break: 12nn - 1pm <br/>
                   </span>
                   <a class="btn btn-default btn-block-xs btn-white-on-violet" role="button" href="{% if page.home != true %}{{ site.baseurl }}{{ '/' }}{% endif %}#badges">Get badges</a>
-                  <a class="btn btn-default btn-block-xs btn-orange" role="button" href="http://reg2016.y4it.org" target="_blank">Register</a>
+                  <a class="btn btn-default btn-block-xs btn-orange" role="button" href="http://reg2016.y4it.org" target="_blank" rel="noopener noreferrer">Register</a>
                 </div>
               </div>
             </div>
@@ -371,7 +371,12 @@ animate: true
             dynamic IT industry. Since its launching, Y4iT has gone on to be at
             the forefront of information technology gathering events in the
             Philippines.
+            <br/><br/>
+            <a id="btn-ched" class="btn btn-default btn-block-xs btn-lg btn-violet" role="button" href="{{ site.baseurl }}/CHEDEndorsement2016.jpeg" target="_blank" rel="noopener noreferrer">CHED <br class="visible-xs"/>Endorsement</a><br/>
+            <br/>
           </p>
+
+
 
           <div class="bar bar-lg-center"></div>
 
@@ -432,7 +437,7 @@ animate: true
                       <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <h3>
                           Small Group<br/>
-                          <small><a name id="tjicy0qq"  target="_blank" href="{{ site.baseurl }}/dgo0x37t.png">50-99 people</a></small>
+                          <small><a name id="tjicy0qq"  target="_blank" rel="noopener noreferrer" href="{{ site.baseurl }}/dgo0x37t.png">50-99 people</a></small>
                         </h3>
                         <span class="span-price"><span>&#8369;</span>650</span>
                       </div>
@@ -475,7 +480,7 @@ animate: true
             <div class="item-inclusion">
 
               {% if forloop.rindex == 1 %}
-              <h2 class="center-xs"><a placeholder="" id="vp2gdpm6" target="_blank" href="http://y4it.org/29xi6phi.png">Certificate</a></h2>
+              <h2 class="center-xs"><a placeholder="" id="vp2gdpm6" target="_blank" rel="noopener noreferrer" href="http://y4it.org/29xi6phi.png">Certificate</a></h2>
               {% else %}
               <h2 class="center-xs">{{ eachinclusion.name }}</h2>
               {% endif %}
@@ -503,14 +508,43 @@ animate: true
           <h1 class="h1-title">Registration</h1>
 
           <p class="text-center">
-            <a id="btn-register" class="btn btn-default btn-block-xs btn-lg btn-white-on-orange" role="button" href="http://reg2016.y4it.org" target="_blank">Register <br class="visible-xs"/>and Get <br class="visible-xs"/>Badges</a><br/>
-            We will be releasing payment details here, so watch this space!<br/>
-            In the meantime, be sure to
-            <a target="_blank" href="https://www.facebook.com/ilove.Y4iT/">like us on Facebook</a>
+            <a id="btn-register" class="btn btn-default btn-block-xs btn-lg btn-white-on-orange" role="button" href="http://reg2016.y4it.org" target="_blank" rel="noopener noreferrer">Register <br class="visible-xs"/>and Get <br class="visible-xs"/>Badges</a><br/>
+          </p>
+
+          <div class="row">
+            <div class="col-lg-12">
+              <h2 class="h2-title">Instructions</h2>
+            </div>
+
+            <div class="col-lg-4 col-lg-offset-2 col-md-4 col-md-offset-2 col-sm-6 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+              <div class="div-register">
+                <i class="fa fa-globe" aria-hidden="true"></i><br/>
+                <p class="text-center">
+                  <a id="btn-register" class="btn btn-default btn-block-xs btn-lg btn-white-on-orange" role="button" href="http://bit.ly/Y4iT2016RegOnline" target="_blank" rel="noopener noreferrer">Online</a><br/>
+                  Fill out our registration form online and pay for your badges before or during the event.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+              <div class="div-register">
+                <i class="fa fa-flag" aria-hidden="true"></i><br/>
+                <p class="text-center">
+                  <a id="btn-register" class="btn btn-default btn-block-xs btn-lg btn-white-on-orange" role="button" href="http://bit.ly/Y4iT2016RegOnsite" target="_blank" rel="noopener noreferrer">On-site</a><br/>
+                  Every process from registration to badge distribution will be done on the congress day.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <p class="text-center">
+
+            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/ilove.Y4iT/">Like us on Facebook</a>
             or
-            <a target="_blank" href="https://twitter.com/y4it">follow us on Twitter</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/y4it">follow us on Twitter</a>
             and
-            <a target="_blank" href="https://instagram.com/y4it">Instagram</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/y4it">Instagram</a>
             so you can get the first scoop on our latest announcements.
           </p>
 

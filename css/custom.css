@@ -73,6 +73,7 @@
   }
 }
 
+.item-speaker .span-special,
 a>.item-speaker .span-special {
   display: inline-block;
   font-family: Roboto Slab;
@@ -83,9 +84,10 @@ a>.item-speaker .span-special {
   border-radius: 5px;
   font-size: 0.75em;
   vertical-align: top;
-  cursor: default;
+  cursor: pointer;
 }
 
+.item-speaker img,
 a>.item-speaker img {
   border-style: solid;
   border-color: #f47e21;
@@ -93,6 +95,8 @@ a>.item-speaker img {
 /*  */
 }
 
+.item-speaker img,
+.item-speaker a img,
 a>.item-speaker img {
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.0);
   /*border-width: 0px;*/
@@ -102,7 +106,9 @@ a>.item-speaker img {
   transition: 250ms ease-out;
 }
 
+.item-speaker a:hover img,
 a:hover>.item-speaker img,
+.item-speaker a:focus img,
 a:focus>.item-speaker img {
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
   -webkit-transform: scale(1.025,1.025);
@@ -323,7 +329,7 @@ a:focus>.item-speaker img {
 
 @media (min-width: 768px) {
   .item-day>section>section:first-of-type {
-    min-height: 400px;
+    min-height: 360px;
   }
 
   .item-day>section>section:last-of-type {
@@ -462,6 +468,33 @@ a:focus>.item-speaker img {
     padding-top: 15px;
     padding-bottom: 15px;
   }
+}
+
+/*
+.panel.panel-default.panel-registration {
+  padding: 15px;
+  background-color: transparent;
+  border-radius: 0;
+  border-width: 3px;
+  border-color: white;
+}
+
+.panel.panel-default.panel-registration img {
+  max-width: 360px;
+}
+*/
+
+.div-register {
+  padding-bottom: 30px;
+}
+
+.div-register i {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 4em;
+  color: white;
 }
 
 /* FAQ */
@@ -874,6 +907,11 @@ footer.section-violet>.container-fluid>.row:not(.row-limit) span {
   text-transform: capitalize !important;
 }
 
+.section-default h2.h2-title {
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
 @media (max-width: 768px) {
   .section-default h1.h1-title {
     font-size: 2.75em;
@@ -882,7 +920,9 @@ footer.section-violet>.container-fluid>.row:not(.row-limit) span {
 }
 
 .section-default.section-violet h1.h1-title,
-.section-default.section-orange h1.h1-title {
+.section-default.section-orange h1.h1-title,
+.section-default.section-violet h2.h2-title,
+.section-default.section-orange h2.h2-title {
   color: white;
 }
 
