@@ -329,11 +329,12 @@ a:focus>.item-speaker img {
 
 @media (min-width: 768px) {
   .item-day>section>section:first-of-type {
-    min-height: 360px;
+    /*min-height: 360px;*/
+    min-height: 80px;
   }
 
   .item-day>section>section:last-of-type {
-    min-height: 200px;
+    /*min-height: 200px;*/
   }
 }
 

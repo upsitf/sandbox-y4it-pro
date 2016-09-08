@@ -241,7 +241,8 @@ animate: true
                     </h2>
 
                     {% if eachschedule.morning or eachschedule.afternoon %}
-                    <!--section{% if forloop.first == false %} class="production-speakers"{% endif %}-->
+
+                    {% if site.switchScheduleOrder == "chronological" %}
                     <section>
                       {% if eachschedule.morning %}
                       <section>
@@ -266,6 +267,44 @@ animate: true
                       {% endif %}
 
                     </section>
+
+                    {% elsif site.switchScheduleOrder == "alphabetical" %}
+                    <section>
+                      <section>
+                        <ol class="list-unstyled list-schedule">
+                          {% for eachtalk in eachschedule.morning %}
+                          {% if forloop.index == 3 %}
+                          {% break %}
+                          {% else %}
+                          {% include item-talk-lean.html %}
+                          {% endif %}
+                          {% endfor %}
+                        </ol>
+                      </section>
+                      <section>
+                        <h3>Tech Talks</h3>
+                        <span>Speakers in alphabetical order</span>
+                        <ol class="list-unstyled list-schedule">
+                          {% for eachspeaker in site.speakers %}
+                          {% for eachtalk in eachschedule.morning %}
+                          {% if eachspeaker.id == eachtalk.id %}
+                          {% if eachtalk.topic != "Welcome Address" and eachtalk.topic != "Keynote Speech" %}
+                          {% include item-talk-lean.html %}
+                          {% endif %}
+                          {% endif %}
+                          {% endfor %}
+                          {% for eachtalk in eachschedule.afternoon %}
+                          {% if eachspeaker.id == eachtalk.id %}
+                          {% include item-talk-lean.html %}
+                          {% endif %}
+                          {% endfor %}
+                          {% endfor %}
+                        </ol>
+                      </section>
+                    </section>
+
+                    {% endif %}
+
                     {% endif %}
 
                     {% if forloop.index == 2 %}
@@ -626,7 +665,6 @@ animate: true
           <h1 class="h1-title">Partners</h1>
 
           <h2 class="h2-title">Sponsors</h2>
-
           <div class="div-partners" style="text-align:center;">
             {% for eachsponsor in site.sponsors %}
             <img alt="{{ eachsponsor.name }}" src="{{ site.baseurl }}/images/partners/{{ eachsponsor.logo }}">
@@ -634,10 +672,16 @@ animate: true
           </div>
 
           <h2 class="h2-title">Media Partners</h2>
-
           <div class="div-partners" style="text-align:center;">
             {% for eachmedia in site.media %}
             <img alt="{{ eachsponsor.name }}" src="{{ site.baseurl }}/images/partners/{{ eachmedia.logo }}">
+            {% endfor %}
+          </div>
+
+          <h2 class="h2-title">Partner Organizations</h2>
+          <div class="div-partners" style="text-align:center;">
+            {% for eachorg in site.orgs %}
+            <img alt="{{ eachorg.name }}" src="{{ site.baseurl }}/images/partners/{{ eachorg.logo }}">
             {% endfor %}
           </div>
 

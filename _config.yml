@@ -16,6 +16,7 @@ switchSpeakersHeader: false
 switchParallel: false
 switchSchedule: "leanfull"
 # switchSchedule values can be "lean," "leanfull" (full-length "lean") or "full"
+switchScheduleOrder: "alphabetical"
 switchPayment: false
 switchFAQ: true
 switchSponsor: true
@@ -37,8 +38,38 @@ urlSnapchat: "https://www.snapchat.com/add/y4it"
 urlViber: "http://chats.viber.com/y4it"
 
 speakers:
+ - id: "baguda"
+   name:
+    - "Baltazar"
+    - "Aguda"
+   title: "Dr."
+   image: "Aguda_Baltazar-edit-web.jpg"
+   professional:
+    - designation: "Executive Director"
+      company: "Philippine Genome Center"
+   description:
+    - "Dr. Aguda is a multidisciplinary scientist who started his scientific career as a theoretical-physical chemist investigating the nonlinear dynamics of complex biochemical reaction systems, developing methods for predicting interaction network instabilities and the construction of predictive computational models. For the past 16 years, he has focused the applications of his methods to understanding how certain perturbations of gene & molecular interaction networks could lead to cancer."
+    - "The ultimate goal of Dr. Aguda’s research program is the control of gene & molecular networks that are deregulated during malignant transformation.  He advocates the paradigm of network pharmacology that proposes targeting gene networks using combinations of drugs instead of the old one drug-one target strategy. At the Philippine Genome Center, one of the projects of his research group is the creation of network modules databases that serve, in association with novel computer algorithms being created by his group, as in silico platforms to aid in combination drug targets & disease biomarkers discovery."
+   social:
+    - type: ""
+      url: ""
+ - id: "jchen"
+   name:
+    - "Joyce"
+    - "Chen"
+   title: "Ms."
+   image: "Chen_Joyce-edit-web.jpg"
+   professional:
+    - designation: "GSE Strategy & Development Senior Manager"
+      company: "Internet Corporation for Assigned Names and Numbers (ICANN)"
+   description: "Joyce joined the ICANN staff on February 2016. She currently serves the organization as GSE Strategy and Development Senior Manager in the Asia Pacific APAC Hub based in Singapore. Her main focus will be in deepening ICANN’s engagement within Southeast Asia and other countries in the APAC region. She previously worked in Singapore Institute of Technology for Corporate Communications as well as Strategic Planning. Joyce has experience in corporate development strategies and media relations. Joyce was also a young diplomat with Singapore’s Ministry of Foreign Affairs upon graduating from National University of Singapore. She handled the ASEAN portfolio while in the Foreign Affairs."
+   social:
+    - type: ""
+      url: ""
  - id: "jdeluzuriaga"
-   name: "Jonathan Defensor De Luzuriaga"
+   name:
+    - "Jonathan Defensor"
+    - "De Luzuriaga"
    title: "Mr."
    image: "De_Luzuriaga_Jonathan-edit-web.jpg"
    professional:
@@ -50,54 +81,93 @@ speakers:
    social:
     - type: ""
       url: ""
- - id: "psmithson"
-   name: "Phil Smithson"
+ - id: "adelacruz"
+   name:
+    - "Albert"
+    - "Dela Cruz"
    title: "Mr."
-   image: "Smithson_Phil1-edit-web.jpg"
+   image: "Dela_Cruz_Albert-edit-web.jpg"
    professional:
-    - designation: "Lead Service Designer and Director"
-      company: "On-Off Group"
-   description: "Phil is a Lead Service Designer and Director of On-Off Group. He's been helping companies design experiences for over 10 years and has taught UX to over 1,500 people. In 2015, he spent 3 months travelling the Philippines introducing UX to multiple universities. He finds it difficult to switch off the 'designer' part of his brain and is always thinking about how to improve experiences wherever he goes."
+    - designation: "Principal Consultant"
+      company: "RIGELTECH Corporation"
+   description: "Albert is a seasoned executive in the IT industry replete with experience accumulated over two and a half decades working in sales, marketing, technical and operational roles in various organizations such as Bay Networks and Microsoft in the Philippines. He also founded and nurtured several successful startups in the areas of systems integration, mobile application development, and information security. Albert holds a degree in Electronics and Communications Engineering and certifications in the field of Data Communications and Information Security. He is an Alumni of the US, State Department’s International Leadership Program on eCommerce and the World Economy and Japan’s Association for Overseas Training and Support (AOTS). Abet is a Certified Information Security Systems Professional (CISSP), SANS GIAC Industrial Cyber Security Professional (GICSP) and GIAC Critical Controls Certified (GCCC) as well as an ISO 27001 Lead Auditor and ITIL v3  Professional"
    social:
     - type: ""
       url: ""
- - id: "msantos"
-   name: "Mary Grace Mirandilla-Santos"
-   title: "Ms."
-   image: "Mirandilla-Santos_Grace-edit-web.jpg"
+ - id: "hduh"
+   name:
+    - "Henry"
+    - "Duh"
+   title: "Prof."
+   image: "Duh_Henry-edit-web.jpg"
+   special:
+    - display: "ACM"
+      title: "ACM Distinguished Speaker"
    professional:
-    - designation: "Vice President for Policy"
-      company: "Internet Society Philippines Chapter"
-   description: "Mary Grace is an independent researcher specializing in telecommunications and information and communications technology (ICT) policy, and technology’s impact on development and society. Her areas of interest include telecom/ICT regulation and competition policy, e-government, e-democracy, and universal ICT access. Currently, she is a national ICT research consultant at the Asian Development Bank and a local expert for a European Union-funded research project on telecommunications competition mapping. Her personal advocacy is better telecom and Internet services in the Philippines. She is a research fellow of LIRNEasia, a regional ICT policy think tank, and vice president for policy of the Internet Society (ISOC) Philippine Chapter."
+    - designation: "Director"
+      company: "Human Interface Technology Laboratory Australia"
+   description: "Professor Duh is the Director of Human Interface Technology Laboratory Australia and Professor of School of Engineering & ICT at University of Tasmania. He is a Fellow of the Institution of Engineering and Technology and British Computer Society, ACM Distinguished Speaker; the Australian National Representative of IFIP TC on HCI and Entertainment Computing; Steering committee chair of ChineseCHI and steering committee member of IEEE ISMAR. He is the Editor-in-Chief, Journal of Visual Languages and Computing (Springer), editorial board members of HCI book series (Springer), and published more than 120 conference and journal papers in HCI area. Professor Duh has served the program/organizing committee for IEEE/ACM International Symposium of Mixed and Augmented Reality (ISMAR) and IEEE Virtual Reality for years. His research focuses on augmented/virtual reality, user experience and interaction design, and gaming effects in mobile systems."
    social:
     - type: ""
       url: ""
- - id: "mwarren"
-   name: "Miguel Warren"
+ - id: "adumanhug"
+   name:
+    - "Allan Jay"
+    - "Dumanhug"
    title: "Mr."
-   image: "Warren_Miguel-edit-web.jpg"
+   image: "Dumanhug_Allan-edit-web.jpg"
+   professional:
+    - designation: "IT Security Analyst"
+      company: "University of the Philippines – eUP Project"
+   description: "Allan is a Fresh Graduate from STI College Muñoz-EDSA with a Bachelor's Degree in Information Technology, Freelance Website Penetration Tester, Software Engineer and Tech Entrepreneur. In the past 3 years, he has spent most of time helping organizations by reporting security vulnerabilities. He became a Top White Hat Hacker on HackerOne, the world's most popular bug bounty platform and Top White Hat Hacker on Facebook for the 1st Quarter of 2016. Allan was also acknowledged by many well-known organizations such as Twitter, Slack, Apple, Ebay and Yahoo. Currently, he is an IT Security Analyst at University of the Philippines - eUP Project."
+   social:
+    - type: ""
+      url: ""
+ - id: "pgioca"
+   name:
+    - "Philip"
+    - "Gioca"
+   title: "Mr."
+   image: "Gioca_Philip-edit-web.jpg"
    professional:
     - designation: "Country Manager"
-      company: "Payoneer"
-   description:
-    - "Miguel is the Country Manager of Payoneer Philippines, a leading cross-border payments company for small businesses and professionals worldwide. Founded in 2005 and based in New York, Payoneer is venture-backed, profitable and ranked in the top 100 of Inc. 5000’s Financial Services companies. Miguel has been involved in financial services technology since 2003 with global solution providers such as FIS, SunGard and GFG Group (now Wirecard). He has worked with banks, mobile payment operators and payment schemes (Visa, Mastercard, UnionPay) across South East Asia to deliver card, mobile and cross border payment solutions for consumer and business-to-business (B2B) payments."
-    - "Miguel graduated from Ateneo De Manila University with a Bachelor of Science in Management Engineering."
+      company: "Jobstreet.com Philippines"
+   description: "As Jobstreet.com Philippines’s top executive, Philip is responsible for the overall strategy and execution for the company’s online recruitment services in the Philippines. Prior to his installation in his new role earlier this year, he was the company&apos;s Director for Sales, where he managed and grew sales through broad organizational developments, marketing strategies, and leadership. He spearheaded various sales teams to be in a market leading position. Prior to his years in JobStreet.com, he had been a part of the executive committee of the leading multinational insurance company in the country. He graduated with a degree of BS Management in Ateneo de Manila University."
    social:
     - type: ""
       url: ""
- - id: "jchen"
-   name: "Joyce Chen"
-   title: "Ms."
-   image: "Chen_Joyce-edit-web.jpg"
+ - id: "dhaas"
+   name:
+    - "Damian"
+    - "Haas"
+   title: "Mr."
+   image: "Haas_Damian-edit-web.jpg"
    professional:
-    - designation: "GSE Strategy & Development Senior Manager"
-      company: "Internet Corporation for Assigned Names and Numbers (ICANN)"
-   description: "Joyce joined the ICANN staff on February 2016. She currently serves the organization as GSE Strategy and Development Senior Manager in the Asia Pacific APAC Hub based in Singapore. Her main focus will be in deepening ICANN’s engagement within Southeast Asia and other countries in the APAC region. She previously worked in Singapore Institute of Technology for Corporate Communications as well as Strategic Planning. Joyce has experience in corporate development strategies and media relations. Joyce was also a young diplomat with Singapore’s Ministry of Foreign Affairs upon graduating from National University of Singapore. She handled the ASEAN portfolio while in the Foreign Affairs."
+    - designation: "Oracle Academy Regional Director, Asia Pacific"
+      company: "Oracle Corporation"
+   description: "Damian is the Regional Director for Oracle Academy across Asia Pacific and Japan.  The role involves the oversight of activities to support Oracle Academy’s mission to advance computer science education globally through its portfolio of learning resources and to make it accessible and engaging to students.  Oracle Academy is an entirely free and philanthropic program designed to enable higher education learners to advance proficiency in core, in-demand skills which are fundamental to modern computing. Damian has over 20 years experience in sales, marketing and business development within the information technology industry in Australia/New Zealand and internationally. In 2011, Damian was engaged by Oracle University as an Education Solution Consultant and was subsequently appointed the Director of Oracle University for Australasia until his appointment with Oracle Academy in 2016."
+   social:
+    - type: ""
+      url: ""
+ - id: "shermoso"
+   name:
+    - "Sheryl"
+    - "Hermoso"
+   title: "Ms."
+   image: "Hermoso_Sheryl-edit-web.jpg"
+   professional:
+    - designation: "Senior Training Officer"
+      company: "Asia-Pacific Network Information Centre (APNIC)"
+   description:
+    - "Sheryl is a Senior Training Officer for APNIC, the Internet registry for the Asia-Pacific region. Based in Australia, her role has taken her around the region educating network and IT professionals, helping build secure and stable infrastructure, and advocating about Internet technologies, particularly IPv6, DNSSEC, and Security."
+    - "Sheryl started her career as a Network Engineer in the Philippines shortly after completing her degree from UP Diliman, and has since worked in various technical positions in the industry over the last 10 years. She is a firm believer that the Internet community needs more women engineers."
    social:
     - type: ""
       url: ""
  - id: "mibrahim"
-   name: "Monchito Ibrahim"
+   name:
+    - "Monchito"
+    - "Ibrahim"
    title: "Comm."
    image: "Ibrahim_Monchito-edit-web.jpg"
    professional:
@@ -111,22 +181,10 @@ speakers:
    social:
     - type: ""
       url: ""
- - id: "shermoso"
-   name: "Sheryl Hermoso"
-   title: "Ms."
-   image: "Hermoso_Sheryl-edit-web.jpg"
-   professional:
-    - designation: "Senior Training Officer"
-      company: "Asia-Pacific Network Information Centre (APNIC)"
-   description:
-    - "Sheryl has had various roles as Network and Systems Administrator before joining the Asia Pacific Network Information Centre (APNIC). She started her career as a Technical Support Assistant while studying at the University of the Philippines."
-    - "She later finished her degree in BS Computer Engineering and continued to work in the same University as a Network Engineer, where she managed the Diliman Network (DilNet) backbone and wireless infrastructure."
-    - "Her areas of interest include wireless and Wi-Fi technologies, DNS/DNSSEC, IPv6, and network security concerns, among others."
-   social:
-    - type: ""
-      url: ""
  - id: "jjanssens"
-   name: "Johan Janssens"
+   name:
+    - "Johan"
+    - "Janssens"
    title: "Mr."
    image: "Janssens_Johan-edit-web.jpg"
    professional:
@@ -136,44 +194,10 @@ speakers:
    social:
     - type: ""
       url: ""
- - id: "pgioca"
-   name: "Philip Gioca"
-   title: "Mr."
-   image: "Gioca_Philip-edit-web.jpg"
-   professional:
-    - designation: "Country Manager"
-      company: "Jobstreet.com Philippines"
-   description: "As Jobstreet.com Philippines’s top executive, Philip is responsible for the overall strategy and execution for the company’s online recruitment services in the Philippines. Prior to his installation in his new role earlier this year, he was the company&apos;s Director for Sales, where he managed and grew sales through broad organizational developments, marketing strategies, and leadership. He spearheaded various sales teams to be in a market leading position. Prior to his years in JobStreet.com, he had been a part of the executive committee of the leading multinational insurance company in the country. He graduated with a degree of BS Management in Ateneo de Manila University."
-   social:
-    - type: ""
-      url: ""
- - id: "hduh"
-   name: "Henry Duh"
-   title: "Prof."
-   image: "Duh_Henry-edit-web.jpg"
-   special:
-    - display: "ACM"
-      title: "ACM Distinguished Speaker"
-   professional:
-    - designation: "Director"
-      company: "Human Interface Technology Laboratory Australia"
-   description: "Professor Duh is the Director of Human Interface Technology Laboratory Australia and Professor of School of Engineering & ICT at University of Tasmania. He is a Fellow of the Institution of Engineering and Technology and British Computer Society, ACM Distinguished Speaker; the Australian National Representative of IFIP TC on HCI and Entertainment Computing; Steering committee chair of ChineseCHI and steering committee member of IEEE ISMAR. He is the Editor-in-Chief, Journal of Visual Languages and Computing (Springer), editorial board members of HCI book series (Springer), and published more than 120 conference and journal papers in HCI area. Professor Duh has served the program/organizing committee for IEEE/ACM International Symposium of Mixed and Augmented Reality (ISMAR) and IEEE Virtual Reality for years. His research focuses on augmented/virtual reality, user experience and interaction design, and gaming effects in mobile systems."
-   social:
-    - type: ""
-      url: ""
- - id: "kjones"
-   name: "Keith Jones"
-   title: "Mr."
-   image: "Jones_Keith-edit-web.jpg"
-   professional:
-    - designation: "CIS Divisional Head, Philippines"
-      company: "Cognizant Technology Solutions"
-   description: "Keith leads the Infrastructure practice in the Philippines for Cognizant which is a global IT outsourcer with 210,000 employees and 5000+ in the Philippines. He has 15 years of outsourcing experience. He has enhanced his exceptional leadership skills and expertise via his research work on “Sustainable Excellence: An integrated Plan to become a Strategic Asset” and “Cultural Transformation: Inspire People and Move your Organization forward.” His work has produced ~$8M  in financial improvements for his clients. He has orchestrated program turnarounds resulting in top tier employee satisfaction and reduced attrition rates by 50%. Recently his Manila team achieved Help Desk Institute certification. This is the first such certification earned by Filipino talent and represents global excellence in Service Desk operations. He is a Six Sigma Black Belt, previous quality auditor for the state of Florida, and holds an MBA from the University of South Florida."
-   social:
-    - type: ""
-      url: ""
  - id: "jjensen"
-   name: "Jacqueline Jensen"
+   name:
+    - "Jacqueline"
+    - "Jensen"
    title: "Ms."
    image: "Jensen_Jacqueline-edit-web.jpg"
    professional:
@@ -183,25 +207,111 @@ speakers:
    social:
     - type: ""
       url: ""
- - id: "dhaas"
-   name: "Damian Haas"
+ - id: "kjones"
+   name:
+    - "Keith"
+    - "Jones"
    title: "Mr."
-   image: "Haas_Damian-edit-web.jpg"
+   image: "Jones_Keith-edit-web.jpg"
    professional:
-    - designation: "Oracle Academy Regional Director, Asia Pacific"
-      company: "Oracle Corporation"
-   description: "Damian is the Regional Director for Oracle Academy across Asia Pacific and Japan.  The role involves the oversight of activities to support Oracle Academy’s mission to advance computer science education globally through its portfolio of learning resources and to make it accessible and engaging to students.  Oracle Academy is an entirely free and philanthropic program designed to enable higher education learners to advance proficiency in core, in-demand skills which are fundamental to modern computing. Damian has over 20 years experience in sales, marketing and business development within the information technology industry in Australia/New Zealand and internationally. In 2011, Damian was engaged by Oracle University as an Education Solution Consultant and was subsequently appointed the Director of Oracle University for Australasia until his appointment with Oracle Academy in 2016."
+    - designation: "CIS Divisional Head, Philippines"
+      company: "Cognizant Technology Solutions"
+   description: "Keith leads the Infrastructure practice in the Philippines for Cognizant which is a global IT outsourcer with 210,000 employees and 5000+ in the Philippines. He has 15 years of outsourcing experience. He has enhanced his exceptional leadership skills and expertise via his research work on “Sustainable Excellence: An integrated Plan to become a Strategic Asset” and “Cultural Transformation: Inspire People and Move your Organization forward.” His work has produced ~$8M  in financial improvements for his clients. He has orchestrated program turnarounds resulting in top tier employee satisfaction and reduced attrition rates by 50%. Recently his Manila team achieved Help Desk Institute certification. This is the first such certification earned by Filipino talent and represents global excellence in Service Desk operations. He is a Six Sigma Black Belt, previous quality auditor for the state of Florida, and holds an MBA from the University of South Florida."
    social:
     - type: ""
       url: ""
- - id: "adumanhug"
-   name: "Allan Jay Dumanhug"
-   title: "Mr."
-   image: "Dumanhug_Allan-edit-web.jpg"
+ - id: "lkuster"
+   name:
+    - "LizAn"
+    - "Kuster"
+   title: "Ms."
+   image: "Kuster_LizAn-edit-web.jpg"
    professional:
-    - designation: "IT Security Analyst"
-      company: "University of the Philippines – eUP Project"
-   description: "Allan is a Fresh Graduate from STI College Muñoz-EDSA with a Bachelor's Degree in Information Technology, Freelance Website Penetration Tester, Software Engineer and Tech Entrepreneur. In the past 3 years, he has spent most of time helping organizations by reporting security vulnerabilities. He became a Top White Hat Hacker on HackerOne, the world's most popular bug bounty platform and Top White Hat Hacker on Facebook for the 1st Quarter of 2016. Allan was also acknowledged by many well-known organizations such as Twitter, Slack, Apple, Ebay and Yahoo. Currently, he is an IT Security Analyst at University of the Philippines - eUP Project."
+    - designation: "Co-Founder"
+      company: "Impact Hub Manila"
+   description: "In 2010, she won Miss Earth Switzerland and has since become a host and ambassador to many ecological brands in Switzerland. Today, she is a Co-Founder of Impact Hub Manila and an advocate of all things sustainable. She holds a degree in Business Administration (International Management) and had a long career in banking, which started with an apprenticeship for Credit Suisse which eventually garnered her a banking degree. A wanderlust at heart, LizAn took a year off to travel around the world. This experience immersed her in various cultures and exposed her to the realities present in the different parts of the world. Upon her return to Switzerland, she went on to managing her company, where she got exposed to the gamut of setting up/optimizing the business and to overseeing daily operations. LizAn especially loves being able to meet people and continues to learn from everything she’s exposed to. LizAn is multi-lingual communicator (4 languages) and is half Filipina, half Swiss."
+   social:
+    - type: ""
+      url: ""
+ - id: "mmirandillasantos"
+   name:
+    - "Mary Grace"
+    - "Mirandilla-Santos"
+   title: "Ms."
+   image: "Mirandilla-Santos_Grace-edit-web.jpg"
+   professional:
+    - designation: "Vice President for Policy"
+      company: "Internet Society Philippines Chapter"
+   description: "Mary Grace is an independent researcher specializing in telecommunications and information and communications technology (ICT) policy, and technology’s impact on development and society. Her areas of interest include telecom/ICT regulation and competition policy, e-government, e-democracy, and universal ICT access. Currently, she is a national ICT research consultant at the Asian Development Bank and a local expert for a European Union-funded research project on telecommunications competition mapping. Her personal advocacy is better telecom and Internet services in the Philippines. She is a research fellow of LIRNEasia, a regional ICT policy think tank, and vice president for policy of the Internet Society (ISOC) Philippine Chapter."
+   social:
+    - type: ""
+      url: ""
+ - id: "gpadillaconcepcion"
+   name:
+    - "Gisela"
+    - "Padilla-Concepcion"
+   title: "Dr."
+   image: "Concepcion_Gisela-edit-web.jpg"
+   professional:
+    - designation: "Vice-President for Academic Affairs"
+      company: "University of the Philippines"
+   description:
+    - "Vice-President Padilla-Concepcion is not only known for her expertise in marine natural products research, and the biomolecular and biomedical sciences, but also for her science advocacies. She is also considered as a champion of voluntarism and is very active in the campaign to increase awareness of the importance of S&T and R&D to socio-economic development."
+    - "For her various efforts in scientific research and in the promotion of the sciences, for her studies on bioactive compounds from marine organisms and the appreciation and protection of marine life, Padilla-Concepcion was chosen as the 2013 Philippine Federation of Chemical Societies Awardee for Chemical Research, the 2010 honoree for Outstanding Achievement in Science and Technology of the Philippine Development (Ayala) Foundation USA. She also received the 2007 National Research Council of the Philippines (NRCP) Achievement Award in Chemistry; the 2006 Gregorio Y. Zara Award for Basic Research; the 2006 NAST-LELEDFI Award for Outstanding Research in Tropical Medicine; the 2005 Philippine Society for Biochemistry and Molecular Biology (PSBMB) Research Award, and the 2002 Dr. Eusebio Y. Garcia Recognition Award for Molecular Biology & Molecular Pathology by the NRCP."
+   social:
+    - type: ""
+      url: ""
+ - id: "ipatdu"
+   name:
+    - "Ivy"
+    - "Patdu"
+   title: "Dr. Atty."
+   image: "Patdu_Ivy-edit-web.jpg"
+   professional:
+    - designation: "Deputy Commissioner"
+      company: "National Privacy Commission"
+   description: "Ivy was appointed as Deputy Commissioner of the National Privacy Commission in 2016. She is a doctor, lawyer and health privacy advocate. She previously worked with the National Telehealth Center of the University of the Philippines-Manila, in developing legal frameworks for Telemedicine, use of electronic health records and other eHealth initiatives. She served as member of the Health Privacy Group of the Department of Health. She is a graduate of the Philippine Science High School and finished her Doctor of Medicine degree from UP College of Medicine.  She obtained her Juris Doctor degree from the Ateneo de Manila School of Law, where she graduated with Scholastic Second Honors. She teaches Legal Medicine in the San Beda College of Law-Alabang, Ateneo de Manila School of Law, and Far Eastern University Institute of Law, Makati."
+   social:
+    - type: ""
+      url: ""
+ - id: "psmithson"
+   name:
+    - "Phil"
+    - "Smithson"
+   title: "Mr."
+   image: "Smithson_Phil1-edit-web.jpg"
+   professional:
+    - designation: "Lead Service Designer and Director"
+      company: "On-Off Group"
+   description: "Phil is a Lead Service Designer and Director of On-Off Group. He's been helping companies design experiences for over 10 years and has taught UX to over 1,500 people. In 2015, he spent 3 months travelling the Philippines introducing UX to multiple universities. He finds it difficult to switch off the 'designer' part of his brain and is always thinking about how to improve experiences wherever he goes."
+   social:
+    - type: ""
+      url: ""
+ - id: "jvandenende"
+   name:
+    - "Jacqueline"
+    - "van den Ende"
+   title: "Ms."
+   image: "van_den_Ende_Jacqueline-edit-web.jpg"
+   professional:
+    - designation: "Founder and CEO"
+      company: "Lamudi Philippines"
+   description: "Jacqueline is a founder and currently the managing director of Lamudi Philippines. Prior to that, she worked 3 years as an investment professional in a leading private equity firm. Prior to her career at HAL Investments, Jacqueline founded a non-profit company which now employs over 100 students in three countries. She is passionate about creating companies from scratch and building high performance teams of talented individuals. Her strength lies in the combination of an analytic background, with strong communication skills, passionate entrepreneurial drive and the ability to create a great company culture."
+   social:
+    - type: ""
+      url: ""
+ - id: "mwarren"
+   name:
+    - "Miguel"
+    - "Warren"
+   title: "Mr."
+   image: "Warren_Miguel-edit-web.jpg"
+   professional:
+    - designation: "Country Manager"
+      company: "Payoneer"
+   description:
+    - "Miguel is the Country Manager of Payoneer Philippines, a leading cross-border payments company for small businesses and professionals worldwide. Founded in 2005 and based in New York, Payoneer is venture-backed, profitable and ranked in the top 100 of Inc. 5000’s Financial Services companies. Miguel has been involved in financial services technology since 2003 with global solution providers such as FIS, SunGard and GFG Group (now Wirecard). He has worked with banks, mobile payment operators and payment schemes (Visa, Mastercard, UnionPay) across South East Asia to deliver card, mobile and cross border payment solutions for consumer and business-to-business (B2B) payments."
+    - "Miguel graduated from Ateneo De Manila University with a Bachelor of Science in Management Engineering."
    social:
     - type: ""
       url: ""
@@ -210,7 +320,9 @@ speakers:
 
 speakersLegacy:
  - id: "caragon"
-   name: "Claudine Aragon"
+   name:
+    - "Claudine"
+    - "Aragon"
    title: "Ms."
    image: "Aragon_Claudine-edit-web.jpg"
    professional:
@@ -227,7 +339,7 @@ schedules:
  - morning:
     - id: "jdeluzuriaga"
       topic: "Welcome Address"
-    - id: ""
+    - id: "keynote"
       topic: "Keynote Speech"
     - id: "pgioca"
       topic: "Tech Talk"
@@ -241,11 +353,11 @@ schedules:
     - id: "jjensen"
       topic: "14 Million Infographics Later, Here Are 24 Ideas For Your Inspiration"
     - id: "shermoso"
-      topic: "Tech Talk"
+      topic: "Youth, Diversity and Women in Technology"
     - id: "jchen"
-      topic: "Tech Talk"
+      topic: "Digital Citizenship to Connect the Unconnected"
  - morning:
-    - id: ""
+    - id: "gpadillaconcepcion"
       topic: "Welcome Address"
     - id: ""
       topic: "Keynote Speech"
@@ -258,10 +370,10 @@ schedules:
     - id: ""
       topic: "Tech Talk"
    afternoon:
-    - id: ""
-      topic: "Tech Talk"
-    - id: ""
-      topic: "Tech Talk"
+    - id: "ipatdu"
+      topic: "What Data Privacy Act means to IT"
+    - id: "jvandenende"
+      topic: "Leading through Technology"
     - id: "kjones"
       topic: "How to Prepare for the 4th Industrial Revolution"
  - morning:
@@ -271,19 +383,19 @@ schedules:
       topic: "Keynote Speech"
     - id: "mwarren"
       topic: "Global Opportunities for Digital Entrepreneurs"
-    - id: "adumanhug"
-      topic: "Hacking Organizations in Ethical Way"
+    - id: "lkuster"
+      topic: "Impact Entrepreneurship"
     - id: ""
       topic: "Tech Talk"
     - id: "hduh"
       topic: "Tech Talk"
    afternoon:
-    - id: ""
-      topic: "Tech Talk"
-    - id: ""
-      topic: "Tech Talk"
-    - id: ""
-      topic: "Tech Talk"
+    - id: "baguda"
+      topic: "The Philippine Genome Center and IT"
+    - id: "adumanhug"
+      topic: "CyberSecurity: Bug Bounty Program"
+    - id: "adelacruz"
+      topic: "CATCH-PATCH-MATCH: 4-Things you need to DO to Protect Yourself from 85% of Cyber Security Threats"
 
 
 parallels:
@@ -396,6 +508,28 @@ media:
  - id: "wheninmanila"
    name: "When In Manila"
    logo: "logo_media-wheninmanila.png"
+
+
+
+orgs:
+ - id: "sitefeu"
+   name: "SITE - Society of Information Technology - Far Eastern University Diliman"
+   logo: "logo_org-sitefeu.png"
+ - id: "acpi"
+   name: "ACPI - Animation Council of the Philippines, Inc."
+   logo: "logo_org-acpi.png"
+ - id: "compsoc"
+   name: "Computing Society of the Philippines"
+   logo: "logo_org-compsoc.png"
+ - id: "igda"
+   name: "IGDA - International Game Developers Association"
+   logo: "logo_org-igda.png"
+ - id: "psia"
+   name: "PSIA - Philippine Software Industry Association"
+   logo: "logo_org-psia.png"
+ - id: "psite"
+   name: "PSITE - Philippine Society of IT Educators"
+   logo: "logo_org-psite.png"
 
 
 

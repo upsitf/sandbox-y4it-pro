@@ -5,7 +5,7 @@
       <img class="img-responsive img-circle img-speaker" src="{{ site.baseurl }}/images/speakers/{{ eachspeaker.image }}" style="">
       </a>
       <h4>
-        {{ eachspeaker.name }}{% if eachspeaker.special %}{% for eachspecial in eachspeaker.special %}<a{% if eachspeaker.id == "hduh" %} href="http://dsp.acm.org/view_lecturer.cfm?lecturer_id=6123" target="_blank" rel="noopener noreferrer" {% endif %}><span class="span-special" title="{{ eachspecial.title }}" alt="{{ eachspecial.title }}">{{ eachspecial.display }}</span></a>{% endfor %}{% endif %}<br/>
+        {% for eachname in eachspeaker.name %}{{ eachname }}{% if forloop.last == false %} {% endif %}{% endfor %}{% if eachspeaker.special %}{% for eachspecial in eachspeaker.special %}<a{% if eachspeaker.id == "hduh" %} href="http://dsp.acm.org/view_lecturer.cfm?lecturer_id=6123" target="_blank" rel="noopener noreferrer" {% endif %}><span class="span-special" title="{{ eachspecial.title }}" alt="{{ eachspecial.title }}">{{ eachspecial.display }}</span></a>{% endfor %}{% endif %}<br/>
         <small>
           {% for eachprofessional in eachspeaker.professional %}
           {{ eachprofessional.designation }} at {{ eachprofessional.company }}
@@ -25,7 +25,7 @@
         <div class="col-lg-12">
 
           <h4 class="hidden-xs">
-            <span class="span-speaker">{{ eachspeaker.name }}</span>
+            <span class="span-speaker">{% for eachname in eachspeaker.name %}{{ eachname }}{% if forloop.last == false %} {% endif %}{% endfor %}</span>
             <small class="span-company">
               {% for eachprofessional in eachspeaker.professional %}
               {{ eachprofessional.designation }} at {{ eachprofessional.company }}

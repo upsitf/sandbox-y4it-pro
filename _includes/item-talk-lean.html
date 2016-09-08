@@ -6,7 +6,7 @@
   {% else %}
   {% for onlyspeaker in site.speakers %}
   {% if onlyspeaker.id == eachtalk.id %}
-  {% if onlyspeaker.title %}{{ onlyspeaker.title }} {% endif %}{{ onlyspeaker.name }}
+  {% if onlyspeaker.title %}{{ onlyspeaker.title }} {% endif %}{% for eachname in onlyspeaker.name %}{{ eachname }}{% if forloop.last == false %} {% endif %}{% endfor %}
   {% endif %}
   {% endfor %}
   {% endif %}
