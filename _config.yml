@@ -164,6 +164,20 @@ speakers:
    social:
     - type: ""
       url: ""
+ - id: "philario"
+   name:
+    - "Paul"
+    - "Hilario"
+   title: "Mr."
+   image: "Hilario_Paul-edit-web.jpg"
+   professional:
+    - designation: "Instructor and Project Staff"
+      company: "Philippine Microsatellite Program"
+   description:
+    - "Dr. Hilario is a faculty member of the Electrical and Electronics Engineering Institute of the University of the Philippines in Diliman, where he obtained his bachelor's degree in Applied Physics and his masters and doctoral degrees in Physics. He specializes in optics and instrumentation physics, which he uses as a project staff of the Philippine Microsatellite program. He is also heading the crafting of the satellite development roadmap of the National SPACE Development Program. In his free time, he looks at stars, watches movies, and plays Magic the Gathering as well as DOTA 2."
+   social:
+    - type: ""
+      url: ""
  - id: "mibrahim"
    name:
     - "Monchito"
@@ -230,6 +244,19 @@ speakers:
     - designation: "Co-Founder"
       company: "Impact Hub Manila"
    description: "In 2010, she won Miss Earth Switzerland and has since become a host and ambassador to many ecological brands in Switzerland. Today, she is a Co-Founder of Impact Hub Manila and an advocate of all things sustainable. She holds a degree in Business Administration (International Management) and had a long career in banking, which started with an apprenticeship for Credit Suisse which eventually garnered her a banking degree. A wanderlust at heart, LizAn took a year off to travel around the world. This experience immersed her in various cultures and exposed her to the realities present in the different parts of the world. Upon her return to Switzerland, she went on to managing her company, where she got exposed to the gamut of setting up/optimizing the business and to overseeing daily operations. LizAn especially loves being able to meet people and continues to learn from everything she’s exposed to. LizAn is multi-lingual communicator (4 languages) and is half Filipina, half Swiss."
+   social:
+    - type: ""
+      url: ""
+ - id: "kmelquiades"
+   name:
+    - "Kristian"
+    - "Melquiades"
+   title: "Mr."
+   image: "Melquiades_Kristian-edit-web.jpg"
+   professional:
+    - designation: "Country Manager"
+      company: "Tala"
+   description: "Kristian is the country manager of Tala, a data science mobile technology company that is revolutionizing financial services in emerging markets. Traditional credit excludes over 2.5 billion people worldwide — but Tala believes everyone deserves control over their financial lives and power over their future. Going beyond traditional credit models, taking into account network diversity, social connectedness, geographic patterns, and over 10,000 other data points, to build a much richer picture of a customer’s capacity. Tala app is already being used by hundreds of thousands of people in East Africa, and Tala is now building its operations in the Philippines."
    social:
     - type: ""
       url: ""
@@ -300,6 +327,20 @@ speakers:
    social:
     - type: ""
       url: ""
+ - id: "gvillorente"
+   name:
+    - "Gabriel"
+    - "Villorente"
+   title: "Mr."
+   image: "Villorente_Gabriel-edit-web.jpg"
+   professional:
+    - designation: "Senior Embedded Systems Training Instructor: Mobile and Embedded Software Development Track"
+      company: "UP Information Technology Development Center"
+   description:
+    - "Gabriel is a senior faculty member in Embedded Systems and Mobile Applications Development at the UP Information Technology Development Center, UP Diliman. His expertise include Architecture of IT Enterprise Solutions, Unconventional Computing, IoT Solutions, Electronics and Electrical Engineering. With 5 years of experience as IT trainer and consultant, he has also served as a frequent resource person for IT-related topics on educational TV shows, news and public affairs programs as well as IT conferences and seminars."
+   social:
+    - type: ""
+      url: ""
  - id: "mwarren"
    name:
     - "Miguel"
@@ -332,6 +373,35 @@ speakersLegacy:
    social:
     - type: ""
       url: ""
+ - id: "ppaje"
+   name:
+    - "Paulo"
+    - "Paje"
+   title: "Mr."
+   image: "Paje_Paulo-edit-web.jpg"
+   professional:
+    - designation: "Director"
+      company: "UP Information Technology Development Center"
+   description: ""
+   social:
+    - type: ""
+      url: ""
+ - id: "cty"
+   name:
+    - "Charles Patrick"
+    - "Ty"
+   title: "Mr."
+   image: "Ty_Charles-edit-web.jpg"
+   professional:
+    - designation: "Business Development Manager"
+      company: "Intel Philippines"
+   description:
+    - "Charles is the Business Development Manager for Intel Philippines. His charter is to accelerate the deployment of the Intel® based platforms for cloud computing, high performance computing, network function virtualization and big data; and to drive adoption through working closely with the industry ecosystem. In addition, Charles is also responsible for development of Intel® based IOT Solutions for Retail, Industrial, Healthcare and other Verticals in the Philippines. Prior to joining Intel, Charles was Category Manager for Hewlett-Packard enterprise, He was responsible for growing the Data storage business across Southeast Asia, Hong Kong and Taiwan."
+    - "Charles has over 10 years working experience in the industry and holds a Bachelor of Arts degree with a major in Economics from the Ateneo de Manila University."
+   social:
+    - type: ""
+      url: ""
+
 
 
 
@@ -347,7 +417,7 @@ schedules:
       topic: "Human Centered Design"
     - id: "dhaas"
       topic: "Think Big, Start Small, Grow Fast - Working with Industry for ‘Work Ready’ Students"
-    - id: "msantos"
+    - id: "mmirandillasantos"
       topic: "PH Broadband: Current State and The Way Forward"
    afternoon:
     - id: "jjensen"
@@ -456,6 +526,12 @@ sponsors:
  - id: "ek"
    name: "Enchanted Kingdom"
    logo: "logo_sponsor-ek.png"
+ - id: "globe"
+   name: "Globe"
+   logo: "logo_sponsor-globe.png"
+ - id: "intel"
+   name: "Intel"
+   logo: "logo_sponsor-intel.png"
  - id: "jobstreet"
    name: "Jobstreet"
    logo: "logo_sponsor-jobstreet.png"
@@ -480,9 +556,15 @@ sponsors:
  - id: "piktochart"
    name: "Piktochart"
    logo: "logo_sponsor-piktochart.png"
+ - id: "powermac"
+   name: "Power Mac Center"
+   logo: "logo_sponsor-powermac.png"
  - id: "teradoor"
    name: "Teradoor"
    logo: "logo_sponsor-teradoor.png"
+ - id: "unity"
+   name: "Unity"
+   logo: "logo_sponsor-unity.png"
 
 
 
@@ -493,12 +575,21 @@ media:
  - id: "bworld"
    name: "Business World"
    logo: "logo_media-bworld.png"
+ - id: "ebc"
+   name: "Eagle Broadcasting Company"
+   logo: "logo_media-ebc.png"
  - id: "inqpop"
    name: "Inquirer Pop"
    logo: "logo_media-inqpop.png"
  - id: "manilabulletin"
    name: "Manila Bulletin"
    logo: "logo_media-manilabulletin.png"
+ - id: "manilatimes"
+   name: "The Manila Times"
+   logo: "logo_media-manilatimes.png"
+ - id: "pcbuyers"
+   name: "PC Buyer's Guide"
+   logo: "logo_media-pcbuyers.png"
  - id: "scoutmag"
    name: "Scout Magazine"
    logo: "logo_media-scoutmag.png"
@@ -515,6 +606,9 @@ orgs:
  - id: "sitefeu"
    name: "SITE - Society of Information Technology - Far Eastern University Diliman"
    logo: "logo_org-sitefeu.png"
+ - id: "bcissanbeda"
+   name: "BCIS - Bedan Computer Information Society - San Beda College"
+   logo: "logo_org-bcissanbeda.png"
  - id: "acpi"
    name: "ACPI - Animation Council of the Philippines, Inc."
    logo: "logo_org-acpi.png"
