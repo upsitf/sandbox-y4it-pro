@@ -2,69 +2,17 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script type="text/javascript" src="{{ site.baseurl }}/js/smoothscroll.js"></script>
 
-
-{% if page.home %}
+<script type="text/javascript" src="{{ site.baseurl }}/js/flipclock.min.js"></script>
 <script>
+  var date = new Date(2017, 9, 5);
+  var now = new Date();
+  var diff = (date.getTime()/1000) - (now.getTime()/1000);
 
-var current = -1;
-
-$(document).ready(function(){
-  $('[id^="speaker-"]').click(function(){
-
-    var speakerindex_str = $(this).attr('id').substring(8);
-    //var speakerindex_int = parseInt(speakerindex_str);
-    var speakerindex0_int = parseInt(speakerindex_str) - 1;
-
-    if (current != speakerindex0_int) {
-
-    var speakerindex3s_int = Math.floor(speakerindex0_int/3) + 1;
-    if (speakerindex3s_int < 10) {var speakerindex3s_str = "0".concat(speakerindex3s_int.toString());}
-    else {var speakerindex3s_str = speakerindex3s_int.toString();}
-    var speakerindex3srel_int = (speakerindex0_int%3)+1;
-    var speakerindex3srel_str = speakerindex3srel_int.toString();
-
-    var speakerindex4s_int = Math.floor(speakerindex0_int/4) + 1;
-    if (speakerindex4s_int < 10) {var speakerindex4s_str = "0".concat(speakerindex4s_int.toString());}
-    else {var speakerindex4s_str = speakerindex4s_int.toString();}
-    var speakerindex4srel_int = (speakerindex0_int%4)+1;
-    var speakerindex4srel_str = speakerindex4srel_int.toString();
-
-    $('[id^="speakerdrilldown-"]').removeClass("visible-maxheight");
-
-    //setTimeout(function(){
-      $('#speakerdrilldown-3s-'+speakerindex3s_str).find(".arrow-up").removeClass("arrow-up-1-of-3 arrow-up-2-of-3 arrow-up-3-of-3").addClass("arrow-up-"+speakerindex3srel_str+"-of-3");
-      $('#speakerdrilldown-3s-'+speakerindex3s_str).find(".span-speaker").html($('#speakerdrilldown-'+speakerindex_str).find(".span-speaker").html());
-      $('#speakerdrilldown-3s-'+speakerindex3s_str).find(".span-company").html($('#speakerdrilldown-'+speakerindex_str).find(".span-company").html());
-      $('#speakerdrilldown-3s-'+speakerindex3s_str).find("p").html($('#speakerdrilldown-'+speakerindex_str).find("p").html());
-
-      $('#speakerdrilldown-4s-'+speakerindex4s_str).find(".arrow-up").removeClass("arrow-up-1-of-4 arrow-up-2-of-4 arrow-up-3-of-4 arrow-up-4-of-4").addClass("arrow-up-"+speakerindex4srel_str+"-of-4");
-      $('#speakerdrilldown-4s-'+speakerindex4s_str).find(".span-speaker").html($('#speakerdrilldown-'+speakerindex_str).find(".span-speaker").html());
-      $('#speakerdrilldown-4s-'+speakerindex4s_str).find(".span-company").html($('#speakerdrilldown-'+speakerindex_str).find(".span-company").html());
-      $('#speakerdrilldown-4s-'+speakerindex4s_str).find("p").html($('#speakerdrilldown-'+speakerindex_str).find("p").html());
-
-
-      $('#speakerdrilldown-'+speakerindex_str).addClass("visible-maxheight");
-      $('#speakerdrilldown-3s-'+speakerindex3s_str).addClass("visible-maxheight");
-      $('#speakerdrilldown-4s-'+speakerindex4s_str).addClass("visible-maxheight");
-
-    //}, 500);
-
-    current = speakerindex0_int;
-
-    }
-    else {
-
-      $('[id^="speakerdrilldown-"]').removeClass("visible-maxheight");
-      current = -1;
-
-    }
-
+  var clock = $('.flipclock').FlipClock(diff,{
+      clockFace: 'DailyCounter',
+      countdown: true
   });
-});
-
 </script>
-
-{% endif %}
 
 {% if page.animate %}
 <script src="{{ site.baseurl }}/js/wow.min.js"></script>

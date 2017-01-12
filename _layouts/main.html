@@ -5,15 +5,7 @@
 
     <body{% if page.home %}{{ ' data-spy="scroll" data-target="#km-navbar" data-offset="5"'  }}{% endif %}>
 
-		{% include header.html %}
-
-		<section class="page-content">
-
-		{{content}}
-
-		</section>
-
-		{% include footer.html %}
+    {{content}}
 
 		{% include foot.html %}
 
