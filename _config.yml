@@ -9,25 +9,6 @@ baseurl: http://toffmendoza.me/sandbox-y4it
 markdown: kramdown
 permalink: pretty
 
-cert: http://reg2016.y4it.org/certificates
-switchCert: false
-
-# Site variables
-switchAnnouncement: false
-switchSpeakers: true
-switchSpeakersHeader: false
-switchParallel: false
-switchSchedule: "leanfull"
-# switchSchedule values can be "lean," "leanfull" (full-length "lean") or "full"
-switchScheduleOrder: "alphabetical"
-switchPayment: false
-switchFAQ: true
-switchSponsor: true
-switchPartners: true
-switchTerms: true
-
-switchFooterSitemap: false
-
 urlOfficial: "http://y4it.org/"
 urlFacebook: "https://www.facebook.com/ilove.Y4iT/"
 urlTwitter: "https://twitter.com/y4it"

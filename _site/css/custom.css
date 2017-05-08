@@ -1,15 +1,15 @@
-.div-savethedate .span-title {
+#section-savethedate .span-title {
   font-size: 1.25em;
   color: white;
 }
 
-.div-social {
+#section-social {
   font-size: 3em;
   margin-top: 5px;
 
 }
 
-.div-social a i {
+#section-social a i {
   color: white !important;
 }
 
@@ -238,6 +238,8 @@ footer.section-violet>.container-fluid>.row:not(.row-limit) span {
   transition: 250ms ease-out;
 }
 
+.btn.btn-white-on-violet,
+.btn.btn-default.btn-white-on-violet,
 .section-default.section-violet .btn.btn-white-on-violet,
 .section-default.section-violet .btn.btn-default.btn-white-on-violet {
   color: white;
@@ -249,6 +251,10 @@ footer.section-violet>.container-fluid>.row:not(.row-limit) span {
   transition: 250ms ease-out;
 }
 
+.btn.btn-white-on-violet:hover,
+.btn.btn-white-on-violet:focus,
+.btn.btn-default.btn-white-on-violet:hover,
+.btn.btn-default.btn-white-on-violet:focus,
 .section-default.section-violet .btn.btn-white-on-violet:hover,
 .section-default.section-violet .btn.btn-white-on-violet:focus,
 .section-default.section-violet .btn.btn-default.btn-white-on-violet:hover,
@@ -447,4 +453,12 @@ p {
 .section-default h2.h2-title {
   font-family: Roboto Slab;
   font-weight: 500;
+}
+
+/* FLIPCLOCK RESPONSIVE*/
+@media (max-width: 767px) {
+  .flip-clock-divider.hours,
+  .flip-clock-divider.hours~* {
+    display: none;
+  }
 }

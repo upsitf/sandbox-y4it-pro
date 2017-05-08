@@ -3,7 +3,7 @@ layout: main
 ---
 
 
-<section id="content" style="background-image:url('{{ site.baseurl }}/images/be-a-sponsor/photo_bg-cta.jpg');background-size:cover;background-repeat:no-repeat;">
+<section id="content" style="background-image:url('{{ site.baseurl }}/images/photo_bg-cta.jpg');background-size:cover;background-repeat:no-repeat;">
 
   <section class="section-default section-violet" style="background-color:rgba(0,0,0,0.7);min-height:100vh">
     <div class="container-fluid">
@@ -12,25 +12,33 @@ layout: main
 
           <img class="img-responsive" src="{{ site.baseurl }}/images/logo-y4it-white.png" style="width:100%;max-width:200px;margin-right:auto;margin-bottom:40px;">
 
-          <h1 style="font-family:'Roboto Slab';font-weight:900;">Well, that was fun. :D</h1>
-          <p>
+          <h1 style="font-family:'Roboto Slab';font-weight:900;">Gear up for more!</h1>
+          <p style="line-height:1.5em;">
             {% if site.switchCert == true %}To claim your Certificate of Participation, go to <a href="{{ site.cert2016 }}">reg2016.y4it.org/certificates</a> and enter your badge number.<br/>{% endif %}
-            Thank you for attending! We'll see you again next year.<br/>
+            Get ready for this year's Y4iT!<br/>
             <br/>
           </p>
 
-          <div class="flipclock"></div>
+          <section id="section-flipclock">
+            <div class="flipclock"></div>
+          </section>
 
-          <div class="div-savethedate">
+          <section id="section-savethedate">
             <span class="span-title">The 15th Youth Congress on Information Technology <br/></span>
             <span class="details">
               September 5-7, 2017 <br/>
               SMX Convention Center Manila <br/>
               Mall of Asia Complex, Pasay City <br/>
             </span>
-          </div>
+          </section>
 
-          <div class="div-social">
+          <section>
+            <h1 style="font-family:'Roboto Slab';font-weight:900;">Be a sponsor!</h1>
+            <p style="line-height:1.5em;">Y4iT offers different sponsorship mileages designed to help meet your various objectives and targets. <br class="hidden-xs"/>Collaborate with us to craft the perfect sponsorship for your company.</p>
+            <a href="{{ site.baseurl }}/files/Y4iT2017SponsorshipPackages.pdf" target="_blank" class="btn btn-default btn-white-on-violet btn-lg" style="margin-bottom:30px;line-height:1.25em !important">Download <br class="visible-xs"/>sponsorship <br class="visible-xs"/>packages</a>
+          </section>
+
+          <div id="section-social">
             {% include social.html %}
           </div>
 
