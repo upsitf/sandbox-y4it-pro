@@ -1,3 +1,21 @@
+.flip-clock-divider .flip-clock-label {
+  color: white;
+  font-family: Roboto;
+}
+
+.flip-clock-wrapper { 
+  width: 620px; /* Apply this for 99 or less days left */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+}
+
+@media (max-width: 767px) {
+  .flip-clock-wrapper { 
+    width: 140px;
+  }
+}
+
 .flip-clock-wrapper .flip {
   box-shadow: none !important;
 }
@@ -17,7 +35,7 @@
 /**/
 
 .flip-clock-divider.days .flip-clock-label {
-  right: -118px;
+  right: -83px;
 }
 
 /**/
@@ -76,3 +94,11 @@
   -webkit-animation: hide 0.5s 0.3s linear both;
   -moz-animation: hide 0.5s 0.3s linear both;
   animation: hide 0.5s 0.2s linear both; }
+
+  /* FLIPCLOCK RESPONSIVE*/
+@media (max-width: 767px) {
+  .flip-clock-divider.hours,
+  .flip-clock-divider.hours~* {
+    display: none;
+  }
+}

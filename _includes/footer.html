@@ -1,0 +1,46 @@
+<footer>
+
+  <div class="container-fluid footer-main"><div class="row row-limit-footer">
+
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      
+      <section id="section-social">
+        {% include social.html %}
+      </section>
+      
+      <p id="p-ched" style="display:block;margin-top:15px;">
+        Y4iT 2017 is <a target="_blank" rel="noopener noreferrer" href="{{ site.baseurl }}{{ site.urlAppendCHEDEndorsement }}" style="text-decoration:underline">endorsed by the Commission on Higher Education (CHED)</a>.
+      </p>
+
+      {% if site.switchSponsor == true %}
+      <p id="p-sponsor">
+        Collaborate with us, <a href="{{ site.baseurl }}/be-a-sponsor" style="text-decoration:underline">be a sponsor now!</a>
+      </p>  
+      {% endif %}
+
+    </div>
+
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"">
+      <span class="span-credit">Y4iT is a project of</span>
+      <img src="{{ site.baseurl }}/images/logo_sitf-white-header.png">
+      <span>UP System Information Technology Foundation, Inc.</span>
+      <span>3/F Vidal Tan Hall, Quirino Ave. cor. Velasquez St.,<br> University of
+        the Philippines Diliman, 1110 Quezon City</span>
+      <span>info@y4it.org</span>
+      <span>Landline No. 788-5898/436-2217</span>
+      <span>Fax No. 920-2036</span>
+      <span>Mobile No. 0917-563-5682</span>
+      <!--ul>
+        <li><a href="{{ site.urlFacebook }}"></a></li>
+        <li><a href="{{ site.urlTwitter }}"></a></li>
+      </ul-->
+    </div>
+
+  </div></div>
+
+  <div class="container-fluid footer-legal text-center"><div class="row"><div class="col-lg-12">
+    <span>&copy; 2017 UP System Information Technology Foundation, Inc. All the
+      contents on this site are protected by copyright law.</span>
+  </div></div></div>
+
+</footer>

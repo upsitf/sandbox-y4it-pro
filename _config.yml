@@ -3,13 +3,30 @@
 title: Y4iT
 
 baseurl: http://toffmendoza.me/sandbox-y4it
-#baseurl: http://y4it.org/
+#baseurl: https://y4it.org/
 
 # Build settings
 markdown: kramdown
 permalink: pretty
 
-urlOfficial: "http://y4it.org/"
+# Site variables
+switchAnnouncement: false
+switchSpeakers: false
+switchSchedule: false
+#switchScheduleOrder: "alphabetical"
+switchRates: false
+switchReg: false
+switchPayment: false
+switchFAQ: false
+switchPartners: false
+switchTerms: false
+
+switchSponsor: false
+
+urlAppendCHEDEndorsement: "/files/Y4iT2017CHEDEndorsement.pdf"
+urlAppendSponsorshipPackages: "/files/Y4iT2017SponsorshipPackages.pdf"
+
+urlOfficial: "https://y4it.org/"
 urlFacebook: "https://www.facebook.com/ilove.Y4iT/"
 urlTwitter: "https://twitter.com/y4it"
 urlInstagram: "https://www.instagram.com/y4it/"
@@ -17,5 +34,43 @@ urlYouTube: "https://www.youtube.com/user/iloveY4iT"
 urlSnapchat: "https://www.snapchat.com/add/y4it"
 urlViber: "http://chats.viber.com/y4it"
 
+#urlReg: http://reg2016.y4it.org
+
+#urlAppendPackage: "/sponsorship-package.pdf"
+#urlAppendDeck: "/sponsorship-deck.pdf"
+#urlPartnerConfirmation: "http://y4it.org/isupporty4it"
+
+#urlCert: http://reg2017.y4it.org/certificates
+
 organizerDescription:
  - "The UP System Information Technology Foundation (UPSITF) Inc. is a non-government organization focused on the application of Information and Communication Technology for development. It partners with UP Information Technology Development Center in providing various services such as, but not limited to, Education Development, IT Human Capital Development, Research &amp; Development, Software Engineering, ICT Policy Development and Planning, and IT Project Management."
+
+dataFAQ:
+ - question: "Who can attend the event?"
+   answer: "Y4iT is mostly attended by IT students, professionals, and enthusiasts, but of course, everyone is invited to join."
+ - question: "How do I register for the event?"
+   answer: "To register online, go to reg2017.y4it.org and follow the steps provided. To register on-site, just go to the registration booth, provide the Secretariat with necessary information, and pay for the total registration fee."
+ - question: "Can I register online and pay on-site (during event day)?"
+   answer: "Yes, you may accomplish the registration form online and pay during event day. However, badge rates depend on the date of purchase and not of registration. Payments made during the event day will follow the walk-in rate."
+ - question: "Can I register online and pay offsite (direct payment at UPSITF office or bank deposit) but claim my badge/s on-site?"
+   answer: "Yes, you may claim your badge/s on-site or during the event when you register online and pay before the event. Just present the Registration Summary and proof of payment."
+ - question: "Why should we register online?"
+   answer: "Those who register online will be prioritized during the event. On-site registrants (walk-in participants) will only be accommodated at 9am."
+ - question: "I failed to bring or print out my Registration Summary. Would I still be able to claim my badges?"
+   answer: "Yes. Just bring proof of payment to claim your badges."
+ - question: "I lost my badge, would the management still be able to replace it?"
+   answer: "Unfortunately, Y4iT will not replace lost badge/s."
+ - question: "How long will the program be?"
+   answer: "Gates open at 7am. The program starts at 9am and ends at 4pm."
+ - question: "Will there be different programs per day?"
+   answer: "Yes, there will be a different program for each day. Expect to learn and be inspired by different speakers and topics each day."
+ - question: "I lost my certificate code, would the management still be able to replace it?"
+   answer: "Unfortunately, Y4iT will not replace lost certificate codes."
+
+dataTerms:
+ - name: "Refunds"
+   description: "Tickets are non-refundable but transferrable."
+ - name: "Speakers"
+   description: "Y4iT reserves the right to cancel or replace speakers."
+ - name: "Certificates"
+   description: "Lost certificate codes will not be replaced."

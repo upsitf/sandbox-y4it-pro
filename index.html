@@ -3,44 +3,378 @@ layout: main
 ---
 
 
-<section id="content" style="background-image:url('{{ site.baseurl }}/images/photo_bg-cta.jpg');background-size:cover;background-repeat:no-repeat;">
+<section id="section-header" class="section-bg-dark section-bg-image" style="background-image:url('{{ site.baseurl }}/images/coll_web-header-main.png');">
+  <div class="container-fluid">
+    <div class="row row-limit">
+      <div class="col-lg-12 text-center">
 
-  <section class="section-default section-violet" style="background-color:rgba(0,0,0,0.7);min-height:100vh">
+      <div id="div-header-content">
+        
+        <img id="img-header-logo" class="img-responsive" src="{{ site.baseurl }}/images/coll_web-logo-y4it-wordmark-white.png"/>
+
+        <span id="span-header-presents">presents</span>
+
+        <h1>
+          <span>Engineer</span>
+          <span>a better</span>
+          <span>future</span>
+          <small>The 15th Youth Congress on Information Technology</small>
+        </h1>
+          
+          <span>
+            <span>September 5-7, 2017</span>
+            <span>
+              SMX Convention Center<br/>
+              Mall of Asia Complex, Pasay City
+            </span>
+          </span>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="section-content" class="section-bg-dark">
+
+  <section id="section-countdown">
+    <div class="container-fluid">
+      <div class="row row-limit">
+        <div class="col-lg-12 text-center">
+          <h1>Countdown to Y4iT 2017</h1>
+          <div class="flipclock"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {% if site.switchSpeakers and site.switchSpeakers == true %}
+
+  <section id="section-speakers">
     <div class="container-fluid">
       <div class="row row-limit">
         <div class="col-lg-12">
 
-          <img class="img-responsive" src="{{ site.baseurl }}/images/logo-y4it-white.png" style="width:100%;max-width:200px;margin-right:auto;margin-bottom:40px;">
+        <h1>Speakers</h1>
 
-          <h1 style="font-family:'Roboto Slab';font-weight:900;">Gear up for more!</h1>
-          <p style="line-height:1.5em;">
-            {% if site.switchCert == true %}To claim your Certificate of Participation, go to <a href="{{ site.cert2016 }}">reg2016.y4it.org/certificates</a> and enter your badge number.<br/>{% endif %}
-            Get ready for this year's Y4iT!<br/>
-            <br/>
-          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-          <section id="section-flipclock">
-            <div class="flipclock"></div>
-          </section>
+  {% endif %}
 
-          <section id="section-savethedate">
-            <span class="span-title">The 15th Youth Congress on Information Technology <br/></span>
-            <span class="details">
-              September 5-7, 2017 <br/>
-              SMX Convention Center Manila <br/>
-              Mall of Asia Complex, Pasay City <br/>
-            </span>
-          </section>
+  <section id="section-details">
+    <div class="container-fluid">
+      <div class="row row-limit">
+        <div class="col-lg-12">
 
-          <section>
-            <h1 style="font-family:'Roboto Slab';font-weight:900;">Be a sponsor!</h1>
-            <p style="line-height:1.5em;">Y4iT offers different sponsorship mileages designed to help meet your various objectives and targets. <br class="hidden-xs"/>Collaborate with us to craft the perfect sponsorship for your company.</p>
-            <a href="{{ site.baseurl }}/files/Y4iT2017SponsorshipPackages.pdf" target="_blank" class="btn btn-default btn-white-on-violet btn-lg" style="margin-bottom:30px;line-height:1.25em !important">Download <br class="visible-xs"/>sponsorship <br class="visible-xs"/>packages</a>
-          </section>
+        <h1 class="hidden">Details</h1>
 
-          <div id="section-social">
-            {% include social.html %}
+        <img id="img-smx" class="img-responsive img-small-full wow fadeInDown" src="{{ site.baseurl }}/images/smx.jpg">
+        <sub class="hidden-xs"><a target="_blank" rel="noopener noreferrer" href="http://www.smxconventioncenter.com/manila">SMX Convention Center</a></sub>
+        <!--style>
+          @media (max-width:768px) {
+            #img-smx {
+              margin-top: -50px;
+            }
+          }
+        </style-->
+
+        <!--div class="row"><div class="col-lg-12">
+
+          <h2 class="hidden">Schedule</h2>
+
+        </div></div-->
+
+        <div class="row"><div class="col-lg-12">
+          <h2 class="hidden">Venue</h2>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-lg-push-6 col-md-push-6 col-sm-push-6 col-xs-push-0">
+              <div class="embed-sizer">
+                <div id="map" class="embed-responsive embed-responsive-4by3">
+                  <div class="div-map-overlay" onClick="style.pointerEvents='none'"></div>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d16049.023489840933!2d120.98115258483915!3d14.53198344958815!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcf52fb438feb5a6c!2sSMX+Convention+Center!5e0!3m2!1sen!2sph!4v1457683347486" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+              </div>
+              <span>
+                <strong>SMX Convention Center</strong> <br/>
+                Mall of Asia Complex, Pasay City
+              </span>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-lg-pull-6 col-md-pull-6 col-sm-pull-6 col-xs-pull-0">
+              <p>Badge claiming starts at 7 AM </p> 
+              <p>Gates open at 7 AM </p>
+              <p>Event proper: 9 AM - 4 PM || Break: 12 NN - 1 PM </p>
+            </div>
           </div>
+        </div></div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="section-about" class="section-bg-dark section-bg-image" style="background-image:url('{{ site.baseurl }}/images/coll_web-header.png');">
+    <div class="container-fluid">
+      <div class="row row-limit">
+        <div class="col-lg-12 text-center">
+
+        <h1 class="hidden">About Y4iT</h1>
+
+        <img id="img-about-logo" class="img-responsive" src="{{ site.baseurl }}/images/coll_web-logo-y4it-wordmark-white.png"/>
+
+        <p>Established in 2003, the Youth Congress on Information Technology — commonly known as Y4iT — is an annual information technology event in the Philippines.</p>
+
+        <p>Aimed primarily at college students, professionals, educators, IT experts and enthusiasts, Y4iT is an enabling event for today’s youth and aspires to recognize young Filipinos as key drivers in the dynamic IT industry. Since its launching, Y4iT has gone on to be at the forefront of information technology gathering events in the Philippines. </p>
+
+        <a href="{{ site.baseurl }}{{ site.urlAppendCHEDEndorsement }}" target="_blank" rel="noopener noreferrer" class="btn btn-default">CHED Endorsement</a>
+
+        <!--div class="embed-sizer" style="margin-top:40px;">
+          <div class="embed-responsive embed-responsive-16by9"-->
+            <!--iframe class="embed-responsive-item" width="100%" src="https://www.youtube.com/embed/PWVx1pfzAZw" frameborder="0" allowfullscreen></iframe-->
+            <!--div id="fb-root"></div><script>(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";  fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script><div class="fb-video" data-allowfullscreen="1" data-href="/ilove.Y4iT/videos/vb.80717011915/10153329369461916/?type=3"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/ilove.Y4iT/videos/10153329369461916/"><a href="https://www.facebook.com/ilove.Y4iT/videos/10153329369461916/">Gear Up for Y4iT 2016!</a><p>We are officially inviting everyone to be part of the biggest IT event in the Philippines! Join Y4iT on September 27 to 29 at the SMX Convention Center!</p>Posted by <a href="https://www.facebook.com/ilove.Y4iT/">Youth Congress on Information Technology - y4it</a> on Sunday, March 20, 2016</blockquote></div></div>
+          </div>
+          <sub>Y4iT 2016 Video Montage</sub>
+        </div-->
+        
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="section-registration">
+    <div class="container-fluid">
+      <div class="row row-limit">
+        <div class="col-lg-12">
+
+        {% if site.switchRegistration and site.switchRegistration == true %}
+
+        {% if site.switchBadges and site.switchBadges == true %}
+
+        <h1>
+          Congress Badges
+          <small>Per Day</small>
+        </h1>
+
+        <section class="text-center">
+
+          <h2>Rates</h2>
+
+          <h3>
+            Early Bird Rate
+            <small>until July 17, 2017 11:59 PM</small>
+          </h3>
+          <span>600</span>
+
+          <h3>
+            Regular Rate
+            <small>July 18, 2017 to September 4, 2017 11:59 PM</small>
+          </h3>
+
+          <div class="row">
+
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <h4>Individual</h4>
+              <span>700</span>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <h4>
+                Small Group
+                <small>50-99 people</small>
+              </h4>
+              <span>650</span>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <h4>
+                Big Group
+                <small>100+ people</small>
+              </h4>
+              <span>600</span>
+            </div>
+
+          </div>
+
+          <h3>
+            Walk-In Rate
+            <small>September 5 to 7, 2017</small>
+          </h3>
+          <span>750</span>
+
+        </section>
+
+        <section>
+
+          <h2>Inclusions</h2>
+
+          <div class="div-lg-columns div-lg-columns-3">
+            <div class="div-columns-item item-inclusion">
+            <h3>Admission</h3>
+            <p>
+              <span>Entrance to the Y4iT Plenary and Exhibit Halls.</span>
+              You will be granted access to talks of IT experts and booths and activities of Y4iT partners.
+            </p>
+            </div>
+
+
+            <div class="div-columns-item item-inclusion">
+            <h3>Congress Kit</h3>
+            <p>
+              <span>The official Y4iT Congress Kit.</span>
+              This includes AM and PM snacks, souvenir program, and many more freebies from us and from our sponsors!
+            </p>
+            </div>
+
+            <div class="div-columns-item item-inclusion">
+            <h3>Certificate</h3>
+            <p>
+              <span>Certificate of Participation for each congress day.</span>
+              This shall serve as proof of your attendance and participation in this year’s Y4iT.
+            </p>
+            </div>
+
+          </div>
+
+        </section>
+
+        {% endif %}
+
+        {% if site.switchHowToReg and site.switchHowToReg == true %}
+
+        <section>
+
+          <h2>Registration</h2>
+
+          <h3>Online</h3>
+          <p>Fill out our registration form online and pay for your badges before or during the event.</p>
+
+          <h3>On-site</h3>
+          <p>Every process from registration to badge distribution will be done on the congress day.</p>
+
+        </section>
+
+        {% endif %}
+
+        {% if site.switchPayment and site.switchPayment == true %}
+
+        <section>
+
+          <h2>Modes of Payment</h2>
+
+          <h3>Direct Payment</h3>
+          <p>Lorem ipsum.</p>
+
+          <h3>Check Deposit</h3>
+          <p>Lorem ipsum.</p>
+
+          <h3>On-site Payment</h3>
+          <p>Lorem ipsum.</p>
+
+        </section>
+
+        {% endif %}
+
+        {% else %}
+
+        <h1>Registration</h1>
+
+        <span>Coming Soon!</span>
+
+        <p>Please standby for our upcoming announcements.</p>
+
+        {% endif %}
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {% if site.switchFAQ and site.switchFAQ == true %}
+  <section id="section-faq">
+    <div class="container-fluid">
+      <div class="row row-limit">
+        <div class="col-lg-12">
+
+        <h1>
+          FAQ
+          <small>Frequently Asked Questions</small>
+        </h1>
+
+        <div class="div-lg-columns div-lg-columns-3">
+          {% for eachfaq in site.dataFAQ %}
+          <div class="div-columns-item item-faq">
+            <p class="p-faq-question">{{ eachfaq.question }}</p>
+            <p class="p-faq-answer">{{ eachfaq.answer }}</p>
+          </div>
+          {% endfor %}
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  {% if site.switchPartners and site.switchPartners == true %}
+  <section id="section-partners">
+    <div class="container-fluid">
+      <div class="row row-limit">
+        <div class="col-lg-12">
+
+        <h1>Partners</h1>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  {% if site.switchTerms and site.switchTerms == true %}
+  <section id="section-terms">
+    <div class="container-fluid">
+      <div class="row row-limit">
+        <div class="col-lg-12">
+
+        <h1>Terms and Conditions</h1>
+
+        <!--div class="row">
+          {% for eachterm in site.dataTerms %}
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <h2 class="h2-term-name">{{ eachterm.name }}</h2>
+            <p class="p-term-description">{{ eachterm.description }}</p>
+          </div>
+          {% endfor %}
+        </div-->
+
+        <div class="div-lg-columns div-lg-columns-3">
+          {% for eachterm in site.dataTerms %}
+          <div class="div-columns-item item-term">
+            <h2 class="h2-term-name">{{ eachterm.name }}</h2>
+            <p class="p-term-description">{{ eachterm.description }}</p>
+          </div>
+          {% endfor %}
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  <section id="section-organizer">
+    <div class="container-fluid">
+      <div class="row row-limit">
+        <div class="col-lg-12">
+
+        <h1 class="hidden">The Organizer</h1>
+
+        <img id="img-organizer-logo" src="{{ site.baseurl }}/images/logo_sitf-white-header.png">
+
+        <p>The UP System Information Technology Foundation (UPSITF) Inc. is a non-government organization focused on the application of Information and Communication Technology for development. It partners with UP Information Technology Development Center in providing various services such as, but not limited to, Education Development, IT Human Capital Development, Research and Development, Software Engineering, ICT Policy Development and Planning, and IT Project Management.</p>
 
         </div>
       </div>
