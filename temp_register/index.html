@@ -1,0 +1,272 @@
+---
+layout: main
+---
+
+
+<section id="section-header" class="section-bg-dark section-bg-image" style="background-image:url('{{ site.baseurl }}/images/coll_web-header-main.png');">
+  <div class="container-fluid">
+    <div class="row row-limit">
+      <div class="col-lg-12 text-center">
+
+      <div id="div-header-content">
+        
+        <img id="img-header-logo" class="img-responsive" src="{{ site.baseurl }}/images/coll_web-logo-y4it-wordmark-white.png"/>
+
+        <span id="span-header-presents">presents</span>
+
+        <h1>
+          <span>Engineer</span>
+          <span>a better</span>
+          <span>future</span>
+          <small>The 15th Youth Congress on Information Technology</small>
+        </h1>
+          
+          <span>
+            <span>September 5-7, 2017</span>
+            <span>
+              SMX Convention Center<br/>
+              Mall of Asia Complex, Pasay City
+            </span>
+          </span>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="section-content" class="section-bg-dark">
+
+  <section id="section-details">
+    <div class="container-fluid">
+      <div class="row row-limit">
+        <div class="col-lg-12">
+
+        <h1 class="hidden">The Y4iT Online Module</h1>
+
+        <section>
+          <h2>Registration</h2>
+          <>
+        </section>
+
+        <section>
+          <h2>Certificates</h2>
+        </section>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="section-about" class="section-bg-dark section-bg-image" style="background-image:url('{{ site.baseurl }}/images/coll_web-header.png');">
+    <div class="container-fluid">
+      <div class="row row-limit">
+        <div class="col-lg-12 text-center">
+
+        <h1 class="hidden">About Y4iT</h1>
+
+        <img id="img-about-logo" class="img-responsive" src="{{ site.baseurl }}/images/coll_web-logo-y4it-wordmark-white.png"/>
+
+        <p>Established in 2003, the Youth Congress on Information Technology — commonly known as Y4iT — is an annual information technology event in the Philippines.</p>
+
+        <p>Aimed primarily at college students, professionals, educators, IT experts and enthusiasts, Y4iT is an enabling event for today’s youth and aspires to recognize young Filipinos as key drivers in the dynamic IT industry. Since its launching, Y4iT has gone on to be at the forefront of information technology gathering events in the Philippines. </p>
+
+        <a href="{{ site.baseurl }}{{ site.urlAppendCHEDEndorsement }}" target="_blank" rel="noopener noreferrer" class="btn btn-default">CHED Endorsement</a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="section-registration">
+    <div class="container-fluid">
+      <div class="row row-limit">
+        <div class="col-lg-12">
+
+        {% if site.switchRegistration and site.switchRegistration == true %}
+
+        {% if site.switchBadges and site.switchBadges == true %}
+
+        <h1>
+          Congress Badges
+          <small>Per Day</small>
+        </h1>
+
+        <section class="text-center">
+
+          <h2>Rates</h2>
+
+          <h3>
+            Early Bird Rate
+            <small>until July 17, 2017 11:59 PM</small>
+          </h3>
+          <span>600</span>
+
+          <h3>
+            Regular Rate
+            <small>July 18, 2017 to September 4, 2017 11:59 PM</small>
+          </h3>
+
+          <div class="row">
+
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <h4>Individual</h4>
+              <span>700</span>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <h4>
+                Small Group
+                <small>50-99 people</small>
+              </h4>
+              <span>650</span>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <h4>
+                Big Group
+                <small>100+ people</small>
+              </h4>
+              <span>600</span>
+            </div>
+
+          </div>
+
+          <h3>
+            Walk-In Rate
+            <small>September 5 to 7, 2017</small>
+          </h3>
+          <span>750</span>
+
+        </section>
+
+        <section>
+
+          <h2>Inclusions</h2>
+
+          <div class="div-lg-columns div-lg-columns-3">
+            <div class="div-columns-item item-inclusion">
+            <h3>Admission</h3>
+            <p>
+              <span>Entrance to the Y4iT Plenary and Exhibit Halls.</span>
+              You will be granted access to talks of IT experts and booths and activities of Y4iT partners.
+            </p>
+            </div>
+
+
+            <div class="div-columns-item item-inclusion">
+            <h3>Congress Kit</h3>
+            <p>
+              <span>The official Y4iT Congress Kit.</span>
+              This includes AM and PM snacks, souvenir program, and many more freebies from us and from our sponsors!
+            </p>
+            </div>
+
+            <div class="div-columns-item item-inclusion">
+            <h3>Certificate</h3>
+            <p>
+              <span>Certificate of Participation for each congress day.</span>
+              This shall serve as proof of your attendance and participation in this year’s Y4iT.
+            </p>
+            </div>
+
+          </div>
+
+        </section>
+
+        {% endif %}
+
+        {% if site.switchHowToReg and site.switchHowToReg == true %}
+
+        <section>
+
+          <h2>Registration</h2>
+
+          <h3>Online</h3>
+          <p>Fill out our registration form online and pay for your badges before or during the event.</p>
+
+          <h3>On-site</h3>
+          <p>Every process from registration to badge distribution will be done on the congress day.</p>
+
+        </section>
+
+        {% endif %}
+
+        {% if site.switchPayment and site.switchPayment == true %}
+
+        <section>
+
+          <h2>Modes of Payment</h2>
+
+          <h3>Direct Payment</h3>
+          <p>Lorem ipsum.</p>
+
+          <h3>Check Deposit</h3>
+          <p>Lorem ipsum.</p>
+
+          <h3>On-site Payment</h3>
+          <p>Lorem ipsum.</p>
+
+        </section>
+
+        {% endif %}
+
+        {% else %}
+
+        <h1>Registration</h1>
+
+        <span>Coming Soon!</span>
+
+        <p>Please standby for our upcoming announcements.</p>
+
+        {% endif %}
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {% if site.switchFAQ and site.switchFAQ == true %}
+  <section id="section-faq">
+    <div class="container-fluid">
+      <div class="row row-limit">
+        <div class="col-lg-12">
+
+        <h1>
+          FAQ
+          <small>Frequently Asked Questions</small>
+        </h1>
+
+        <div class="div-lg-columns div-lg-columns-3">
+          {% for eachfaq in site.dataFAQ %}
+          <div class="div-columns-item item-faq">
+            <p class="p-faq-question">{{ eachfaq.question }}</p>
+            <p class="p-faq-answer">{{ eachfaq.answer }}</p>
+          </div>
+          {% endfor %}
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  {% if site.switchPartners and site.switchPartners == true %}
+  <section id="section-partners">
+    <div class="container-fluid">
+      <div class="row row-limit">
+        <div class="col-lg-12">
+
+        <h1>Partners</h1>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+
+
+</section>
