@@ -17,7 +17,8 @@ body {
 /* END - Safeguard Styling */
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Roboto Slab;
+  font-family: Roboto;
+  font-weight: 900;
 }
 
 *, p, span, h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
@@ -82,11 +83,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* TITLE PANEL */
 
-#section-header h1 {
+#section-home-header h1 {
 
 }
 
-#section-header h1>span {
+#section-home-header h1>span {
   display: block;
   font-family: Gotham;
   font-weight: 800;
@@ -94,35 +95,35 @@ h1, h2, h3, h4, h5, h6 {
   text-shadow: 2px 2px 5px rgba(0,0,0,0.22);
 }
 
-#section-header h1>span:nth-of-type(1) {
+#section-home-header h1>span:nth-of-type(1) {
   font-size: 2.7em;
 }
 
-#section-header h1>span:nth-of-type(2) {
+#section-home-header h1>span:nth-of-type(2) {
   font-size: 2.85em;
   line-height: 0.7em;
 }
 
-#section-header h1>span:nth-of-type(3) {
+#section-home-header h1>span:nth-of-type(3) {
   font-size: 3.5em;
   line-height: 1em;
 }
 
 @media (max-width: 767px) {
-  #section-header h1>span:nth-of-type(1) {
+  #section-home-header h1>span:nth-of-type(1) {
     font-size: 1.55em;
   }
 
-  #section-header h1>span:nth-of-type(2) {
+  #section-home-header h1>span:nth-of-type(2) {
     font-size: 1.6em;
     line-height: 0.7em;
   }
 
-  #section-header h1>span:nth-of-type(3) {
+  #section-home-header h1>span:nth-of-type(3) {
     font-size: 2em;
     line-height: 1em;
   }
-  #section-header h1>small {
+  #section-home-header h1>small {
     font-size: 0.5em;
   }
 }
@@ -132,6 +133,18 @@ h1, h2, h3, h4, h5, h6 {
 #img-smx+sub {
   font-style: italic;
 }
+
+/* REGISTRATION */
+
+#section-registration .panel-price {
+  background-color: rgba(238, 238, 238, 0.07);
+  border-style: none;
+}
+
+#section-registration .panel-price.panel-price-active {
+  background-color: rgba(238, 238, 238, 0.14);
+}
+
 
 /* ABOUT */
 

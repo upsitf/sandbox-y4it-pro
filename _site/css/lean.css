@@ -87,12 +87,12 @@ small {
 
 /* LAYOUT - SPECIFIC USAGE */
 
-#div-header-content {
+#section-home-header #div-header-content {
   margin-top: 100px;
   margin-bottom: 100px;
 }
 
-#img-header-logo {
+#section-home-header #img-header-logo {
   width: 100%;
   max-width: 120px;
   margin-left: auto;
@@ -101,30 +101,30 @@ small {
 }
 
 @media (max-width: 767px) {
-  #img-header-logo {
+  #section-home-header #img-header-logo {
     max-width: 80px;
     margin-top: -30px;
   }
 }
 
-#span-header-presents {
+#section-home-header #span-header-presents {
 
 }
 
-#section-content {
+#section-home-content {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-#section-countdown {
+#section-home-content #section-countdown {
   padding-bottom: 30px;
 }
 
-#section-details {
+#section-home-content #section-details {
   padding-bottom: 60px;
 }
 
-#img-smx {
+#section-home-content #img-smx {
   margin-bottom: 10px;
 }
 
@@ -138,21 +138,21 @@ small {
   }
 }
 
-#img-smx+sub {
+#section-home-content #img-smx+sub {
   display: block;
   margin-bottom: 15px;
 }
 
-#img-smx+sub * {
+#section-home-content #img-smx+sub * {
   display: block;
 }
 
-#section-about {
+#section-home-content #section-about {
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
-#img-about-logo {
+#section-home-content #img-about-logo {
   width: 100%;
   max-width: 280px;
   margin-left: auto;
@@ -160,19 +160,33 @@ small {
   margin-bottom: 30px;
 }
 
-#section-about p {
+#section-home-content #section-about p {
   max-width: 767px;
   margin-left: auto;
   margin-right: auto;
 }
 
-#section-about p:last-of-type {
+#section-home-content #section-about p:last-of-type {
   margin-bottom: 30px;
 }
 
-#section-registration {
+#section-home-content #section-registration {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 0px;
+}
+
+#section-home-content #section-faq {
+  padding-top: 30px;
+}
+
+#section-home-content #section-terms {
+  padding-bottom: 30px;
+}
+
+#section-home-content #section-registration h2,
+#section-home-content #section-faq h1,
+#section-home-content #section-terms h1 {
+  margin-bottom: 30px;
 }
 
 .div-columns-item *,
@@ -212,7 +226,7 @@ small {
   margin-bottom: -30px;
 }
 
-#img-organizer-logo {
+#section-home-content #img-organizer-logo {
   display: block;
   width: 100%;
   max-width: 30px;
@@ -245,13 +259,37 @@ small {
 
 /* STYLING - SPECIFIC USAGE */
 
-#section-header {
+#section-home-header {
   /*height: 100vh;
   max-height: 720px;*/
   /*height: 600px;*/
   background-size:cover;
   background-position: center bottom;
   background-repeat: no-repeat;
+}
+
+#section-registration .panel-price {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#section-registration .panel h3,
+#section-registration .panel-default h3,
+#section-registration .panel.panel-default h3 {
+  margin-top: 0;
+  line-height: 1.5em;
+}
+
+#section-registration .panel-price h3 small {
+  font-size: 0.5em;
+}
+
+.span-price {
+  font-size: 2em;
+}
+
+.span-price:before {
+  content: '₱';
 }
 
 #section-about {

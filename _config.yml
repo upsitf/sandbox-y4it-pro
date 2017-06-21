@@ -14,16 +14,19 @@ switchAnnouncement: false
 switchSpeakers: false
 switchSchedule: false
 #switchScheduleOrder: "alphabetical"
-switchRates: false
-switchReg: false
+switchRegistration: true
+switchBadges: true
+switchHowToReg: false
 switchPayment: false
-switchFAQ: false
+switchFAQ: true
 switchPartners: false
-switchTerms: false
+switchTerms: true
 
 switchSponsor: false
 
 urlAppendCHEDEndorsement: "/files/Y4iT2017CHEDEndorsement.pdf"
+urlAppendRegister: "/register"
+urlAppendSponsorship: "/sponsor"
 urlAppendSponsorshipPackages: "/files/Y4iT2017SponsorshipPackages.pdf"
 
 urlOfficial: "https://y4it.org/"

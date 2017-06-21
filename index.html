@@ -3,23 +3,23 @@ layout: main
 ---
 
 
-<section id="section-header" class="section-bg-dark section-bg-image" style="background-image:url('{{ site.baseurl }}/images/coll_web-header-main.png');">
+<section id="section-home-header" class="section-bg-dark section-bg-image" style="background-image:url('{{ site.baseurl }}/images/coll_web-header-main.png');">
   <div class="container-fluid">
     <div class="row row-limit">
       <div class="col-lg-12 text-center">
 
-      <div id="div-header-content">
-        
-        <img id="img-header-logo" class="img-responsive" src="{{ site.baseurl }}/images/coll_web-logo-y4it-wordmark-white.png"/>
+        <div id="div-header-content">
+          
+          <img id="img-header-logo" class="img-responsive" src="{{ site.baseurl }}/images/coll_web-logo-y4it-wordmark-white.png"/>
 
-        <span id="span-header-presents">presents</span>
+          <span id="span-header-presents">presents</span>
 
-        <h1>
-          <span>Engineer</span>
-          <span>a better</span>
-          <span>future</span>
-          <small>The 15th Youth Congress on Information Technology</small>
-        </h1>
+          <h1>
+            <span>Engineer</span>
+            <span>A Better</span>
+            <span>Future</span>
+            <small>The 15th Youth Congress on Information Technology</small>
+          </h1>
           
           <span>
             <span>September 5-7, 2017</span>
@@ -29,6 +29,10 @@ layout: main
             </span>
           </span>
 
+          <br/><br/>
+
+          <a href="{{ site.baseurl }}{{ site.urlAppendRegister }}" target="_blank" rel="noopener noreferrer" class="btn btn-default btn-register">Register Now</a>
+
         </div>
 
       </div>
@@ -36,7 +40,7 @@ layout: main
   </div>
 </section>
 
-<section id="section-content" class="section-bg-dark">
+<section id="section-home-content" class="section-bg-dark">
 
   <section id="section-countdown">
     <div class="container-fluid">
@@ -107,6 +111,10 @@ layout: main
               <p>Badge claiming starts at 7 AM </p> 
               <p>Gates open at 7 AM </p>
               <p>Event proper: 9 AM - 4 PM || Break: 12 NN - 1 PM </p>
+
+              <br/><br/>
+
+              <a href="{{ site.baseurl }}{{ site.urlAppendRegister }}" target="_blank" rel="noopener noreferrer" class="btn btn-default btn-register">Register Now</a>
             </div>
           </div>
         </div></div>
@@ -154,7 +162,7 @@ layout: main
 
         {% if site.switchBadges and site.switchBadges == true %}
 
-        <h1>
+        <h1 class="text-center">
           Congress Badges
           <small>Per Day</small>
         </h1>
@@ -163,53 +171,65 @@ layout: main
 
           <h2>Rates</h2>
 
-          <h3>
-            Early Bird Rate
-            <small>until July 17, 2017 11:59 PM</small>
-          </h3>
-          <span>600</span>
+          <div class="panel panel-default panel-price panel-price-active">
+            <h3>
+              Early Bird Rate
+              <small>until July 17, 2017 11:59 PM</small>
+            </h3>
+            <span class="span-price">600</span>
 
-          <h3>
-            Regular Rate
-            <small>July 18, 2017 to September 4, 2017 11:59 PM</small>
-          </h3>
+            <br/><br/>
 
-          <div class="row">
-
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-              <h4>Individual</h4>
-              <span>700</span>
-            </div>
-
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-              <h4>
-                Small Group
-                <small>50-99 people</small>
-              </h4>
-              <span>650</span>
-            </div>
-
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-              <h4>
-                Big Group
-                <small>100+ people</small>
-              </h4>
-              <span>600</span>
-            </div>
+            <a href="{{ site.baseurl }}{{ site.urlAppendRegister }}" target="_blank" rel="noopener noreferrer" class="btn btn-default btn-register">Register Now</a>
 
           </div>
 
-          <h3>
-            Walk-In Rate
-            <small>September 5 to 7, 2017</small>
-          </h3>
-          <span>750</span>
+          <div class="panel panel-default panel-price">
+            <h3>
+              Regular Rate
+              <small>July 18, 2017 to September 4, 2017 11:59 PM</small>
+            </h3>
+
+            <div class="row">
+
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <h4>Individual</h4>
+                <span class="span-price">700</span>
+              </div>
+
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <h4>
+                  Small Group
+                  <small>50-99 people</small>
+                </h4>
+                <span class="span-price">650</span>
+              </div>
+
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <h4>
+                  Big Group
+                  <small>100+ people</small>
+                </h4>
+                <span class="span-price">600</span>
+              </div>
+
+            </div>
+          </div>
+
+
+          <div class="panel panel-default panel-price">
+            <h3>
+              Walk-In Rate
+              <small>September 5 to 7, 2017</small>
+            </h3>
+            <span class="span-price">750</span>
+          </div>
 
         </section>
 
         <section>
 
-          <h2>Inclusions</h2>
+          <h2 class="text-center">Inclusions</h2>
 
           <div class="div-lg-columns div-lg-columns-3">
             <div class="div-columns-item item-inclusion">
@@ -299,7 +319,7 @@ layout: main
       <div class="row row-limit">
         <div class="col-lg-12">
 
-        <h1>
+        <h1 class="text-center">
           FAQ
           <small>Frequently Asked Questions</small>
         </h1>
@@ -320,7 +340,7 @@ layout: main
   {% endif %}
 
   {% if site.switchPartners and site.switchPartners == true %}
-  <section id="section-partners">
+  <section id="section-partners" class="text-center">
     <div class="container-fluid">
       <div class="row row-limit">
         <div class="col-lg-12">
@@ -339,7 +359,7 @@ layout: main
       <div class="row row-limit">
         <div class="col-lg-12">
 
-        <h1>Terms and Conditions</h1>
+        <h1 class="text-center">Terms and Conditions</h1>
 
         <!--div class="row">
           {% for eachterm in site.dataTerms %}
