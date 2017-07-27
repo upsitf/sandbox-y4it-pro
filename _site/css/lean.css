@@ -5,6 +5,110 @@
   margin: auto;
 }
 
+.section-regular {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.section-regular h1 {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.div-speaker .img-speaker-min {
+  display: inline-block;
+  width: 80px;
+}
+
+.div-speaker div {
+  display: inline-block;
+  width: calc(100% - 100px);
+  margin-left: 15px;
+  vertical-align: text-top;
+}
+
+.div-speaker h2 {
+  font-size: 1.5em;
+}
+
+.div-speaker h2 small {
+  font-size: 0.5em;
+}
+
+.a-speaker-toggle {
+  text-decoration: none !important;
+}
+
+.col-speaker h2,
+.col-speaker .a-speaker-toggle h2 {
+  margin-top: 10px;
+  font-size: 1.5em;
+}
+
+.col-speaker h2 small,
+.col-speaker .a-speaker-toggle h2 small {
+  font-size: 0.5em;
+  line-height: 1.2em;
+}
+
+.col-speaker img {
+  width: 100%;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.col-speaker img+h2 {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#div-speaker-more {
+  width:100%;
+  padding-bottom:100%;
+  background-color:rgba(238, 238, 238, 0.07);
+}
+
+#div-speaker-more p {
+  position:absolute;
+  bottom:0;
+  text-align:right;
+  padding-right:10px;
+  padding-left:10px;
+  color:white;
+  font-size:2em;
+  width:calc(100% - 30px);
+}
+
+@media (max-width: 767px) {
+  #div-speaker-more {
+    position: relative;
+    padding: 30px;
+  }
+
+  #div-speaker-more p {
+    position: relative;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .col-speaker img+h2 {
+    text-align: center;
+  }
+}
+
+.panel-data {
+  border-style: none;
+  border-radius: 0;
+}
+
+.panel-hidden-height {
+  height: 0;
+  overflow: hidden;
+}
+
 .div-map-overlay {
   background: transparent;
   position: absolute;
@@ -116,12 +220,14 @@ small {
   padding-bottom: 30px;
 }
 
-#section-home-content #section-countdown {
-  padding-bottom: 30px;
+/*#section-home-content #section-countdown*/
+#section-home-content>section:first-child {
+  margin-top: -30px;
+  /*padding-bottom: 30px;*/
 }
 
 #section-home-content #section-details {
-  padding-bottom: 60px;
+  /*padding-bottom: 60px;*/
 }
 
 #section-home-content #img-smx {
@@ -171,16 +277,16 @@ small {
 }
 
 #section-home-content #section-registration {
-  padding-top: 60px;
-  padding-bottom: 0px;
+  /*padding-top: 60px;*/
+  /*padding-bottom: 0px;*/
 }
 
 #section-home-content #section-faq {
-  padding-top: 30px;
+  /*padding-top: 30px;*/
 }
 
 #section-home-content #section-terms {
-  padding-bottom: 30px;
+  /*padding-bottom: 30px;*/
 }
 
 #section-home-content #section-registration h2,

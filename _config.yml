@@ -1,35 +1,36 @@
 # Site settings
 
-title: Y4iT
+title: Y4iT Pro
 
-baseurl: http://toffmendoza.me/sandbox-y4it
-#baseurl: https://y4it.org/
+baseurl: http://toffmendoza.me/sandbox-y4it-pro
+#baseurl: https://pro.y4it.org/
 
 # Build settings
 markdown: kramdown
 permalink: pretty
 
 # Site variables
+switchCountdown: false
 switchAnnouncement: false
-switchSpeakers: false
+switchSpeakers: true
+switchSpeakersDescription: false
 switchSchedule: false
 #switchScheduleOrder: "alphabetical"
-switchRegistration: true
-switchBadges: true
+switchRegistration: false
+switchBadges: false
 switchHowToReg: false
 switchPayment: false
-switchFAQ: true
+switchFAQ: false
 switchPartners: false
-switchTerms: true
+switchTerms: false
 
 switchSponsor: false
 
-urlAppendCHEDEndorsement: "/files/Y4iT2017CHEDEndorsement.pdf"
 urlAppendRegister: "/register"
 urlAppendSponsorship: "/sponsor"
 urlAppendSponsorshipPackages: "/files/Y4iT2017SponsorshipPackages.pdf"
 
-urlOfficial: "https://y4it.org/"
+urlOfficial: "https://pro.y4it.org/"
 urlFacebook: "https://www.facebook.com/ilove.Y4iT/"
 urlTwitter: "https://twitter.com/y4it"
 urlInstagram: "https://www.instagram.com/y4it/"
@@ -37,22 +38,85 @@ urlYouTube: "https://www.youtube.com/user/iloveY4iT"
 urlSnapchat: "https://www.snapchat.com/add/y4it"
 urlViber: "http://chats.viber.com/y4it"
 
-#urlReg: http://reg2016.y4it.org
+#urlReg: http://pro.y4it.org/register/
 
 #urlAppendPackage: "/sponsorship-package.pdf"
 #urlAppendDeck: "/sponsorship-deck.pdf"
-#urlPartnerConfirmation: "http://y4it.org/isupporty4it"
+##urlPartnerConfirmation: "http://y4it.org/isupporty4it"
 
-#urlCert: http://reg2017.y4it.org/certificates
+##urlCert: http://pro.y4it.org/certificates
+
+dataSpeakers:
+ - id: "icanasa"
+   pre: "Mr."
+   name: "Israel Dacanay Canasa"
+   affiliation:
+    - designation: "Developer"
+      company: "Timble CVBA, WIZMEDIA"
+   description:
+    - "Ra'el is a programmer by profession, creative by heart, and a tech-entrepreneur by soul. He leads a web development and design company named WIZMEDIA (wizmedia.net). He founded a startup company named Creatizens (creatizens.com) which connects elite creative type Freelancers with awesome clients. He currently works with Timble CVBA, a Web Development Company based in Belgium."
+   image: "coll_web-speaker-icanasa.jpg"
+ - id: "adumanhug"
+   pre: "Mr."
+   name: "Allan Jay Dumanhug"
+   affiliation:
+    - designation: "IT Security Analyst"
+      company: "UP IT Development Center"
+   description:
+    - "Allan is an IT Security Analyst at UP ITDC, Co-Founder and CISO at Secuna, and ICT Coach at STI. At UP ITDC, he works with Software Engineers, System Admins, and Management to ensure IT systems comply with data security & privacy policies, and that IT Systems are protected against malicious attacks. At Secuna, they're on a mission to strengthen the world's capability to build a safer cyberspace. Allan is also a recognized White Hat Hacker. A lot of companies globally acknowledged and rewarded him for helping them finding severe security vulnerabilities. He became a Top Hacker on Facebook for the 1st Quarter of 2016 because of reporting a severe Privilege Escalation on Facebook Pages and hacking 2 websites of Facebook."
+   image: "coll_web-speaker-adumanhug.jpg"
+ - id: "mlainez"
+   pre: "Mr."
+   name: "Marc Lainez"
+   affiliation:
+    - designation: "Systems Engineering Lead, Philippines"
+      company: "Palo Alto Networks"
+   description:
+    - "Marc is the Systems Engineering Lead for Palo Alto Networks in the Philippines. In this role, Marc focuses on providing cybersecurity approaches and educating customers and partners on the Palo Alto Networks Next-Generation Security Platform. In addition, Marc participates in cybersecurity conferences around the Philippines and actively contributes to the cybersecurity communities. Prior to joining Palo Alto Networks, Marc held various positions at Trend Micro including becoming Technical Account Manager supporting the Asia Pacific region; and later, Security Consultant focusing on professional services, consulting, and research. He has more than 10 years of experience in the Cybersecurity industry and holds certifications from ISC2 (Certified Information Systems Security Professional), SANS (GIAC Certified Incident Handler) and VMware (VMware Certified Professional). Marc graduated with a Bachelor of Science in Electronics and Communications Engineering from Rizal Technological University and is currently pursuing a Master’s degree in Technology Management at UP Diliman."
+   image: "coll_web-speaker-mlainez.jpg"
+ - id: "rregalado"
+   pre: "Mr."
+   name: "Ralph Vincent Regalado"
+   affiliation:
+    - designation: "CEO and Founder"
+      company: "Senti"
+    - designation: "Community Manager"
+      company: "Google Developer Group Philippines"
+   description:
+    - "Ralph is the CEO and Founder of Senti, a localized social media analytics platform. He is also one of the Community Managers of Google Developer Group Philippines. He is an assistant professor, and a Natural Language Processing researcher at De La Salle University, Manila. His research works were presented not only in local but also in international conferences hosted in China, Japan, Vietnam, Indonesia and the United States. When he is not at work, he spends his time travelling and hiking mountains."
+   image: "coll_web-speaker-rregalado.jpg"
+ - id: "dtapang"
+   pre: "Mr."
+   name: "David Tapang"
+   affiliation:
+    - designation: "Education Lead"
+      company: "Microsoft Philippines"
+   description:
+    - "David has been a part of Microsoft Corporation for over 15 years with a majority of that career in the education sector. Having held various leadership roles at Microsoft, he has a deep understanding of education and its importance in global economics. David became the Education Lead for Microsoft Philippines in June of 2013 after returning to Microsoft from a break to pursue other business interests and moving here from the U.S."
+   image: "coll_web-speaker-dtapang.jpg"
+ - id: "mvalmores"
+   pre: "Mr."
+   name: "Marco Valmores"
+   affiliation:
+    - designation: "Team Lead"
+      company: "MacAppsLab"
+    - designation: "Lead"
+      company: "Philippine Android Developers Community"
+   description:
+    - "Marco is currently leading the Philippine Android Developers Community and started leading it by 4th quarter of 2014. They started doing events in Manila however, towards the third quarter of 2015. By 2016, most of our events have been geared towards helping the provinces learn and enhance Android development. Also leading the initiative of Tech Caravan, they bring Tech Community leaders as well as experts in the provinces in the promise teaching the teachers and students something new. This endeavor was started in the end of 2015 when all the Tech Community leads decided to work together and reach out to the provinces since we have acknowledge there is a great gap to be filled in terms of IT skill sets."
+    - "He is currently starting a software company in Zamboanga to help the people get jobs."
+    - "He is also currently working with local ICT councils tin organizing Tech Caravan in their provinces."
+   image: "coll_web-speaker-mvalmores.jpg"
+# - id: "more" # this adds the "And More" panel in the Speakers section
 
 organizerDescription:
  - "The UP System Information Technology Foundation (UPSITF) Inc. is a non-government organization focused on the application of Information and Communication Technology for development. It partners with UP Information Technology Development Center in providing various services such as, but not limited to, Education Development, IT Human Capital Development, Research &amp; Development, Software Engineering, ICT Policy Development and Planning, and IT Project Management."
 
 dataFAQ:
  - question: "Who can attend the event?"
-   answer: "Y4iT is mostly attended by IT students, professionals, and enthusiasts, but of course, everyone is invited to join."
+   answer: "Y4iT Pro is expected to be attended by professionals, and enthusiasts, but of course, everyone is invited to join."
  - question: "How do I register for the event?"
-   answer: "To register online, go to reg2017.y4it.org and follow the steps provided. To register on-site, just go to the registration booth, provide the Secretariat with necessary information, and pay for the total registration fee."
+   answer: "To register online, go to pro.y4it.org/register and follow the steps provided. To register on-site, just go to the registration booth, provide the Secretariat with necessary information, and pay for the total registration fee."
  - question: "Can I register online and pay on-site (during event day)?"
    answer: "Yes, you may accomplish the registration form online and pay during event day. However, badge rates depend on the date of purchase and not of registration. Payments made during the event day will follow the walk-in rate."
  - question: "Can I register online and pay offsite (direct payment at UPSITF office or bank deposit) but claim my badge/s on-site?"
@@ -69,6 +133,20 @@ dataFAQ:
    answer: "Yes, there will be a different program for each day. Expect to learn and be inspired by different speakers and topics each day."
  - question: "I lost my certificate code, would the management still be able to replace it?"
    answer: "Unfortunately, Y4iT will not replace lost certificate codes."
+
+dataPartners:
+ - name: "Sponsors"
+   list:
+    - name: ""
+      logo: ""
+ - name: "Media Partners"
+   list:
+    - name: "Manila Bulletin"
+      logo: ""
+ - name: "Organization Partners"
+   list:
+    - name: ""
+      logo: ""
 
 dataTerms:
  - name: "Refunds"

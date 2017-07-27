@@ -14,12 +14,12 @@
   });
 </script>
 
-{% if page.animate %}
+{% if page.animate and page.animate == true %}
 <script src="{{ site.baseurl }}/js/wow.min.js"></script>
 <script>new WOW().init();</script>
 {% endif %}
 
-{% if page.slick == true %}
+{% if page.slick and page.slick == true %}
 <script type="text/javascript" src="{{ site.baseurl }}/js/slick.min.js"></script>
 <!--script>alert('{{ page.title }}')</script-->
 {% if page.title == 'Be a Sponsor' %}
@@ -53,4 +53,29 @@
   });
 </script>
 {% endif %}
+{% endif %}
+
+{% if site.switchSpeakersDescription and site.switchSpeakersDescription == true %}
+<script type="text/javascript">
+  var current = "";
+
+  $(document).ready(function(){
+    $('.a-speaker-toggle').click(function(){
+      if (current === $(this).attr('id')) {
+        $('.img-speaker').addClass('img-grayscale'); // grayscale all img-speaker
+        $('.panel-data').addClass('panel-hidden-height'); // hide all panel-data
+        current = "";
+      }
+      else {
+        $('.img-speaker').addClass('img-grayscale'); // grayscale all img-speaker
+        $('.panel-data').addClass('panel-hidden-height'); // hide all panel-data
+        $(this).children('img').first().removeClass('img-grayscale');
+        $(this).parent().nextAll('.visible-lg.visible-md').first().children().first().removeClass('panel-hidden-height');
+        $(this).parent().nextAll('.visible-sm').first().children().first().removeClass('panel-hidden-height');
+        $(this).next().removeClass('panel-hidden-height');
+        current = $(this).attr('id');
+      }
+    });
+  });
+</script>
 {% endif %}
