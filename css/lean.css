@@ -369,9 +369,6 @@ small {
   /*height: 100vh;
   max-height: 720px;*/
   /*height: 600px;*/
-  background-size:cover;
-  background-position: center bottom;
-  background-repeat: no-repeat;
 }
 
 #section-registration .panel-price {

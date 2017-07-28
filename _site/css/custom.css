@@ -37,6 +37,12 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 12px;*/
 }
 
+.section-bg-image {
+  background-size:cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
 .section-bg-dark .btn,
 .section-bg-image .btn,
 .section-bg-dark.section-bg-image .btn,
@@ -87,6 +93,14 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+#section-home-header #img-art {
+  max-width: 170%;
+  margin-left: -35%;
+  margin-right: -35%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 #section-home-header h1>span {
   /*display: block;
   font-family: Gotham;
@@ -134,6 +148,38 @@ h1, h2, h3, h4, h5, h6 {
   /*background-color: #1a133e;*/
 }
 
+/* DETAILS */
+
+#section-details {
+  min-height: 480px;
+  background-position-y:top
+}
+
+#section-details #span-venue {
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  letter-spacing: 3.4px;
+}
+
+#section-details #span-venue strong {
+  background-color: white;
+  padding: 4px 8px;
+  font-size: 2.67em;
+  color: #5d319c;
+  text-transform: initial;
+  letter-spacing: 0;
+}
+
+#section-details #span-venue~p:first-of-type {
+  margin-top: 10px;
+}
+
+#section-details #span-venue~p {
+  color: white;
+  margin-bottom: 0;
+}
+
 /* SPEAKERS */
 
 #section-speakers {
@@ -176,10 +222,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: 250ms ease-out;*/
 }
 
-
-/* SPEAKERS */
-
-.div-speaker-text {
+#section-speakers .div-speaker-text {
   display: inline-block;
   width: calc(100% - 100px);
   margin-left: 15px;
@@ -187,31 +230,55 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/* DETAILS */
+/* TALKS */
 
-#section-details {
-  /*background-color: #1a133e;*/
+#section-talks {
+
 }
 
-#img-smx+sub {
-  /*font-style: italic;*/
+#section-talks h1 {
+  
 }
 
-/* REGISTRATION */
-
-#section-registration {
-  /*background-color: #1a133e;*/
+#section-talks h2 {
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  letter-spacing: 3.4px;
 }
 
-#section-registration .panel-price {
-  /*background-color: rgba(238, 238, 238, 0.07);
-  border-style: none;*/
+#section-talks h2 strong {
+  background-color: #5d319c;
+  color: white;
+  padding: 4px 8px;
+  display: table;
+  text-transform: initial;
+  font-size: 2.67em;
+  letter-spacing: 0;
+  font-weight: bold;
+  margin-top: 5px;
 }
 
-#section-registration .panel-price.panel-price-active {
-  /*background-color: rgba(238, 238, 238, 0.14);*/
+#section-talks h3 {
+  
 }
 
+#section-talks h3+span {
+  
+}
+
+/* PASSES */
+
+#section-passes .panel {
+  border-radius: 0;
+  border-width: 0 0 0 7.5px;
+  padding: 0.5px 0px 7.5px 15px;
+  box-shadow: none;
+}
+
+#section-passes .panel h2 {
+  margin-top: 12px;
+}
 
 /* FAQ */
 
