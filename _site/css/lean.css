@@ -192,22 +192,48 @@ small {
 /* LAYOUT - SPECIFIC USAGE */
 
 #section-home-header #div-header-content {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+@media (max-width: 767px) {
+  #section-home-header #div-header-content {
+    margin-top: 30px;
+    margin-bottom: 90px;
+  }
 }
 
 #section-home-header #img-header-logo {
   width: 100%;
-  max-width: 120px;
-  margin-left: auto;
+  max-width: 300px;
   margin-right: auto;
-  margin-top: -50px;
 }
 
 @media (max-width: 767px) {
   #section-home-header #img-header-logo {
-    max-width: 80px;
+    max-width: 300px;
     margin-top: -30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+#section-home-header h1 {
+  text-align: center;
+  max-width: 300px;
+  margin-top: -0.1px;
+}
+
+@media (max-width: 767px) {
+  #section-home-header h1 {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  #section-home-header #span-header-details {
+    display: block;
+    text-align: center;
   }
 }
 
@@ -252,6 +278,43 @@ small {
 #section-home-content #img-smx+sub * {
   display: block;
 }
+
+#section-home-content #section-talks-passes {
+  padding-top: 30px;
+}
+
+#section-home-content #section-talks {
+  padding-bottom: 45px;
+}
+
+@media (max-width: 767px) {
+  #section-home-content #section-talks {
+    padding-bottom: 30px;
+  }
+}
+
+#section-home-content #section-talks h3 { 
+  margin-bottom: 0;
+  margin-top: 15px;
+  font-size: 1.5em;
+}
+
+#section-home-content #section-talks h3+span {
+  font-style: italic;
+}
+
+#section-home-content #section-passes {
+  padding-bottom: 60px;
+}
+
+#section-home-content #section-passes .panel-pass h2 {
+  margin-top: 12px;
+}
+
+#section-home-content #section-passes .panel-pass.panel-pass-half h2 {
+  font-size: 1.5em;
+}
+
 
 #section-home-content #section-about {
   padding-top: 100px;

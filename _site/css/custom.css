@@ -41,6 +41,11 @@ h1, h2, h3, h4, h5, h6 {
   background-size:cover;
   background-position: center bottom;
   background-repeat: no-repeat;
+  color: white;
+}
+
+.section-bg-dark {
+  color: white;
 }
 
 .section-bg-dark .btn,
@@ -90,7 +95,23 @@ h1, h2, h3, h4, h5, h6 {
 /* TITLE PANEL */
 
 #section-home-header h1 {
+  margin-top: 15px;
+}
 
+#section-home-header h1 span:nth-of-type(2) {
+  background-color: white;
+  color: #777777;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0px 7.5px 1px;
+}
+
+#section-home-header h1 small {
+  margin-top: 15px;
+  font-size: 0.33em;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
 }
 
 #section-home-header #img-art {
@@ -156,7 +177,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #section-details #span-venue {
-  color: white;
   text-transform: uppercase;
   font-size: 0.75em;
   letter-spacing: 3.4px;
@@ -176,7 +196,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #section-details #span-venue~p {
-  color: white;
   margin-bottom: 0;
 }
 
@@ -230,6 +249,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+/* TALKS + PASSES */
+
+#section-talks-passes {
+  background-color: #ececec;
+}
+
 /* TALKS */
 
 #section-talks {
@@ -260,11 +285,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #section-talks h3 {
-  
+
 }
 
 #section-talks h3+span {
-  
+
 }
 
 /* PASSES */
@@ -276,8 +301,13 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: none;
 }
 
-#section-passes .panel h2 {
-  margin-top: 12px;
+#section-passes .panel-pass {
+  border-color: #e87f31;
+  background-color: white;
+}
+
+#section-passes .panel-pass.panel-pass-half {
+  border-color: #5d319c;
 }
 
 /* FAQ */
@@ -296,7 +326,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #section-organizer {
   /*background-color: rgba(238, 238, 238, 0.07);*/
-  /*background-color: #29234b;*/
+  background-color: #29234b;
 }
 
 #section-organizer p {

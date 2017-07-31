@@ -3,7 +3,7 @@ layout: main
 ---
 
 
-<section id="section-home-header" class="section-bg-image">
+<section id="section-home-header" class="section-bg-image" style="background-image:url('{{ site.baseurl }}/images/coll_web-bg-title.jpg');">
   <div class="container-fluid">
     <div class="row row-limit">
       <div class="col-lg-7 col-lg-push-5 col-md-7 col-md-push-5 col-sm-6 col-sm-push-6 col-xs-12 col-xs-push-0 text-center">
@@ -17,14 +17,14 @@ layout: main
 
           <span id="span-header-presents">presents</span-->
 
-          <img class="img-responsive" src="{{ site.baseurl }}/images/coll_web-logo-y4it-wordmark-white.png"/>
+          <img id="img-header-logo" class="img-responsive" src="{{ site.baseurl }}/images/coll_web-logo-y4it-wordmark-white.png"/>
           <h1>
             <span class="hidden">Y4iT</span>
             <span>Pro</span>
             <small>Y4iT Professionals Event</small>
           </h1>
           
-          <span>
+          <span id="span-header-details">
             <span>September 6, 2017</span> | 
             <span>
               SMX Convention Center<br/>
@@ -127,7 +127,7 @@ layout: main
 
   {% endif %}
 
-  <section>
+  <section id="section-talks-passes">
     <div class="container-fluid">
       <div class="row row-limit">
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -165,7 +165,7 @@ layout: main
               <span></span>
             </div-->
             
-            <h2>
+            <h2 style="margin-top:25px;">
               Afternoon Session<span class="hidden">:</span>
               <strong>Cybersecurity</strong>
             </h2>
@@ -193,13 +193,13 @@ layout: main
           <section id="section-passes">
             <h1>
               Event Passes<span class="hidden"> Rates</span>
-              <small>Per Session (Morning, Afternoon)</small>
+              <!--small>Per Session (Morning, Afternoon)</small-->
             </h1>
 
             <div class="row">
 
               <div class="col-lg-12">
-                <div class="panel panel-default">
+                <div class="panel panel-default panel-pass">
                   <h2>
                     Whole Day Pass
                     <small>Morning and Afternoon Sessions</small>
@@ -208,19 +208,19 @@ layout: main
                 </div>
               </div>
               <div class="col-lg-12">
-                <div class="panel panel-default">
+                <div class="panel panel-default panel-pass panel-pass-half">
                   <h2>
                     AI Pass
-                    <small>Morning Session</small>
+                    <small>Morning Session only</small>
                   </h2>
                   <span class="span-price">3,000</span>
                 </div>
               </div>
               <div class="col-lg-12">
-                <div class="panel panel-default panel-default">
+                <div class="panel panel-default panel-pass panel-pass-half">
                   <h2>
                     Cybersec Pass
-                    <small>Afternoon Session</small>
+                    <small>Afternoon Session only</small>
                   </h2>
                   <span class="span-price">3,000</span>
                 </div>
@@ -236,7 +236,7 @@ layout: main
     </div>
   </section>
 
-  <section id="section-about" class="section-regular section-bg-dark section-bg-image" style="background-image:url('{{ site.baseurl }}/images/coll_web-bg-venue.jpg');background-position-y:top">
+  <section id="section-about" class="section-regular section-bg-dark section-bg-image" style="background-image:url('{{ site.baseurl }}/images/coll_web-bg-about.jpg');background-position-y:top">
     <div class="container-fluid">
       <div class="row row-limit">
         <div class="col-lg-12 text-center">
@@ -263,7 +263,7 @@ layout: main
     </div>
   </section>
 
-  <section id="section-registration" class="section-regular section-bg-dark">
+  <section id="section-registration" class="section-regular">
     <div class="container-fluid">
       <div class="row row-limit">
         <div class="col-lg-12">
