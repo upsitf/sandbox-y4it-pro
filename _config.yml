@@ -65,7 +65,7 @@ dataSpeakers:
       company: "Timble CVBA, WIZMEDIA"
    description:
     - "Ra'el is a programmer by profession, creative by heart, and a tech-entrepreneur by soul. He leads a web development and design company named WIZMEDIA (wizmedia.net). He founded a startup company named Creatizens (creatizens.com) which connects elite creative type Freelancers with awesome clients. He currently works with Timble CVBA, a Web Development Company based in Belgium."
-   image: "coll_web-speaker-icanasa.jpg"
+   image: "coll_web-speaker-icanasa-min.jpg"
  - id: "ldoromal"
    pre: "Mr."
    name: "Lope Doromal Jr."
@@ -75,7 +75,7 @@ dataSpeakers:
    description:
     - "Over his 20 year career in IBM, Lope Doromal Jr. has been in the forefront of the various IT trends that have transformed industries over the years. Starting as an e-business Specialist in the late 90s, when he was the lead advocate for IBM about the value of using this new technology called the Internet for business, to the Analytics-driven Smarter Planet campaign in the late 2000s, when as Chief Technologist, he helped organizations understand how an Instrumented, Interconnected, and Intelligent world changes the way we understand and react to our environment, to his current role as Chief Technology Officer, where is is again leading IBM's campaign around the Cloud and Cognitive technologies."
     - "Concurrently, Lope is also a Client Technical Advisor for the Banking and Financial Markets Industry, providing banking clients with expert, vendor-neutral architectural advice and solution strategies to address the client's strategic business imperatives and current business issues."
-   image: "coll_web-speaker-ldoromal.jpg"
+   image: "coll_web-speaker-ldoromal-min.jpg"
  - id: "adumanhug"
    pre: "Mr."
    name: "Allan Jay Dumanhug"
@@ -84,7 +84,7 @@ dataSpeakers:
       company: "UP IT Development Center"
    description:
     - "Allan is an IT Security Analyst at UP ITDC, Co-Founder and CISO at Secuna, and ICT Coach at STI. At UP ITDC, he works with Software Engineers, System Admins, and Management to ensure IT systems comply with data security & privacy policies, and that IT Systems are protected against malicious attacks. At Secuna, they're on a mission to strengthen the world's capability to build a safer cyberspace. Allan is also a recognized White Hat Hacker. A lot of companies globally acknowledged and rewarded him for helping them finding severe security vulnerabilities. He became a Top Hacker on Facebook for the 1st Quarter of 2016 because of reporting a severe Privilege Escalation on Facebook Pages and hacking 2 websites of Facebook."
-   image: "coll_web-speaker-adumanhug.jpg"
+   image: "coll_web-speaker-adumanhug-min.jpg"
  - id: "mlainez"
    pre: "Mr."
    name: "Marc Lainez"
@@ -93,7 +93,16 @@ dataSpeakers:
       company: "Palo Alto Networks"
    description:
     - "Marc is the Systems Engineering Lead for Palo Alto Networks in the Philippines. In this role, Marc focuses on providing cybersecurity approaches and educating customers and partners on the Palo Alto Networks Next-Generation Security Platform. In addition, Marc participates in cybersecurity conferences around the Philippines and actively contributes to the cybersecurity communities. Prior to joining Palo Alto Networks, Marc held various positions at Trend Micro including becoming Technical Account Manager supporting the Asia Pacific region; and later, Security Consultant focusing on professional services, consulting, and research. He has more than 10 years of experience in the Cybersecurity industry and holds certifications from ISC2 (Certified Information Systems Security Professional), SANS (GIAC Certified Incident Handler) and VMware (VMware Certified Professional). Marc graduated with a Bachelor of Science in Electronics and Communications Engineering from Rizal Technological University and is currently pursuing a Master’s degree in Technology Management at UP Diliman."
-   image: "coll_web-speaker-mlainez.jpg"
+   image: "coll_web-speaker-mlainez-min.jpg"
+ - id: "sphornthabthong"
+   pre: "Mr."
+   name: "Surawut Phornthabthong"
+   affiliation:
+    - designation: "Senior Solution Architect"
+      company: "Amazon Web Services"
+   description:
+    - "He is a Solutions Architect with extensive experience engaging and enabling partners in the development of technology-based solutions in large-scale projects around ASEAN regions. He is experienced in solution integration with the ability to develop business cases through understanding the customer business and technical requirements."
+   image: "coll_web-speaker-sphornthabthong-min.jpg"
  - id: "rregalado"
    pre: "Mr."
    name: "Ralph Vincent Regalado"
@@ -104,7 +113,7 @@ dataSpeakers:
       company: "Google Developer Group Philippines"
    description:
     - "Ralph is the CEO and Founder of Senti, a localized social media analytics platform. He is also one of the Community Managers of Google Developer Group Philippines. He is an assistant professor, and a Natural Language Processing researcher at De La Salle University, Manila. His research works were presented not only in local but also in international conferences hosted in China, Japan, Vietnam, Indonesia and the United States. When he is not at work, he spends his time travelling and hiking mountains."
-   image: "coll_web-speaker-rregalado.jpg"
+   image: "coll_web-speaker-rregalado-min.jpg"
  - id: "dtapang"
    pre: "Mr."
    name: "David Tapang"
@@ -113,7 +122,7 @@ dataSpeakers:
       company: "Microsoft Philippines"
    description:
     - "David has been a part of Microsoft Corporation for over 15 years with a majority of that career in the education sector. Having held various leadership roles at Microsoft, he has a deep understanding of education and its importance in global economics. David became the Education Lead for Microsoft Philippines in June of 2013 after returning to Microsoft from a break to pursue other business interests and moving here from the U.S."
-   image: "coll_web-speaker-dtapang.jpg"
+   image: "coll_web-speaker-dtapang-min.jpg"
  - id: "mvalmores"
    pre: "Mr."
    name: "Marco Valmores"
@@ -126,7 +135,7 @@ dataSpeakers:
     - "Marco is currently leading the Philippine Android Developers Community and started leading it by 4th quarter of 2014. They started doing events in Manila however, towards the third quarter of 2015. By 2016, most of our events have been geared towards helping the provinces learn and enhance Android development. Also leading the initiative of Tech Caravan, they bring Tech Community leaders as well as experts in the provinces in the promise teaching the teachers and students something new. This endeavor was started in the end of 2015 when all the Tech Community leads decided to work together and reach out to the provinces since we have acknowledge there is a great gap to be filled in terms of IT skill sets."
     - "He is currently starting a software company in Zamboanga to help the people get jobs."
     - "He is also currently working with local ICT councils tin organizing Tech Caravan in their provinces."
-   image: "coll_web-speaker-mvalmores.jpg"
+   image: "coll_web-speaker-mvalmores-min.jpg"
 # - id: "more" # this adds the "And More" panel in the Speakers section
 
 dataSchedules:
@@ -137,6 +146,8 @@ dataSchedules:
       topic: "Innovating with AI"
     - id: "rregalado"
       topic: "Introduction to TensorFlow"
+    - id: "sphornthabthong"
+      topic: "Amazon AI"
    afternoon:
     - id: "adumanhug"
       topic: "Website Hacking"
