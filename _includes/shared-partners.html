@@ -1,0 +1,23 @@
+{% for eachcategory in site.dataPartners %}
+{% if eachcategory.id == "sponsor" or eachcategory.id == "sponsors" %}
+<h2>{{ eachcategory.name }}</h2>
+<div class="div-partners">
+{% for eachitem in eachcategory.list %}
+	<img src="{{ site.baseurl }}/images/partners/{{ eachitem.logo }}" class="img-responsive img-partner{% if eachitem.shape %} img-partner-{{  eachitem.shape}}{% endif %}">
+{% endfor %}
+</div>
+{% break %}
+{% endif %}
+{% endfor %}
+
+{% for eachcategory in site.dataPartners %}
+{% if eachcategory.id == "media" or eachcategory.id == "mediapartner" or eachcategory.id == "mediapartners" %}
+<h2>{{ eachcategory.name }}</h2>
+<div class="div-partners">
+{% for eachitem in eachcategory.list %}
+	<img src="{{ site.baseurl }}/images/partners/{{ eachitem.logo }}" class="img-responsive img-partner{% if eachitem.shape %} img-partner-{{  eachitem.shape}}{% endif %}">
+{% endfor %}
+</div>
+{% break %}
+{% endif %}
+{% endfor %}

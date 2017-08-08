@@ -34,8 +34,11 @@ layout: main
 
           {% if site.switchRegistration and site.switchRegistration == true %}
           <br/><br/>
-          <a href="{{ site.baseurl }}{{ site.urlAppendRegister }}" target="_blank" rel="noopener noreferrer" class="btn btn-default btn-register">Register Now</a>
+          <a href="{{ site.urlRegister }}" target="_blank" rel="noopener noreferrer" class="btn btn-default btn-register">Register Now</a>
+          <br/><br/>
           {% endif %}
+
+          <a href="{{ site.urlRegister }}" target="_blank" rel="noopener noreferrer" class="btn btn-default btn-y4it">Youth Congress on IT</a>
 
         </div>
 
@@ -82,7 +85,7 @@ layout: main
 
               {% if site.switchRegistration and site.switchRegistration == true %}
               <br/><br/>
-              <a href="{{ site.baseurl }}{{ site.urlAppendRegister }}" target="_blank" rel="noopener noreferrer" class="btn btn-default btn-register">Register Now</a>
+              <a href="{{ site.urlRegister }}" target="_blank" rel="noopener noreferrer" class="btn btn-default btn-register">Register Now</a>
               {% endif %}
 
             </div>
@@ -112,7 +115,7 @@ layout: main
             <div>
               <h2>
                 {{ eachspeaker.name }}
-                <small>{% for eachaffiliation in eachspeaker.affiliation %}{{ eachaffiliation.designation }} at {{ eachaffiliation.company }}{% break %}{% endfor %}</small>
+                <small>{% for eachaffiliation in eachspeaker.affiliation %}{{ eachaffiliation.designation }} at {{ eachaffiliation.company }}<br>{% endfor %}</small>
               </h2>
             </div>
           </div> 
@@ -135,6 +138,8 @@ layout: main
           <section id="section-talks">
             <h1>Tech Talks</h1>
 
+            {% for eachday in site.dataSchedules %}
+
             <h2>
               Morning Session
               <strong>Artificial Intelligence</strong>
@@ -148,44 +153,42 @@ layout: main
                 </td>
               </tr>
             </table-->
-            <!--div>
-              <h3></h3>
-              <span>Ms. Lyn Gabud</span>
-            </div-->
+            {% for eachtalk in eachday.morning %}
             <div>
-              <h3>Microsoft AI</h3>
-              <span>Mr. David Tapang</span>
+              <h3>{{ eachtalk.topic }}</h3>
+              <span>
+                {% for eachspeaker in site.dataSpeakers %}
+                {% if eachspeaker.id == eachtalk.id %}
+                {{ eachspeaker.pre }} {{ eachspeaker.name }}
+                {% break %}
+                {% endif %}
+                {% endfor %}
+              </span>
             </div>
-            <div>
-              <h3>Introduction to TensorFlow</h3>
-              <span>Mr. Ralph Vincent Regalado</span>
-            </div>
-            <!--div>
-              <h3></h3>
-              <span></span>
-            </div-->
+            {% endfor %}
             
+
             <h2 style="margin-top:25px;">
               Afternoon Session<span class="hidden">:</span>
               <strong>Cybersecurity</strong>
             </h2>
+            {% for eachtalk in eachday.afternoon %}
             <div>
-              <h3>Website Hacking</h3>
-              <span>Mr. Allan Jay Dumanhug</span>
+              <h3>{{ eachtalk.topic }}</h3>
+              <span>
+                {% for eachspeaker in site.dataSpeakers %}
+                {% if eachspeaker.id == eachtalk.id %}
+                {{ eachspeaker.pre }} {{ eachspeaker.name }}
+                {% break %}
+                {% endif %}
+                {% endfor %}
+              </span>
             </div>
-            <div>
-              <h3>Coding PHP Applications Like a Paranoid</h3>
-              <span>Mr. Israel Canasa</span>
-            </div>
-            <div>
-              <h3>Next Generation Cyber Threat Intelligence</h3>
-              <span>Mr. Marc Lainez</span>
-            </div>
-            <div>
-              <h3>Mobile Security</h3>
-              <span>Mr. Marco Valmores</span>
-            </div>
-          </section>
+            {% endfor %}
+
+
+            {% break %}
+            {% endfor %}
 
         </div>
 
@@ -228,6 +231,8 @@ layout: main
 
             </div>
 
+            <a href="{{ site.urlRegister }}" target="_blank" rel="noopener noreferrer" class="btn btn-default btn-register">Register Now</a>
+
           </section>
 
         </div>
@@ -263,17 +268,15 @@ layout: main
     </div>
   </section>
 
-  <section id="section-registration" class="section-regular">
+  <!--section id="section-registration" class="section-regular">
     <div class="container-fluid">
       <div class="row row-limit">
         <div class="col-lg-12">
 
         {% if site.switchRegistration and site.switchRegistration == true %}
 
-        {% if site.switchBadges and site.switchBadges == true %}
-
         <h1 class="text-center">
-          Congress Badges
+          Registration
         </h1>
 
         <section>
@@ -309,8 +312,6 @@ layout: main
           </div>
 
         </section>
-
-        {% endif %}
 
         {% if site.switchHowToReg and site.switchHowToReg == true %}
 
@@ -360,7 +361,7 @@ layout: main
         </div>
       </div>
     </div>
-  </section>
+  </section-->
 
   {% if site.switchFAQ and site.switchFAQ == true %}
   <section id="section-faq" class="section-regular section-bg-dark">
@@ -395,6 +396,8 @@ layout: main
         <div class="col-lg-12">
 
         <h1>Partners</h1>
+
+        {% include shared-partners.html %}
 
         </div>
       </div>

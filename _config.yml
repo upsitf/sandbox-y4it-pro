@@ -5,6 +5,8 @@ title: Y4iT Pro
 baseurl: http://toffmendoza.me/sandbox-y4it-pro
 #baseurl: https://pro.y4it.org/
 
+baseurlDisplay: "pro.y4it.org"
+
 # Build settings
 markdown: kramdown
 permalink: pretty
@@ -16,19 +18,25 @@ switchSpeakers: true
 switchSpeakersDescription: false
 switchSchedule: false
 #switchScheduleOrder: "alphabetical"
-switchRegistration: false
+switchRegistration: true
 switchBadges: false
 switchHowToReg: false
 switchPayment: false
 switchFAQ: false
-switchPartners: false
+switchPartners: true
 switchTerms: false
 
 switchSponsor: false
 
+urlRegister: "https://sitf.typeform.com/to/hzW46Y"
 urlAppendRegister: "/register"
-urlAppendSponsorship: "/sponsor"
-urlAppendSponsorshipPackages: "/files/Y4iT2017SponsorshipPackages.pdf"
+
+urlRegisterShorter: "http://bit.ly/y4itproregister"
+urlRegisterShorterDisplay: "bit.ly/y4itproregister"
+
+#urlAppendRegister: "/register"
+#urlAppendSponsorship: "/sponsor"
+#urlAppendSponsorshipPackages: "/files/Y4iT2017SponsorshipPackages.pdf"
 
 urlOfficial: "https://pro.y4it.org/"
 urlFacebook: "https://www.facebook.com/ilove.Y4iT/"
@@ -56,6 +64,16 @@ dataSpeakers:
    description:
     - "Ra'el is a programmer by profession, creative by heart, and a tech-entrepreneur by soul. He leads a web development and design company named WIZMEDIA (wizmedia.net). He founded a startup company named Creatizens (creatizens.com) which connects elite creative type Freelancers with awesome clients. He currently works with Timble CVBA, a Web Development Company based in Belgium."
    image: "coll_web-speaker-icanasa.jpg"
+ - id: "ldoromal"
+   pre: "Mr."
+   name: "Lope Doromal Jr."
+   affiliation:
+    - designation: "Chief Technology Officer"
+      company: "IBM Philippines"
+   description:
+    - "Over his 20 year career in IBM, Lope Doromal Jr. has been in the forefront of the various IT trends that have transformed industries over the years. Starting as an e-business Specialist in the late 90s, when he was the lead advocate for IBM about the value of using this new technology called the Internet for business, to the Analytics-driven Smarter Planet campaign in the late 2000s, when as Chief Technologist, he helped organizations understand how an Instrumented, Interconnected, and Intelligent world changes the way we understand and react to our environment, to his current role as Chief Technology Officer, where is is again leading IBM's campaign around the Cloud and Cognitive technologies."
+    - "Concurrently, Lope is also a Client Technical Advisor for the Banking and Financial Markets Industry, providing banking clients with expert, vendor-neutral architectural advice and solution strategies to address the client's strategic business imperatives and current business issues."
+   image: "coll_web-speaker-ldoromal.jpg"
  - id: "adumanhug"
    pre: "Mr."
    name: "Allan Jay Dumanhug"
@@ -109,6 +127,24 @@ dataSpeakers:
    image: "coll_web-speaker-mvalmores.jpg"
 # - id: "more" # this adds the "And More" panel in the Speakers section
 
+dataSchedules:
+ - morning:
+    - id: "ldoromal"
+      topic: "Harnessing the Power of Watson in Your Applications"
+    - id: "dtapang"
+      topic: "Innovating with AI"
+    - id: "rregalado"
+      topic: "Introduction to TensorFlow"
+   afternoon:
+    - id: "adumanhug"
+      topic: "Website Hacking"
+    - id: "icanasa"
+      topic: "Coding PHP Applications Like a Paranoid"
+    - id: "mlainez"
+      topic: "Next Generation Cyber Threat Intelligence"
+    - id: "mvalmores"
+      topic: "Mobile Security"
+
 organizerDescription:
  - "The UP System Information Technology Foundation (UPSITF) Inc. is a non-government organization focused on the application of Information and Communication Technology for development. It partners with UP Information Technology Development Center in providing various services such as, but not limited to, Education Development, IT Human Capital Development, Research &amp; Development, Software Engineering, ICT Policy Development and Planning, and IT Project Management."
 
@@ -136,17 +172,25 @@ dataFAQ:
 
 dataPartners:
  - name: "Sponsors"
+   id: "sponsor"
    list:
-    - name: ""
-      logo: ""
- - name: "Media Partners"
-   list:
-    - name: "Manila Bulletin"
-      logo: ""
- - name: "Organization Partners"
-   list:
-    - name: ""
-      logo: ""
+    - name: "Appsfresh"
+      logo: "coll_web-partner-sponsor-appsfresh.png"
+    - name: "Converge ICT Solutions"
+      logo: "coll_web-partner-sponsor-converge.png"
+    - name: "Palo Alto Networks"
+      logo: "coll_web-partner-sponsor-paloalto.png"
+    - name: "Z.com"
+      logo: "coll_web-partner-sponsor-zcom.png"
+# - name: "Media Partners"
+#   id: "media"
+#   list:
+#    - name: ""
+#      logo: ""
+# - name: "Organization Partners"
+#   list:
+#    - name: ""
+#      logo: ""
 
 dataTerms:
  - name: "Refunds"

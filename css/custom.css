@@ -100,7 +100,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #section-home-header h1 span:nth-of-type(2) {
   background-color: white;
-  color: #777777;
+  /*color: #777777;*/
+  color: #5d319c;
   text-transform: uppercase;
   font-weight: 600;
   padding: 0px 7.5px 1px;
@@ -161,6 +162,80 @@ h1, h2, h3, h4, h5, h6 {
   #section-home-header h1>small {
     /*font-size: 0.5em;*/
   }
+}
+
+.btn.btn-default {
+  border-radius: 0;
+  border-style: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  color: white;
+  box-shadow: 5px 5px 0 #28184b;
+  background-color: #5d319c;
+
+  -webkit-transition: 250ms ease-out;
+  -moz-transition: 250ms ease-out;
+  -o-transition: 250ms ease-out;
+  transition: 250ms ease-out;*/
+
+}
+
+.btn.btn-default:hover,
+.btn.btn-default:focus {
+  color: #5d319c;
+  /*box-shadow: 5px 5px 0 #28184b;*/
+  background-color: white;
+  -webkit-transition: 250ms ease-out;
+  -moz-transition: 250ms ease-out;
+  -o-transition: 250ms ease-out;
+  transition: 250ms ease-out;*/
+}
+
+.section-bg-image .btn.btn-default {
+  color: #5d319c;
+  box-shadow: 5px 5px 0 #5d319c;
+  background-color: #ffffff;
+
+  -webkit-transition: 250ms ease-out;
+  -moz-transition: 250ms ease-out;
+  -o-transition: 250ms ease-out;
+  transition: 250ms ease-out;*/
+}
+
+.section-bg-image .btn.btn-default:hover,
+.section-bg-image .btn.btn-default:focus {
+  color: white;
+  box-shadow: 5px 5px 0 #28184b;
+  background-color: #5d319c;
+
+  -webkit-transition: 250ms ease-out;
+  -moz-transition: 250ms ease-out;
+  -o-transition: 250ms ease-out;
+  transition: 250ms ease-out;*/
+}
+
+.btn.btn-default.btn-y4it {
+  font-size: 0.75em;
+  box-shadow: 5px 5px 0 #e87f31;
+  color: #e87f31;
+
+  -webkit-transition: 250ms ease-out;
+  -moz-transition: 250ms ease-out;
+  -o-transition: 250ms ease-out;
+  transition: 250ms ease-out;*/
+}
+
+.btn.btn-default.btn-y4it:focus,
+.btn.btn-default.btn-y4it:hover {
+  color: white;
+  box-shadow: 5px 5px 0 #7d4516;
+  background-color: #e87f31;
+
+  -webkit-transition: 250ms ease-out;
+  -moz-transition: 250ms ease-out;
+  -o-transition: 250ms ease-out;
+  transition: 250ms ease-out;*/
 }
 
 /* COUNTDOWN */
